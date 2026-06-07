@@ -1,0 +1,28 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B"],
+  "status": "approved",
+  "winner": "A",
+  "why_winner": "Draft A earns the bold claim through story — the reader lives the gap before being told it, which makes the conclusion land harder. The pacing and white space also make it more scannable on mobile, and the observation feels genuinely builder-honest rather than verdict-first.",
+  "scores": {
+    "A": { "hook_strength": 8, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.8 },
+    "B": { "hook_strength": 7, "authenticity": 8, "readability": 7, "plan_compliance": 8, "cta_clarity": 9, "avg": 7.8 }
+  },
+  "runner_up_notes": {
+    "B": "The compressed paragraph — 'I kept re-explaining. It kept asking for more context. Three more prompts to get close to what I meant on the first ask.' — is tighter and more specific than A's version. A should borrow that exact phrasing to sharpen its middle section. B also front-loads the core insight more efficiently, which reduces drop-off risk for skimmers."
+  },
+  "issues": [
+    {
+      "type": "buries_insight",
+      "severity": "low",
+      "description": "In Draft A, the re-prompting detail is present but vague compared to B's version which specifies 'Three more prompts to get close to what I meant on the first ask.' The specificity is what makes it credible.",
+      "action": "Replace 'I kept re-explaining. / It kept asking for more context.' with 'I kept re-explaining. It kept asking for more context. Three more prompts to get close to what I meant on the first ask.'"
+    },
+    {
+      "type": "weak_hook",
+      "severity": "low",
+      "description": "Draft A's hook uses 'like a real user' which hedges what is actually a factual action. It slightly undersells the autonomy gap.",
+      "action": "Tighten to: 'One tool opened a browser, navigated the full flow, and confirmed the implementation. On its own.'"
+    }
+  ]
+}
