@@ -17,23 +17,33 @@
 
 ## Final Post
 
-Claude Code just shipped something that quietly changes what "running a tool" means.
+My entire job in our new content pipeline: Drop a raw idea into a folder.
 
-It's called /loop.
+That's it.
 
-One command. Runs any prompt or slash command on a recurring interval. The tool calls itself.
+Three AI agents handle the rest:
 
-I spotted it today and immediately wired it into a content pipeline. Same day — no manual trigger, no cron job, no glue code.
+The Strategist: Plans the angle.
 
-I don't have results yet. This is a field note from day one, not a results review.
+The Writer: Drafts the copy.
 
-But the mental model shift is instant: you stop thinking about tools you invoke and start thinking about processes that run. That's a different kind of leverage.
+The Editor: Scores and revises.
 
-Experiment is live. I'll share what I find.
+It runs end-to-end. No cron jobs. No glue code. No manual triggers.
 
-What are you automating with Claude Code right now?
+This became possible four days ago when Claude Code shipped /loop, introducing a concept we need to start talking about: Loop Engineering.
 
-#ClaudeCode #AITools #BuildingWithAI #DeveloperTools #Automation
+One command. Runs any prompt or slash command on a recurring interval. I pointed /loop at my content folder, and the factory woke up.
+
+Here is the massive shift: A tool you call is a capability. A process that runs autonomously is infrastructure.
+
+Most AI workflows right now are just capabilities—you invoke them, they respond, you move on. Loop engineering is the on-ramp to personal infrastructure. Your agents keep working on your ideas while you're off thinking about the next one.
+
+I built the factory. /loop turned the power on.
+
+The experiment is live. What is the first workflow you are going to convert from a capability into infrastructure using a loop?
+
+#LoopEngineering #ClaudeCode #BuildingWithAI #AgenticWorkflows #Automation
 
 ---
 

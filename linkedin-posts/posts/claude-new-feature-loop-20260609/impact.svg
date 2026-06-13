@@ -1,48 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
   <defs>
-    <!-- Background gradient -->
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0a0e1a"/>
       <stop offset="100%" stop-color="#111827"/>
     </linearGradient>
-
-    <!-- Cyan-to-violet accent gradient -->
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#22d3ee"/>
       <stop offset="100%" stop-color="#a78bfa"/>
     </linearGradient>
-
-    <!-- Hero text gradient -->
     <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#22d3ee"/>
       <stop offset="60%" stop-color="#818cf8"/>
       <stop offset="100%" stop-color="#a78bfa"/>
     </linearGradient>
-
-    <!-- Tile background -->
     <linearGradient id="tileBg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#1e2433"/>
       <stop offset="100%" stop-color="#161c2e"/>
     </linearGradient>
-
-    <!-- Arrow gradient -->
     <linearGradient id="arrowGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.6"/>
     </linearGradient>
-
-    <!-- Glow filter -->
+    <linearGradient id="infra" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
     <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <!-- Subtle glow for hero -->
     <filter id="heroGlow" x="-20%" y="-50%" width="140%" height="200%">
-      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -68,83 +59,89 @@
   <rect x="0" y="0" width="1080" height="5" fill="url(#accent)"/>
 
   <!-- Top label -->
-  <text x="540" y="80" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="22" fill="#22d3ee" text-anchor="middle" letter-spacing="6" opacity="0.8">CLAUDE CODE · FEATURE DROP</text>
+  <text x="540" y="78" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="21" fill="#22d3ee" text-anchor="middle" letter-spacing="6" opacity="0.8">CLAUDE CODE · /loop</text>
 
-  <!-- Decorative horizontal rule -->
-  <line x1="80" y1="100" x2="1000" y2="100" stroke="url(#accent)" stroke-width="1" opacity="0.3"/>
+  <!-- Decorative rule -->
+  <line x1="80" y1="98" x2="1000" y2="98" stroke="url(#accent)" stroke-width="1" opacity="0.25"/>
 
-  <!-- Hero command text -->
-  <text x="540" y="280" font-family="'SF Mono', 'Fira Code', 'Courier New', monospace" font-size="200" font-weight="bold" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="-4">/loop</text>
+  <!-- Hero: LOOP ENGINEERING -->
+  <text x="540" y="220" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="100" font-weight="800" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="-3">LOOP</text>
+  <text x="540" y="330" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="100" font-weight="800" fill="url(#heroGrad)" text-anchor="middle" filter="url(#heroGlow)" letter-spacing="-3">ENGINEERING</text>
 
   <!-- Hero subtitle -->
-  <text x="540" y="350" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="32" fill="#94a3b8" text-anchor="middle" letter-spacing="1">Run any command on a recurring interval</text>
+  <text x="540" y="385" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#64748b" text-anchor="middle" letter-spacing="1">your agents run while you think about the next idea</text>
 
-  <!-- Decorative rule below hero -->
-  <line x1="200" y1="385" x2="880" y2="385" stroke="url(#accent)" stroke-width="1" opacity="0.25"/>
+  <!-- Decorative rule -->
+  <line x1="160" y1="415" x2="920" y2="415" stroke="url(#accent)" stroke-width="1" opacity="0.2"/>
 
-  <!-- Three concept tiles -->
-  <!-- Tile 1: ONE COMMAND -->
-  <rect x="60" y="420" width="290" height="220" rx="16" fill="url(#tileBg)" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.3"/>
-  <text x="205" y="490" font-family="'SF Mono', 'Fira Code', monospace" font-size="52" fill="#22d3ee" text-anchor="middle" font-weight="bold" filter="url(#glow)">/loop</text>
-  <line x1="85" y1="510" x2="325" y2="510" stroke="#22d3ee" stroke-width="1" opacity="0.2"/>
-  <text x="205" y="555" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#e2e8f0" text-anchor="middle" font-weight="600" letter-spacing="3">ONE COMMAND</text>
-  <text x="205" y="590" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">no glue code needed</text>
-  <text x="205" y="618" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">no extra infra</text>
+  <!-- Pipeline label -->
+  <text x="540" y="462" font-family="'SF Mono', 'Fira Code', monospace" font-size="18" fill="#475569" text-anchor="middle" letter-spacing="4">THE 3-AGENT PIPELINE</text>
+
+  <!-- Agent Tile 1: STRATEGIST -->
+  <rect x="55" y="482" width="280" height="200" rx="16" fill="url(#tileBg)" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="195" y="544" font-family="'SF Mono', 'Fira Code', monospace" font-size="38" fill="#22d3ee" text-anchor="middle" font-weight="bold" filter="url(#glow)">01</text>
+  <line x1="78" y1="563" x2="312" y2="563" stroke="#22d3ee" stroke-width="1" opacity="0.2"/>
+  <text x="195" y="603" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="2">STRATEGIST</text>
+  <text x="195" y="636" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">Plans the angle</text>
+  <text x="195" y="659" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">picks the hook</text>
 
   <!-- Arrow 1 -->
-  <g opacity="0.6">
-    <line x1="365" y1="530" x2="410" y2="530" stroke="url(#arrowGrad)" stroke-width="2"/>
-    <polygon points="410,523 425,530 410,537" fill="#a78bfa" opacity="0.7"/>
-  </g>
+  <line x1="348" y1="582" x2="390" y2="582" stroke="url(#arrowGrad)" stroke-width="2.5"/>
+  <polygon points="390,574 408,582 390,590" fill="#818cf8" opacity="0.8"/>
 
-  <!-- Tile 2: RECURRING -->
-  <rect x="395" y="420" width="290" height="220" rx="16" fill="url(#tileBg)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.3"/>
-  <!-- Loop icon (circular arrow suggestion via arcs) -->
-  <circle cx="540" cy="483" r="26" fill="none" stroke="url(#accent)" stroke-width="3" stroke-dasharray="130 30"/>
-  <polygon points="556,465 566,477 554,480" fill="#a78bfa"/>
-  <line x1="420" y1="510" x2="660" y2="510" stroke="#818cf8" stroke-width="1" opacity="0.2"/>
-  <text x="540" y="555" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#e2e8f0" text-anchor="middle" font-weight="600" letter-spacing="3">RECURRING</text>
-  <text x="540" y="590" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">prompt or slash command</text>
-  <text x="540" y="618" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">runs on your schedule</text>
+  <!-- Agent Tile 2: WRITER -->
+  <rect x="400" y="482" width="280" height="200" rx="16" fill="url(#tileBg)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="540" y="544" font-family="'SF Mono', 'Fira Code', monospace" font-size="38" fill="#818cf8" text-anchor="middle" font-weight="bold" filter="url(#glow)">02</text>
+  <line x1="423" y1="563" x2="657" y2="563" stroke="#818cf8" stroke-width="1" opacity="0.2"/>
+  <text x="540" y="603" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="2">WRITER</text>
+  <text x="540" y="636" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">Drafts the copy</text>
+  <text x="540" y="659" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">N variants in parallel</text>
 
   <!-- Arrow 2 -->
-  <g opacity="0.6">
-    <line x1="700" y1="530" x2="745" y2="530" stroke="url(#arrowGrad)" stroke-width="2"/>
-    <polygon points="745,523 760,530 745,537" fill="#a78bfa" opacity="0.7"/>
-  </g>
+  <line x1="693" y1="582" x2="735" y2="582" stroke="url(#arrowGrad)" stroke-width="2.5"/>
+  <polygon points="735,574 753,582 735,590" fill="#a78bfa" opacity="0.8"/>
 
-  <!-- Tile 3: LIVE EXPERIMENT -->
-  <rect x="730" y="420" width="290" height="220" rx="16" fill="url(#tileBg)" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.3"/>
-  <!-- Pulsing dot indicator -->
-  <circle cx="875" cy="468" r="10" fill="#22d3ee" opacity="0.2"/>
-  <circle cx="875" cy="468" r="6" fill="#22d3ee" opacity="0.5"/>
-  <circle cx="875" cy="468" r="3" fill="#22d3ee"/>
-  <line x1="755" y1="510" x2="995" y2="510" stroke="#a78bfa" stroke-width="1" opacity="0.2"/>
-  <text x="875" y="555" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#e2e8f0" text-anchor="middle" font-weight="600" letter-spacing="3">LIVE NOW</text>
-  <text x="875" y="590" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">content pipeline</text>
-  <text x="875" y="618" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">running as we speak</text>
+  <!-- Agent Tile 3: EDITOR -->
+  <rect x="745" y="482" width="280" height="200" rx="16" fill="url(#tileBg)" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.35"/>
+  <text x="885" y="544" font-family="'SF Mono', 'Fira Code', monospace" font-size="38" fill="#a78bfa" text-anchor="middle" font-weight="bold" filter="url(#glow)">03</text>
+  <line x1="768" y1="563" x2="1002" y2="563" stroke="#a78bfa" stroke-width="1" opacity="0.2"/>
+  <text x="885" y="603" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="2">EDITOR</text>
+  <text x="885" y="636" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">Scores and revises</text>
+  <text x="885" y="659" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">picks the winner</text>
+
+  <!-- Raw idea input label -->
+  <text x="55" y="724" font-family="'SF Mono', 'Fira Code', monospace" font-size="15" fill="#22d3ee" opacity="0.7" letter-spacing="2">RAW IDEA IN ↗</text>
+
+  <!-- Finished post output label -->
+  <text x="745" y="724" font-family="'SF Mono', 'Fira Code', monospace" font-size="15" fill="#a78bfa" opacity="0.7" letter-spacing="2">FINISHED POST OUT ↗</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="750" x2="1020" y2="750" stroke="url(#accent)" stroke-width="1" opacity="0.15"/>
 
   <!-- Mental model section -->
-  <rect x="60" y="680" width="960" height="180" rx="16" fill="#0d1120" stroke="none"/>
-  <rect x="60" y="680" width="6" height="180" rx="3" fill="url(#accent)"/>
+  <rect x="60" y="775" width="960" height="210" rx="16" fill="#0d1120"/>
+  <rect x="60" y="775" width="6" height="210" rx="3" fill="url(#accent)"/>
 
-  <text x="110" y="740" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#64748b" letter-spacing="2">THE SHIFT</text>
-  <text x="110" y="790" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="36" fill="#94a3b8" font-weight="300">tools you <tspan fill="#f87171" font-weight="600">invoke</tspan></text>
-  <text x="110" y="840" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="36" fill="#94a3b8" font-weight="300">vs processes that <tspan fill="#22d3ee" font-weight="600">run</tspan></text>
+  <text x="110" y="830" font-family="'SF Mono', 'Fira Code', monospace" font-size="18" fill="#475569" letter-spacing="3">THE SHIFT</text>
+
+  <text x="110" y="882" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="38" fill="#64748b" font-weight="300">A tool you call is a <tspan fill="#f87171" font-weight="700">capability</tspan></text>
+  <text x="110" y="932" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="38" fill="#64748b" font-weight="300">A process that runs is <tspan fill="#22d3ee" font-weight="700">infrastructure</tspan></text>
+
+  <text x="110" y="970" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#334155">/loop is the shortest path between the two</text>
 
   <!-- Divider -->
-  <line x1="60" y1="900" x2="1020" y2="900" stroke="url(#accent)" stroke-width="1" opacity="0.15"/>
+  <line x1="60" y1="1020" x2="1020" y2="1020" stroke="url(#accent)" stroke-width="1" opacity="0.15"/>
 
   <!-- Tagline -->
-  <text x="540" y="990" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="72" font-weight="700" fill="#f1f5f9" text-anchor="middle" letter-spacing="-1">Set it.</text>
-  <text x="540" y="1080" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="72" font-weight="700" fill="url(#heroGrad)" text-anchor="middle" letter-spacing="-1">Let it run.</text>
+  <text x="540" y="1110" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="66" font-weight="700" fill="#f1f5f9" text-anchor="middle" letter-spacing="-1">Drop an idea.</text>
+  <text x="540" y="1195" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="66" font-weight="700" fill="url(#heroGrad)" text-anchor="middle" letter-spacing="-1">The loop does the rest.</text>
 
   <!-- Divider -->
-  <line x1="60" y1="1130" x2="1020" y2="1130" stroke="url(#accent)" stroke-width="1" opacity="0.15"/>
+  <line x1="60" y1="1245" x2="1020" y2="1245" stroke="url(#accent)" stroke-width="1" opacity="0.15"/>
 
   <!-- Byline -->
-  <text x="540" y="1220" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#475569" text-anchor="middle" letter-spacing="1">Built by Altaf</text>
-  <text x="540" y="1260" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#334155" text-anchor="middle" letter-spacing="2">AI ENGINEERING</text>
+  <text x="540" y="1295" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#475569" text-anchor="middle" letter-spacing="1">Built by Altaf</text>
+  <text x="540" y="1328" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#334155" text-anchor="middle" letter-spacing="3">AI ENGINEERING</text>
 
   <!-- Bottom accent bar -->
   <rect x="0" y="1345" width="1080" height="5" fill="url(#accent)"/>
