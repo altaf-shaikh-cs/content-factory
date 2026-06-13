@@ -15,14 +15,14 @@ LinkedIn lets you export post analytics from the Creator Analytics page.
 3. Look for an **Export** or **Download CSV** button in the top-right corner
    - This appears for accounts with Creator Mode on
    - If you don't see it: use Path B instead
-4. Save the CSV file — it will be named something like `Content_Analytics_YYYYMMDD.csv`
+4. Save the file — LinkedIn exports `.xlsx` (Excel), not `.csv`. The filename is usually something like `Content_Analytics_YYYYMMDD.xlsx`
 5. Drop it into:
    ```
    linkedin-posts/performance/csv-imports/
    ```
-6. Run `/linkedin-growth-agent` — Agent 0 will detect the CSV, parse it, match rows to post folders, write `performance.md` per post, update `tracker.md`, and move the CSV to `csv-imports/processed/`
+6. Run `/linkedin-growth-agent` — the LinkedIn Performance Agent will detect the file, read it, match rows to post folders by date, write `performance.md` per post, update `tracker.md`, and move the file to `csv-imports/processed/`
 
-### What LinkedIn's CSV contains
+### What LinkedIn's export contains
 
 | Column | What it is |
 |--------|-----------|
