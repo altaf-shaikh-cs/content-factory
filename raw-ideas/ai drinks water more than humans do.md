@@ -1,0 +1,1 @@
+So I want to write a very sarcastic post about how using a simple query behind the scenes at the back end is consuming gallons of water. Fresh water is drinkable water, and in this world, drinkable water is in scarcity. You may not need to drink less water to work, but doing the smallest job is taking so much water, energy, and natural resources – one could never imagine.

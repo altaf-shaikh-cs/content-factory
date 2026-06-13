@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+
+  <!-- Subtle grid texture -->
+  <line x1="0" y1="450" x2="1080" y2="450" stroke="#1e293b" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="900" x2="1080" y2="900" stroke="#1e293b" stroke-width="1" opacity="0.4"/>
+  <line x1="540" y1="0" x2="540" y2="1350" stroke="#1e293b" stroke-width="1" opacity="0.4"/>
+
+  <!-- Top accent bar -->
+  <rect x="80" y="100" width="180" height="5" rx="3" fill="url(#accent)"/>
+
+  <!-- Section label -->
+  <text x="80" y="160" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="6" fill="#64748b">INFRASTRUCTURE REALITY</text>
+
+  <!-- Hero headline: line 1 -->
+  <text x="80" y="255" font-family="'Helvetica Neue', Arial, sans-serif" font-size="80" font-weight="900" fill="white">Your query.</text>
+  <!-- Hero headline: line 2 accent -->
+  <text x="80" y="345" font-family="'Helvetica Neue', Arial, sans-serif" font-size="80" font-weight="900" fill="url(#accent)">Their cooling tower.</text>
+
+  <!-- Divider -->
+  <rect x="80" y="390" width="920" height="2" rx="1" fill="#1e293b"/>
+
+  <!-- What YOU see label -->
+  <text x="270" y="456" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="4" fill="#64748b" text-anchor="middle">WHAT YOU SEE</text>
+
+  <!-- Arrow pointing right -->
+  <text x="540" y="456" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#334155" text-anchor="middle">&#8594;</text>
+
+  <!-- What ACTUALLY HAPPENS label -->
+  <text x="810" y="456" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="4" fill="#64748b" text-anchor="middle">WHAT HAPPENS</text>
+
+  <!-- Tile 1: top-left — "1 query" -->
+  <rect x="80" y="475" width="420" height="280" rx="16" fill="url(#tileGrad)" stroke="#1e293b" stroke-width="1"/>
+  <text x="290" y="560" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#64748b" text-anchor="middle" letter-spacing="3">YOU SUBMIT</text>
+  <text x="290" y="665" font-family="'Helvetica Neue', Arial, sans-serif" font-size="110" font-weight="900" fill="url(#accent)" text-anchor="middle">1</text>
+  <text x="290" y="720" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="500">query</text>
+
+  <!-- Tile 2: top-right — "gallons" -->
+  <rect x="580" y="475" width="420" height="280" rx="16" fill="url(#tileGrad)" stroke="#1e293b" stroke-width="1"/>
+  <text x="790" y="560" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#64748b" text-anchor="middle" letter-spacing="3">COOLING TAKES</text>
+  <text x="790" y="665" font-family="'Helvetica Neue', Arial, sans-serif" font-size="110" font-weight="900" fill="url(#accent)" text-anchor="middle">?</text>
+  <text x="790" y="720" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="500">gallons of water</text>
+
+  <!-- Tile 3: bottom-left — "$0.00" -->
+  <rect x="80" y="790" width="420" height="280" rx="16" fill="url(#tileGrad)" stroke="#1e293b" stroke-width="1"/>
+  <text x="290" y="870" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#64748b" text-anchor="middle" letter-spacing="3">YOUR INVOICE</text>
+  <text x="290" y="975" font-family="'Helvetica Neue', Arial, sans-serif" font-size="82" font-weight="900" fill="url(#accent)" text-anchor="middle">$0.00</text>
+  <text x="290" y="1030" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="500">billed</text>
+
+  <!-- Tile 4: bottom-right — "not on your bill" -->
+  <rect x="580" y="790" width="420" height="280" rx="16" fill="url(#tileGrad)" stroke="#1e293b" stroke-width="1"/>
+  <text x="790" y="870" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" fill="#64748b" text-anchor="middle" letter-spacing="3">PLANET'S COST</text>
+  <text x="790" y="960" font-family="'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="900" fill="url(#accent)" text-anchor="middle">invisible</text>
+  <text x="790" y="1010" font-family="'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="900" fill="url(#accent)" text-anchor="middle">to you</text>
+  <text x="790" y="1050" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#64748b" text-anchor="middle" font-weight="400">but real to someone</text>
+
+  <!-- Accent divider line before tagline -->
+  <rect x="80" y="1110" width="920" height="2" rx="1" fill="#1e293b"/>
+
+  <!-- Tagline -->
+  <text x="540" y="1185" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" fill="white" text-anchor="middle">The bill exists.</text>
+  <text x="540" y="1235" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" fill="url(#accent)" text-anchor="middle">It just shows up somewhere else.</text>
+
+  <!-- Byline -->
+  <text x="540" y="1305" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" fill="#475569" text-anchor="middle" letter-spacing="2">Altaf Shaikh</text>
+</svg>

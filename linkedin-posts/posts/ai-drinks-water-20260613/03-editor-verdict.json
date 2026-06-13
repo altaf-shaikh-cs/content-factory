@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "Angle C opens with the sharpest hook of the three — 'The AI industry's most successful product is not a model. It's the idea that AI has no cost.' — a sentence that earns a pause and directly challenges a belief the audience holds. It reframes the entire conversation without needing sarcasm to land the point. A's story arc is authentic but takes too long to activate; B is direct but reads like a PSA. C is the only variant that gives the reader a belief to argue with, which drives comments.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.6 },
+    "B": { "hook_strength": 8, "authenticity": 7, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.2 },
+    "C": { "hook_strength": 10, "authenticity": 8, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 9.0 }
+  },
+  "runner_up_notes": {
+    "A": "The revised line 'The bill exists. It just shows up somewhere else.' from the prior round is C's structural sibling — C already makes this point more elegantly. No grafting needed.",
+    "B": "Nothing in B that C doesn't do better."
+  },
+  "issues": []
+}

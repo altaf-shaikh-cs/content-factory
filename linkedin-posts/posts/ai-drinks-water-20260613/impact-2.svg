@@ -1,0 +1,120 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Cream background -->
+  <rect width="1080" height="1350" fill="#faf8f4"/>
+
+  <!-- Top: short rule + small-caps category label -->
+  <line x1="90" y1="90" x2="132" y2="90" stroke="#1a1a1a" stroke-width="2.5"/>
+  <text x="146" y="97"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="700" letter-spacing="5" fill="#9ca3af">AI INFRASTRUCTURE</text>
+
+  <!-- Hero headline: line 1 "The cost" — dark -->
+  <text x="90" y="222"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="120" font-weight="900" fill="#1a1a1a">The cost</text>
+
+  <!-- Hero headline: line 2 "didn't" — dark -->
+  <text x="90" y="358"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="120" font-weight="900" fill="#1a1a1a">didn&#8217;t</text>
+
+  <!-- Hero headline: line 3 "disappear." — orange -->
+  <text x="90" y="494"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="120" font-weight="900" fill="#e85d2f">disappear.</text>
+
+  <!-- Body text block with left orange bar -->
+  <rect x="90" y="528" width="4" height="76" rx="2" fill="#e85d2f"/>
+  <text x="112" y="558"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="700" fill="#1a1a1a">It just moved off your invoice</text>
+  <text x="112" y="598"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="400" fill="#4b5563">and onto a ledger you never see.</text>
+
+  <!-- Divider 1 -->
+  <line x1="90" y1="648" x2="990" y2="648" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Stats row 1 — COST PER TOKEN (left) -->
+  <text x="90" y="692"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" fill="#9ca3af">COST PER TOKEN</text>
+  <text x="90" y="782"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="72" font-weight="900" fill="#e85d2f">falling</text>
+  <text x="90" y="820"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" fill="#6b7280">for the person prompting</text>
+
+  <!-- Vertical divider between row-1 columns -->
+  <line x1="547" y1="660" x2="547" y2="848" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Stats row 1 — COST TO PLANET (right) -->
+  <text x="567" y="692"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" fill="#9ca3af">COST TO PLANET</text>
+  <text x="567" y="782"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="72" font-weight="900" fill="#2563eb">invisible</text>
+  <text x="567" y="820"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" fill="#6b7280">to the person prompting</text>
+
+  <!-- Divider 2 -->
+  <line x1="90" y1="860" x2="990" y2="860" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Stats row 2 — WHAT MOVED (left) -->
+  <text x="90" y="904"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" fill="#9ca3af">WHAT MOVED</text>
+  <text x="90" y="974"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="48" font-weight="900" fill="#1a1a1a">your invoice</text>
+  <text x="90" y="1010"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" fill="#6b7280">off your bill</text>
+
+  <!-- Vertical divider between row-2 columns -->
+  <line x1="547" y1="872" x2="547" y2="1038" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Stats row 2 — WHAT STAYED (right) -->
+  <text x="567" y="904"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" fill="#9ca3af">WHAT STAYED</text>
+  <text x="567" y="974"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="46" font-weight="900" fill="#e85d2f">the water bill</text>
+  <text x="567" y="1010"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" fill="#6b7280">on the planet&#8217;s ledger</text>
+
+  <!-- Footer thick divider -->
+  <line x1="90" y1="1068" x2="990" y2="1068" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Tagline -->
+  <text x="90" y="1120"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="700" fill="#1a1a1a">The cost didn&#8217;t disappear.</text>
+  <text x="90" y="1160"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="300" fill="#4b5563">It just moved off your invoice.</text>
+
+  <!-- Author name + domain -->
+  <text x="90" y="1245"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" fill="#1a1a1a">Altaf Shaikh</text>
+  <text x="90" y="1278"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" fill="#6b7280">// AI Infrastructure</text>
+
+  <!-- Handle — prominent, orange accent -->
+  <text x="90" y="1314"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" fill="#e85d2f">@teachmebro</text>
+
+  <!-- Decorative dots — bottom right -->
+  <circle cx="952" cy="1282" r="13" fill="#e85d2f"/>
+  <circle cx="984" cy="1282" r="13" fill="#2563eb"/>
+
+</svg>

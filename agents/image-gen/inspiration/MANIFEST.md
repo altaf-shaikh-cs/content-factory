@@ -78,6 +78,25 @@ Font stack:           -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
 
 ---
 
+## LinkedIn Dimension Reference
+
+Use this when `Dimensions: auto` is passed for a LinkedIn brief, or when the Image Designer is choosing dimensions. First match wins.
+
+| Condition | Format | Dimensions | Notes |
+|-----------|--------|------------|-------|
+| Post includes a URL or link | Landscape | **1200×627** | Link-share preview format |
+| ≥3 stats AND content-type is `stat-card` | Portrait | **1080×1350** | Max mobile feed real estate |
+| content-type is `editorial` or `quote-card` | Square | **1080×1080** | Most versatile, best mobile performance |
+| 1–2 stats or qualitative only | Square | **1080×1080** | Versatile, clean |
+| Fallback | Portrait | **1080×1350** | Safe default |
+
+**When generating two concepts for the same post, always use DIFFERENT dimensions** — one Portrait, one Square (or Landscape if the post has a URL). Never generate both at the same size.
+
+Max file size: 8 MB (keep under 5 MB for optimal delivery).
+Supported export formats: JPG, PNG, GIF.
+
+---
+
 ## Adding a New Style
 
 1. Create a subfolder: `inspiration/<style-slug>/`

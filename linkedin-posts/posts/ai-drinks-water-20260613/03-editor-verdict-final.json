@@ -1,0 +1,12 @@
+{
+  "round": 2,
+  "variants_reviewed": ["A-revised"],
+  "status": "approved",
+  "winner": "A-revised",
+  "why_winner": "Both revision fixes landed. 'Barely a thought' activates the sarcasm in line 2 instead of line 6. 'The bill exists. It just shows up somewhere else' is the post's most quotable line and now sits where it can carry weight. The story arc is complete: casual action → invisible infrastructure → honest reckoning → open question. No invented stats. CTA is public-shareable. Authentic voice throughout.",
+  "scores": {
+    "A-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.2 }
+  },
+  "runner_up_notes": {},
+  "issues": []
+}
