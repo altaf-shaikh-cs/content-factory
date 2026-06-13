@@ -28,7 +28,14 @@ content-stratergy/
 ├── README.md                     ← you are here
 ├── CLAUDE.md                     ← AI agent contract for this whole project
 ├── raw-ideas/                    ← SHARED idea library (one file = one idea)
-│   └── 001-claude-vs-codex.md
+│   ├── 001-claude-vs-codex.md
+│   ├── 002-SuperReps-learnings.md
+│   ├── 003-claude-new-feature-loop.md
+│   ├── ai drinks water more than humans do.md
+│   └── ai-non-deterministic-code-vs-program-deterministic-code.md
+├── agents/                       ← shared service agents (not channels)
+│   └── image-gen/                ← image generation agent + inspiration library
+│       └── inspiration/          ← style samples (SVG, JPEG) + MANIFEST.md
 ├── linkedin.agent.md             ← /loop prompt for the LinkedIn channel
 ├── x.agent.md                    ← /loop prompt for the X channel       (stub)
 ├── blog.agent.md                 ← /loop prompt for the blog channel    (stub)
@@ -84,6 +91,19 @@ This means:
 | X (Twitter)   | (TBD — `x-growth-agent`)             | `x.agent.md` (stub)   | `x-posts/`        | 🟡 stub     |
 | Blog          | (TBD — `blog-growth-agent` / `idea-to-blog`) | `blog.agent.md` (stub) | `blog-post/`      | 🟡 stub     |
 | Presentation  | (TBD — `idea-to-presentation`)       | (not yet)             | (not yet)         | ⚪ planned   |
+
+### LinkedIn pipeline — current spec
+
+| Setting | Value |
+|---------|-------|
+| Copywriter variants per post | 3 (A: story-first · B: bold claim-first · C: adaptive) |
+| Max editor revision rounds | 2 |
+| Images per post | 2 (always different LinkedIn formats) |
+| Image generation | `/image-gen-agent` skill — reads `agents/image-gen/inspiration/` |
+| Image formats | Square 1080×1080 · Portrait 1080×1350 · Landscape 1200×627 (URL posts) |
+| Brand handle on images | @teachmebro (accent color, above byline) |
+| Performance feedback | LinkedIn CSV/XLSX → `linkedin-posts/performance/tracker.md` |
+| Scheduled runner | `linkedin-daily-post-runner` (cloud scheduled task) |
 
 ---
 
