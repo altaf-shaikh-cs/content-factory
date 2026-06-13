@@ -10,31 +10,27 @@ LinkedIn lets you export post analytics from the Creator Analytics page.
 
 ### Steps
 
-1. Go to **linkedin.com/analytics/creator/content**
+1. Go to **linkedin.com/analytics/creator/**
 2. Set the date range to cover the posts you want to capture
-3. Look for an **Export** or **Download CSV** button in the top-right corner
-   - This appears for accounts with Creator Mode on
-   - If you don't see it: use Path B instead
-4. Save the file — LinkedIn exports `.xlsx` (Excel), not `.csv`. The filename is usually something like `Content_Analytics_YYYYMMDD.xlsx`
+3. Click the **Export** button (top-right — requires Creator Mode)
+4. LinkedIn downloads an `.xlsx` file named `AggregateAnalytics_<YourName>_<start>_<end>.xlsx`
 5. Drop it into:
    ```
    linkedin-posts/performance/csv-imports/
    ```
-6. Run `/linkedin-growth-agent` — the LinkedIn Performance Agent will detect the file, read it, match rows to post folders by date, write `performance.md` per post, update `tracker.md`, and move the file to `csv-imports/processed/`
+6. Run `/linkedin-growth-agent` — the LinkedIn Performance Agent detects the file, reads all 5 sheets, matches posts to folders by publish date, writes `performance.md` per post, updates `tracker.md`, and moves the file to `csv-imports/processed/`
 
-### What LinkedIn's export contains
+### What the export contains (5 sheets)
 
-| Column | What it is |
-|--------|-----------|
-| Content | First ~200 chars of your post text |
-| Date published | YYYY-MM-DD |
-| Impressions | Total times the post appeared in feed |
-| Members reached | Unique accounts that saw it |
-| Reactions | Likes + other reactions |
-| Comments | Direct comments |
-| Reposts | Shares without added text |
-| Clicks | Link or post clicks |
-| Engagement rate (%) | (Reactions + Comments + Reposts + Clicks) / Impressions |
+| Sheet | What's in it |
+|-------|-------------|
+| DISCOVERY | Total impressions + members reached for the selected period |
+| ENGAGEMENT | Daily impressions + engagements totals (not per post) |
+| TOP POSTS | Per-post: URL · Publish Date · Engagements · Impressions — **this is the key sheet** |
+| FOLLOWERS | Daily new follower counts + total followers |
+| DEMOGRAPHICS | Audience breakdown by company, location, seniority, job title, industry |
+
+**Important:** `Engagements` in TOP POSTS is a combined total — reactions + comments + reposts + clicks. There is no per-type breakdown in this export. To see individual reactions vs. comments, open the post on LinkedIn and tap "View analytics" directly.
 
 ---
 
