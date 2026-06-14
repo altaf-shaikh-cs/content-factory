@@ -1,0 +1,109 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf6ef"/>
+      <stop offset="100%" stop-color="#f0ebe0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bg1)"/>
+
+  <!-- Subtle constellation decoration - top right -->
+  <g opacity="0.12" fill="#1a1a1a" stroke="#1a1a1a">
+    <circle cx="855" cy="62" r="4"/>
+    <circle cx="905" cy="82" r="3"/>
+    <circle cx="962" cy="54" r="5"/>
+    <circle cx="1010" cy="88" r="4"/>
+    <circle cx="932" cy="118" r="3"/>
+    <circle cx="878" cy="134" r="4"/>
+    <circle cx="992" cy="134" r="3"/>
+    <line x1="855" y1="62" x2="905" y2="82" stroke-width="1"/>
+    <line x1="905" y1="82" x2="962" y2="54" stroke-width="1"/>
+    <line x1="962" y1="54" x2="1010" y2="88" stroke-width="1"/>
+    <line x1="1010" y1="88" x2="992" y2="134" stroke-width="1"/>
+    <line x1="992" y1="134" x2="932" y2="118" stroke-width="1"/>
+    <line x1="932" y1="118" x2="878" y2="134" stroke-width="1"/>
+    <line x1="878" y1="134" x2="855" y2="62" stroke-width="1"/>
+  </g>
+
+  <!-- Accent dots - top right -->
+  <circle cx="958" cy="84" r="11" fill="#E85D00" opacity="0.88"/>
+  <circle cx="993" cy="84" r="11" fill="#2563EB" opacity="0.88"/>
+
+  <!-- Category label -->
+  <text x="80" y="100"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" font-weight="400" fill="#888888" letter-spacing="5">
+    &#8212; GEN AI &#183; LEVEL 1 ROADMAP
+  </text>
+
+  <!-- Headline — 4 lines -->
+  <text x="80" y="222"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="100" font-weight="900" fill="#1a1a1a">
+    I wasn't
+  </text>
+  <text x="80" y="338"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="100" font-weight="900" fill="#1a1a1a">
+    learning.
+  </text>
+  <text x="80" y="454"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="100" font-weight="900" fill="#1a1a1a">
+    I was just
+  </text>
+  <text x="80" y="570"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="100" font-weight="900" fill="#E85D00">
+    consuming.
+  </text>
+
+  <!-- Orange vertical bar -->
+  <rect x="80" y="616" width="5" height="76" rx="2" fill="#E85D00"/>
+
+  <!-- Sub-quote -->
+  <text x="100" y="648"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="35" font-weight="700" fill="#1a1a1a">
+    The problem wasn't discipline.
+  </text>
+  <text x="100" y="690"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="35" font-weight="700" fill="#1a1a1a">
+    It was having no map.
+  </text>
+
+  <!-- Horizontal rule -->
+  <line x1="80" y1="752" x2="520" y2="752" stroke="#cccccc" stroke-width="1" opacity="0.9"/>
+
+  <!-- Tagline -->
+  <text x="80" y="800"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="400" fill="#888888" font-style="italic">
+    Start here. Not everywhere.
+  </text>
+
+  <!-- Handle — prominent accent -->
+  <text x="80" y="920"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="44" font-weight="700" fill="#E85D00">
+    @teachmebro
+  </text>
+
+  <!-- Author -->
+  <text x="80" y="966"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" fill="#1a1a1a">
+    Altaf Shaikh
+  </text>
+
+  <!-- Domain -->
+  <text x="80" y="999"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="400" fill="#888888">
+    // AI Engineering / Gen AI
+  </text>
+
+</svg>

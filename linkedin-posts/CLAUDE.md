@@ -10,7 +10,7 @@ The LinkedIn channel of the multi-channel content factory. Consumes ideas from `
 
 Channel overview: [`README.md`](./README.md).
 Loop prompt: [`../linkedin.agent.md`](../linkedin.agent.md).
-Full skill definition: `~/.claude/skills/linkedin-growth-agent/SKILL.md`.
+Full skill definition: `.claude/skills/linkedin-growth-agent/SKILL.md`.
 
 ---
 
@@ -57,7 +57,8 @@ Full skill definition: `~/.claude/skills/linkedin-growth-agent/SKILL.md`.
   → Copywriters × N parallel          → 02a-..., 02b-..., 02c-... (if N≥3)
   → Editor                            → 03-editor-verdict.json
   → [revision loop, max 2 rounds]
-  → Image Designer                    → impact.svg (1080×1350 default)
+  → Image Designer (/image-gen-agent) → impact-1.svg + impact-2.svg (dimensions reasoned from content)
+                                       → exports/impact-1.png + exports/impact-2.png (auto-converted)
   → final-post.md
   → TODO.md: move entry to Done section (DO NOT move source file)
 ```
@@ -68,9 +69,10 @@ Default N=2. User can override to 3 or 4. When N=3, Strategist picks Angle C ada
 
 ## Image defaults
 
-- **Format:** Vertical 1080×1350 (4:5) — best LinkedIn mobile feed coverage
-- **Style:** Dark gradient bg (`#0a0e1a → #111827`), cyan→violet accent (`#22d3ee → #a78bfa`)
-- **Carries:** 3-4 big-number tiles + tagline + byline
+- **Variations:** 2 per post — different dimension AND style, reasoned from post content and winning angle
+- **Formats available:** Portrait 1080×1350 · Square 1080×1080 · Landscape 1200×627 — agent picks based on content
+- **SVGs:** saved in the post folder (`impact-1.svg`, `impact-2.svg`)
+- **PNGs:** auto-converted into `exports/` subfolder (`exports/impact-1.png`, `exports/impact-2.png`)
 - **No emojis, no logos, no company names** unless explicitly requested
 - Keep exported PNG under 5 MB
 

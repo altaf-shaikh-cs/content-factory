@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background: white -->
+  <rect width="1080" height="1350" fill="#ffffff"/>
+
+  <!-- Soft purple watercolor wash behind tangle -->
+  <ellipse cx="420" cy="280" rx="220" ry="170" fill="#7C3AED" opacity="0.055"/>
+
+  <!-- Tangled chaos paths (gray, stroke only, no fill) -->
+  <!-- These represent infinite content / learning without a map -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 220,280 C 300,120 540,130 560,280 C 580,420 360,480 220,280" stroke="#aaaaaa" stroke-width="4" opacity="0.55"/>
+    <path d="M 260,200 C 340,100 520,160 510,290 C 500,400 290,430 260,200" stroke="#bbbbbb" stroke-width="3.5" opacity="0.5"/>
+    <path d="M 310,170 C 270,290 500,390 390,470" stroke="#999999" stroke-width="4" opacity="0.5"/>
+    <path d="M 270,430 C 350,270 450,310 390,160" stroke="#aaaaaa" stroke-width="3" opacity="0.6"/>
+    <path d="M 490,220 C 400,320 280,295 360,430" stroke="#bbbbbb" stroke-width="4.5" opacity="0.45"/>
+    <path d="M 210,270 C 380,195 500,420 310,420" stroke="#cccccc" stroke-width="3" opacity="0.55"/>
+    <path d="M 400,150 C 310,255 410,365 510,290" stroke="#bbbbbb" stroke-width="4" opacity="0.5"/>
+    <path d="M 210,370 C 340,285 490,340 530,190" stroke="#aaaaaa" stroke-width="3.5" opacity="0.55"/>
+    <path d="M 360,180 C 460,285 320,390 410,465" stroke="#bbbbbb" stroke-width="4" opacity="0.5"/>
+    <path d="M 250,235 C 330,150 480,220 450,370" stroke="#cccccc" stroke-width="3" opacity="0.6"/>
+    <path d="M 295,155 C 400,190 480,310 370,425" stroke="#aaaaaa" stroke-width="4.5" opacity="0.45"/>
+    <path d="M 185,305 C 295,235 415,330 510,265" stroke="#bbbbbb" stroke-width="3.5" opacity="0.55"/>
+    <!-- Short jitter lines adding density to the cluster -->
+    <path d="M 295,260 C 345,300 360,248 310,300" stroke="#cccccc" stroke-width="3" opacity="0.5"/>
+    <path d="M 420,310 C 390,270 445,345 400,335" stroke="#bbbbbb" stroke-width="3" opacity="0.5"/>
+    <path d="M 330,360 C 390,340 370,405 330,390" stroke="#aaaaaa" stroke-width="3" opacity="0.5"/>
+    <path d="M 240,330 C 280,290 260,360 295,340" stroke="#cccccc" stroke-width="2.5" opacity="0.45"/>
+    <path d="M 460,240 C 440,210 480,270 455,255" stroke="#bbbbbb" stroke-width="2.5" opacity="0.45"/>
+  </g>
+
+  <!-- Single clean purple path emerging from the chaos -->
+  <path d="M 395,460 C 445,560 510,680 542,790"
+        fill="none" stroke="#7C3AED" stroke-width="5.5" stroke-linecap="round" opacity="0.92"/>
+
+  <!-- Dot at end of clean path — arrival point -->
+  <circle cx="542" cy="796" r="9" fill="#7C3AED" opacity="0.9"/>
+
+  <!-- Main text -->
+  <text x="80" y="900"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="102" font-weight="900" fill="#1a1a1a">
+    Start here.
+  </text>
+  <text x="80" y="1014"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="102" font-weight="900" fill="#7C3AED">
+    Not everywhere.
+  </text>
+
+  <!-- Horizontal rule -->
+  <line x1="80" y1="1060" x2="620" y2="1060" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- Domain label -->
+  <text x="80" y="1108"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="400" fill="#888888" letter-spacing="4">
+    GEN AI &#183; LEVEL 1 ROADMAP
+  </text>
+
+  <!-- Sub-message -->
+  <text x="80" y="1152"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="400" fill="#888888" font-style="italic">
+    Core fundamentals. The stuff that stays.
+  </text>
+
+  <!-- Handle — prominent accent -->
+  <text x="80" y="1248"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="46" font-weight="700" fill="#7C3AED">
+    @teachmebro
+  </text>
+
+  <!-- Author -->
+  <text x="80" y="1296"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" fill="#1a1a1a">
+    Altaf Shaikh
+  </text>
+
+  <!-- Domain byline -->
+  <text x="80" y="1328"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="400" fill="#888888">
+    // AI Engineering / Gen AI
+  </text>
+
+</svg>

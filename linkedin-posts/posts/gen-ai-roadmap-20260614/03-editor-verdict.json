@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "A",
+  "why_winner": "Variant A earns the highest authenticity — 'I kept opening new tabs' is an immediately recognizable behavior for any developer and grounds the insight in a real moment rather than a declaration. The line 'I wasn't learning Gen AI. I was just consuming it.' is the sharpest statement of the core insight across all three variants. It also has the best pacing and white space of the three.",
+  "scores": {
+    "A": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 8, "avg": 8.8 },
+    "B": { "hook_strength": 8, "authenticity": 7, "readability": 8, "plan_compliance": 9, "cta_clarity": 8, "avg": 8.0 },
+    "C": { "hook_strength": 7, "authenticity": 7, "readability": 8, "plan_compliance": 9, "cta_clarity": 8, "avg": 7.8 }
+  },
+  "runner_up_notes": {
+    "B": "The two-use framing ('if you're starting' / 'if you're already building') is a strong structural device that Variant A lacks — the winner could borrow this to clarify the audience more explicitly.",
+    "C": "The 'design decisions' framing with numbered points works well for the tactical audience; the line 'Those already exist and they're overwhelming for a reason' is a sharp closer that could be borrowed."
+  },
+  "issues": []
+}

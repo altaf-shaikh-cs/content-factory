@@ -43,11 +43,11 @@ Full overview: [`README.md`](./README.md).
 
 Agents that serve all channels live in `./agents/`. They are not channels — they produce no posts — they are shared services called by channel pipelines.
 
-| Agent | Folder | Global skill | What it does |
-|-------|--------|--------------|--------------|
-| image-gen | `agents/image-gen/` | `~/.claude/skills/image-gen-agent/SKILL.md` | Generates on-brand SVGs for any channel. Reads inspiration library, picks style, produces SVG. |
+| Agent | Folder | Skill | What it does |
+|-------|--------|-------|--------------|
+| image-gen | `agents/image-gen/` | `.claude/skills/image-gen-agent/SKILL.md` | Generates on-brand SVGs for any channel. Reads inspiration library, picks style, produces SVG. |
 
-**To edit an agent's behavior:** open its folder, read `AGENT.md` — it points to the global skill file.
+**To edit an agent's behavior:** open its folder, read `AGENT.md` — it points to the project-local skill file.
 **To add inspiration styles:** drop a file (SVG/PNG/JPG/PDF/screenshot) into `agents/image-gen/inspiration/<style-slug>/` and add a row to `MANIFEST.md`.
 
 ---
@@ -73,7 +73,7 @@ Agents that serve all channels live in `./agents/`. They are not channels — th
    - `README.md` — human onboarding
    - `TODO.md` — Queue + In Progress + Done sections
    - `posts/` — empty, will fill with per-idea folders
-2. Create or install a skill at `~/.claude/skills/<channel>-growth-agent/SKILL.md`.
+2. Create or install a skill at `.claude/skills/<channel>-growth-agent/SKILL.md`.
 3. Create `<channel>.agent.md` at the top level — the `/loop` prompt for that channel. Reference [`linkedin.agent.md`](./linkedin.agent.md) as the template.
 4. Update the **Channels — current status** table in this project's `README.md`.
 

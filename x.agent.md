@@ -13,7 +13,7 @@ This file will hold the daily loop prompt for the X channel once the skill exist
 
 ## To activate this channel
 
-1. Author `~/.claude/skills/x-growth-agent/SKILL.md` (likely: single tweet + thread variant + reply hook)
+1. Author `.claude/skills/x-growth-agent/SKILL.md` (likely: single tweet + thread variant + reply hook)
 2. Populate `x-posts/` with `CLAUDE.md`, `README.md`, `TODO.md`, `posts/`
 3. Replace this stub with the real loop prompt (use `linkedin.agent.md` as the template)
 4. Update the channels status table in [`README.md`](./README.md)

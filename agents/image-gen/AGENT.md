@@ -9,7 +9,7 @@ Project-side home for the image generation agent. Everything image-related lives
 The agent brain (instructions, selection logic, SVG generation rules) lives at:
 
 ```
-~/.claude/skills/image-gen-agent/SKILL.md
+.claude/skills/image-gen-agent/SKILL.md
 ```
 
 Edit that file to change how the agent behaves. This folder holds the assets the agent draws from.

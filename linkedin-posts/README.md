@@ -117,4 +117,4 @@ Only listed channels will consume the idea. If frontmatter is absent, all channe
 
 ## The skill
 
-Full pipeline contract: `~/.claude/skills/linkedin-growth-agent/SKILL.md`.
+Full pipeline contract: `.claude/skills/linkedin-growth-agent/SKILL.md`.

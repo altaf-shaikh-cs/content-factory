@@ -77,7 +77,7 @@ This means:
 ## Adding a new channel
 
 1. Create `<channel>-posts/` (or similar) with its own `CLAUDE.md`, `README.md`, `TODO.md`, `posts/` subfolder.
-2. Create or commission a skill at `~/.claude/skills/<channel>-growth-agent/SKILL.md`.
+2. Create or commission a skill at `.claude/skills/<channel>-growth-agent/SKILL.md`.
 3. Create `<channel>.agent.md` at the top level — the loop prompt that picks an idea, calls the skill, updates the channel's `TODO.md`.
 4. Start the loop: `/loop 1d <paste the prompt from <channel>.agent.md>`.
 
