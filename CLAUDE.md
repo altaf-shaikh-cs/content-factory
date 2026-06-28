@@ -36,6 +36,8 @@ The daily channel runs are **cloud routines** (scheduled Claude Code agents), no
 
 Because the fork is only ever a fast-forward of personal `main`, the down-sync never conflicts. Code goes down; content comes up as a fork branch you pull into a PR locally and approve.
 
+The up-sync is automated locally by a **launchd agent** that runs `scripts/open-content-prs.sh` daily at **11:00 AM IST** (only when the Mac is awake). See [`scripts/launchd/README.md`](./scripts/launchd/README.md) to install/inspect/uninstall. If the Mac was asleep, just run `bash scripts/open-content-prs.sh` manually — nothing is lost (branches accumulate on the fork until pulled).
+
 **Deploy path for any repo change a routine depends on:**
 1. `git push origin main` (land it on upstream `main`).
 2. `bash scripts/sync-fork.sh` (fast-forward the fork's `main` from upstream).
