@@ -32,9 +32,9 @@ The daily channel runs are **cloud routines** (scheduled Claude Code agents), no
 **Two sync directions — personal `main` is the single source of truth:**
 
 - **DOWN — code (personal → fork):** after editing skills/configs, `git push origin main`, then `bash scripts/sync-fork.sh` to fast-forward the fork. A change is not live for the routines until the fork is synced. Never skip step 2.
-- **UP — content (fork → personal):** the cloud routine generates posts/reels on the fork (it's authed on the work account, so it can only write there). It commits to a `claude/<channel>-<date>` branch and opens a **cross-fork PR with base `altafshaikh/content-factory:main`** (forks can always PR upstream). **You review + merge that PR** → content reaches the private personal repo. Then run `bash scripts/sync-fork.sh` to realign the fork.
+- **UP — content (fork → personal):** the cloud routine generates posts/reels on the fork (it's authed only on the work account, so it can only write there) and pushes them to a `claude/<channel>-<date>` branch on the fork. It **cannot** open the PR — the personal repo is private and the cloud lacks a token for it. So **from your local machine** (which has the personal token) run `bash scripts/open-content-prs.sh` to open a cross-fork PR per branch into `altafshaikh/content-factory:main` (use `--merge` to auto-merge + re-sync). **You review + merge** → content reaches the private personal repo. Then `bash scripts/sync-fork.sh` realigns the fork.
 
-Because the fork is only ever a fast-forward of personal `main`, the down-sync never conflicts. Code goes down, content comes back up as a PR you approve.
+Because the fork is only ever a fast-forward of personal `main`, the down-sync never conflicts. Code goes down; content comes up as a fork branch you pull into a PR locally and approve.
 
 **Deploy path for any repo change a routine depends on:**
 1. `git push origin main` (land it on upstream `main`).

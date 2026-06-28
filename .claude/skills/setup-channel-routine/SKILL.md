@@ -61,23 +61,23 @@ Run <AGENT INVOCATION>.
 
 <one-paragraph channel summary: what this channel does and where it writes — pull it from the channel's CLAUDE.md so the cloud agent has context>. Follow .claude/skills/<channel-skill>/SKILL.md and ./<channel-folder>/CLAUDE.md exactly. ./raw-ideas/ is immutable — never move, rename, or delete files there. Only write inside ./<channel-folder>/; cross-channel reads are read-only. Update the channel's TODO.md.
 
-After the run, route the generated content back to the private upstream repo via a pull request:
+After the run, save the generated content for review:
 1. Create a branch on the fork: git checkout -b claude/<channel>-$(date +%Y%m%d)
-2. Stage and commit only the new/changed files.
+2. Stage and commit only the new/changed files with a clear message.
 3. Push the branch to origin (the fork): git push -u origin claude/<channel>-$(date +%Y%m%d)
-4. Open a PR whose BASE is the upstream parent repo: gh pr create --repo altafshaikh/content-factory --base main --head altaf-shaikh-cs:claude/<channel>-$(date +%Y%m%d) --title "content: daily <channel>" --body "Automated daily <channel> run."
-Do NOT push to main directly. The PR MUST target altafshaikh/content-factory (the personal upstream) so the content reaches the private main repo for review.
+Do NOT push to main. Do NOT attempt to open a pull request — this cloud environment only has the work-account token and cannot access the private personal upstream repo, so a PR will fail. The PR into the personal repo is opened later from Altaf's local machine (scripts/open-content-prs.sh). Your job ends at pushing the branch to the fork.
 ```
 
 ## Content flows up: fork → personal (the other sync direction)
 
-The cloud routine is authed on the **work** account, so it can only write to the **fork**. To get its output into your **private personal** repo:
+The cloud routine is authed only on the **work** account, and the personal repo is **private**, so the cloud **cannot** open a PR into it (verified: cross-fork `gh pr create` against a private parent fails without a token that can access the parent). The work is split:
 
-- The routine commits to a `claude/<channel>-<date>` branch on the fork and opens a **cross-fork PR** with **base `altafshaikh/content-factory:main`** (the parent). Forks can always PR upstream — no collaborator status needed.
-- **You review and merge** that PR on GitHub → content lands in personal `main`.
-- Then run `bash scripts/sync-fork.sh` to fast-forward the fork back to match personal, keeping the fork a clean downstream mirror (never diverged).
+- **Cloud (routine):** runs the agent, commits to a `claude/<channel>-<date>` branch on the **fork**, and pushes that branch. It stops there.
+- **Local (your machine, has the personal token):** run `bash scripts/open-content-prs.sh` — it finds the fork's `claude/*` branches and opens a cross-fork PR for each into `altafshaikh/content-factory:main`. (Add `--merge` to auto-squash-merge and re-sync the fork.)
+- **You review and merge** the PR(s) on GitHub → content lands in personal `main`.
+- Then `bash scripts/sync-fork.sh` fast-forwards the fork to match personal, keeping it a clean downstream mirror.
 
-This makes **personal `main` the single source of truth**: code flows down (personal → fork via sync-fork.sh), content flows up (fork → personal via PR), and the fork is only ever a fast-forward of personal — so the down-sync never conflicts.
+This makes **personal `main` the single source of truth**: code flows down (personal → fork via `sync-fork.sh`), content flows up (fork branch → local PR → personal), and the fork is only ever a fast-forward of personal — so the down-sync never conflicts.
 
 ---
 
