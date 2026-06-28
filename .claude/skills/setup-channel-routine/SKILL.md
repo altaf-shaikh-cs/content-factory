@@ -14,11 +14,11 @@ Stands up (or updates) the **daily cloud routine** for a content-factory channel
 
 ## Critical context: the fork the routine clones
 
-Cloud routines do **not** read your local working copy. They clone **`altaf-shaikh-cs/content-factory`** (a FORK of the upstream `altafshaikh/content-factory`, which is your local `origin`). A routine runs whatever is on the **fork's `main`**.
+Cloud routines do **not** read your local working copy. They clone **`altaf-shaikh-cs/content-factory`** — the FORK, which is the single integration point and the source of truth. A routine runs whatever is on the **fork's `main`**. The personal repo `altafshaikh/content-factory` (your local `origin`) is just a downstream mirror.
 
-So before/after creating a routine, the channel's skill files MUST already be on the fork:
-1. Push the channel skill + folder to upstream `main` (`git push origin main`).
-2. Sync the fork: `bash scripts/sync-fork.sh`.
+So before creating a routine, the channel's skill files MUST already be on the fork:
+1. Commit the channel skill + folder locally.
+2. Deploy to the fork: `bash scripts/deploy-code.sh`.
 
 If the channel skill isn't on the fork, the routine will fail or run stale. **Always verify deployment** (see Step 4).
 
@@ -54,34 +54,35 @@ If the user names a different time, convert IST → UTC (subtract 5:30) and **co
 
 ## Prompt template (per run)
 
-The cloud agent starts with zero context, so the prompt must be self-contained. The final block is the **up-sync**: it routes generated content from the fork back to the private personal upstream via a PR (see "Content flows up" below).
+The cloud agent starts with zero context, so the prompt must be self-contained. The routine clones the fork (which is current — it's the source of truth), so no self-sync step is needed. The final block opens a **within-fork PR** for review, which works because the cloud's `gh` owns the fork.
 
 ```
-First, sync your working tree to the latest upstream content. The personal repo altafshaikh/content-factory is the source of truth and is public, so no auth is needed:
-  git fetch https://github.com/altafshaikh/content-factory.git main
-  git reset --hard FETCH_HEAD
-This discards any stale fork state so you generate against current code.
-
-Then run <AGENT INVOCATION>.
+Run <AGENT INVOCATION>.
 
 <one-paragraph channel summary: what this channel does and where it writes — pull it from the channel's CLAUDE.md so the cloud agent has context>. Follow .claude/skills/<channel-skill>/SKILL.md and ./<channel-folder>/CLAUDE.md exactly. ./raw-ideas/ is immutable — never move, rename, or delete files there. Only write inside ./<channel-folder>/; cross-channel reads are read-only. Update the channel's TODO.md.
 
-After the run, save the generated content for review:
-1. Create a branch on the fork: git checkout -b claude/<channel>-$(date +%Y%m%d)
+This repo IS the fork and the integration point. Before generating, run `gh pr list --state open --json headRefName` to see which ideas already have content in flight. Use the skill to select the single best next item to produce, and derive a STABLE kebab slug for it from its source raw-idea (NOT today's date), so the same idea always maps to the same branch: claude/<channel>-<slug>.
+
+If that branch already has an open PR, or the skill determines there is nothing new worth producing, STOP NOW — do not create a branch or PR; just report that there was nothing new. Otherwise:
+1. git checkout -b claude/<channel>-<slug>
 2. Stage and commit only the new/changed files with a clear message.
-3. Push the branch to origin (the fork): git push -u origin claude/<channel>-$(date +%Y%m%d)
-Do NOT push to main. Do NOT open a pull request — the cloud's gh is not authenticated for the upstream, so a PR from here fails. The PR into the personal repo is opened later from Altaf's local machine (scripts/open-content-prs.sh). Your job ends at pushing the branch to the fork.
+3. Push the branch to origin (the fork): git push -u origin claude/<channel>-<slug>
+4. Open a pull request into the fork's own main for review:
+     gh pr create --base main --head claude/<channel>-<slug> \
+       --title "content: <channel> — <slug>" \
+       --body "Routine-generated <channel> content. Review and merge into the fork's main; the personal mirror syncs automatically."
+This is a same-repo PR on the fork, which your gh account owns, so it succeeds. Do NOT push to main directly. Do NOT touch the personal upstream.
 ```
 
-## Sync model (personal `main` = single source of truth)
+## Sync model (fork `main` = single source of truth)
 
-`altafshaikh/content-factory` is **PUBLIC**, so the routine can fetch it with no auth — that powers the self-sync. Three parts:
+The **fork** is the integration point; the personal repo is a downstream mirror. Three parts:
 
-- **Down, at generation time (PRIMARY):** the routine's first step is `git fetch <upstream> main && git reset --hard FETCH_HEAD`, so it always works from current upstream no matter how stale the fork is. No Mac/cron dependency.
-- **Up (fork → personal):** the routine pushes a `claude/<channel>-<date>` branch to the fork but does **not** open a PR — the cloud's `gh` isn't authenticated for the upstream (verified: a live run pushed the branch fine but created no PR). The PR is opened **from the local machine** (which has the personal token) via `bash scripts/open-content-prs.sh` (`--merge` to auto-merge + re-sync). You review/merge; unreviewed PRs stay open.
-- **11:00 AM cron** (`scripts/daily-content-sync.sh`, launchd): down-syncs the fork from personal (picks up merges), then opens PRs for new fork branches. Mac-awake only; run by hand otherwise.
+- **Content (routine → fork PR):** the routine picks the next item, derives a stable idea slug, and — only if no open PR already covers it and there's something new worth producing — pushes `claude/<channel>-<slug>` to the fork and opens a **within-fork PR** into the fork's own `main`. Idempotent across days: an in-flight idea won't be duplicated. The cloud's `gh` owns the fork, so this same-repo PR succeeds (a cross-repo PR to the personal upstream would NOT — the work account isn't a collaborator there).
+- **Code (local → fork):** `bash scripts/deploy-code.sh` pushes committed local changes to the fork's `main`. Never `git push origin main` (diverges the mirror).
+- **Mirror (fork → personal):** `bash scripts/mirror-personal.sh` fast-forwards personal `main` from the fork. Runs daily at 11:00 AM via launchd; safe to run by hand.
 
-Because the fork's `main` is only ever a fast-forward of personal, the down-sync never conflicts; the routine self-sync guarantees freshness even if the fork drifts.
+Because personal `main` is only ever a fast-forward of the fork, the mirror never conflicts. The routine always clones current code because the fork is the source of truth.
 
 ---
 
@@ -91,8 +92,8 @@ Because the fork's `main` is only ever a fast-forward of personal, the down-sync
 2. **Load the API tool:** `ToolSearch` with `select:RemoteTrigger`. (Auth is in-process — never use curl.)
 3. **Check for an existing routine:** `RemoteTrigger {action:"list"}`. If one already exists for this channel (match by name, e.g. "Daily X Post Creator"), ask whether to **update** it (`action:"update"`, partial body) instead of creating a duplicate.
 4. **Verify the channel skill is deployed to the fork** (so the routine won't run stale):
-   - Confirm the channel's `SKILL.md` + folder are committed on upstream `main`.
-   - `gh api repos/altaf-shaikh-cs/content-factory/contents --jq '.[].name'` and check the channel folder is present. If not, push to origin/main and run `bash scripts/sync-fork.sh` first.
+   - Confirm the channel's `SKILL.md` + folder are committed locally.
+   - `gh api repos/altaf-shaikh-cs/content-factory/contents --jq '.[].name'` and check the channel folder is present on the fork. If not, run `bash scripts/deploy-code.sh` first.
 5. **Build the create body** (generate a fresh lowercase v4 UUID for `events[].data.uuid`):
    ```json
    {
@@ -125,4 +126,4 @@ Because the fork's `main` is only ever a fast-forward of personal, the down-sync
 - Min cron interval is 1 hour.
 - Keep schedules staggered; check the existing routines' times before picking a new one.
 - This skill only configures the cloud routine. The channel's generation logic lives in its own growth-agent skill — this skill just schedules it.
-- After ANY repo change that the routine depends on, re-deploy: push to origin/main, then `bash scripts/sync-fork.sh`.
+- After ANY repo change that the routine depends on, re-deploy: commit locally, then `bash scripts/deploy-code.sh` (pushes to the fork). The personal mirror follows via `scripts/mirror-personal.sh`.
