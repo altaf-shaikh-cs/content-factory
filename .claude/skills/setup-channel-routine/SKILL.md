@@ -54,15 +54,30 @@ If the user names a different time, convert IST → UTC (subtract 5:30) and **co
 
 ## Prompt template (per run)
 
-The cloud agent starts with zero context, so the prompt must be self-contained:
+The cloud agent starts with zero context, so the prompt must be self-contained. The final block is the **up-sync**: it routes generated content from the fork back to the private personal upstream via a PR (see "Content flows up" below).
 
 ```
 Run <AGENT INVOCATION>.
 
 <one-paragraph channel summary: what this channel does and where it writes — pull it from the channel's CLAUDE.md so the cloud agent has context>. Follow .claude/skills/<channel-skill>/SKILL.md and ./<channel-folder>/CLAUDE.md exactly. ./raw-ideas/ is immutable — never move, rename, or delete files there. Only write inside ./<channel-folder>/; cross-channel reads are read-only. Update the channel's TODO.md.
 
-After the run, commit the changes and open a PR.
+After the run, route the generated content back to the private upstream repo via a pull request:
+1. Create a branch on the fork: git checkout -b claude/<channel>-$(date +%Y%m%d)
+2. Stage and commit only the new/changed files.
+3. Push the branch to origin (the fork): git push -u origin claude/<channel>-$(date +%Y%m%d)
+4. Open a PR whose BASE is the upstream parent repo: gh pr create --repo altafshaikh/content-factory --base main --head altaf-shaikh-cs:claude/<channel>-$(date +%Y%m%d) --title "content: daily <channel>" --body "Automated daily <channel> run."
+Do NOT push to main directly. The PR MUST target altafshaikh/content-factory (the personal upstream) so the content reaches the private main repo for review.
 ```
+
+## Content flows up: fork → personal (the other sync direction)
+
+The cloud routine is authed on the **work** account, so it can only write to the **fork**. To get its output into your **private personal** repo:
+
+- The routine commits to a `claude/<channel>-<date>` branch on the fork and opens a **cross-fork PR** with **base `altafshaikh/content-factory:main`** (the parent). Forks can always PR upstream — no collaborator status needed.
+- **You review and merge** that PR on GitHub → content lands in personal `main`.
+- Then run `bash scripts/sync-fork.sh` to fast-forward the fork back to match personal, keeping the fork a clean downstream mirror (never diverged).
+
+This makes **personal `main` the single source of truth**: code flows down (personal → fork via sync-fork.sh), content flows up (fork → personal via PR), and the fork is only ever a fast-forward of personal — so the down-sync never conflicts.
 
 ---
 

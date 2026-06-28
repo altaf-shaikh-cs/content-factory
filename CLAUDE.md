@@ -29,9 +29,16 @@ Full overview: [`README.md`](./README.md).
 
 The daily channel runs are **cloud routines** (scheduled Claude Code agents), not local cron. They clone code from the **fork** `altaf-shaikh-cs/content-factory` (a fork of this repo's `origin`, `altafshaikh/content-factory`) and run the channel's growth-agent skill, then commit + open a PR.
 
+**Two sync directions — personal `main` is the single source of truth:**
+
+- **DOWN — code (personal → fork):** after editing skills/configs, `git push origin main`, then `bash scripts/sync-fork.sh` to fast-forward the fork. A change is not live for the routines until the fork is synced. Never skip step 2.
+- **UP — content (fork → personal):** the cloud routine generates posts/reels on the fork (it's authed on the work account, so it can only write there). It commits to a `claude/<channel>-<date>` branch and opens a **cross-fork PR with base `altafshaikh/content-factory:main`** (forks can always PR upstream). **You review + merge that PR** → content reaches the private personal repo. Then run `bash scripts/sync-fork.sh` to realign the fork.
+
+Because the fork is only ever a fast-forward of personal `main`, the down-sync never conflicts. Code goes down, content comes back up as a PR you approve.
+
 **Deploy path for any repo change a routine depends on:**
 1. `git push origin main` (land it on upstream `main`).
-2. `bash scripts/sync-fork.sh` (fast-forward the fork's `main` from upstream — this is the auto-sync step; never skip it).
+2. `bash scripts/sync-fork.sh` (fast-forward the fork's `main` from upstream).
 
 A change is not live for the routines until step 2 completes.
 
