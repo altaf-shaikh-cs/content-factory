@@ -53,6 +53,8 @@ Post has URL: <yes | no>   ← only include when relevant
 Output path: <relative/path/to/impact.svg>   ← for Variations: 2, treat as prefix (impact-1.svg, impact-2.svg)
 ```
 
+**Default output location.** When the brief omits `Output path` — e.g. a standalone `/image-gen-agent` call with no owning post folder — save to the root `./image-gen-output/` folder. Derive the SVG filename from a short kebab-slug of the content/tagline (e.g. `systems-while-you-sleep.svg`). The PNG goes in `./image-gen-output/exports/` per the Step 4 convention. Channel pipelines that pass an explicit `Output path` write into their own per-post folder as before.
+
 ---
 
 ## Step 0 — Reason about variations (only when Variations: 2 OR Style/Dimensions is "reason")

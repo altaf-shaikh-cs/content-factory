@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1ede4"/>
+      <stop offset="1" stop-color="#e7e1d5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1080" height="1080" fill="url(#paper)"/>
+
+  <!-- constellation decoration (top right) -->
+  <g stroke="#cbc4b4" stroke-width="1.5" fill="none" opacity="0.9">
+    <path d="M860 150 L935 95 L1000 175 L955 235"/>
+    <path d="M935 95 L905 205"/>
+  </g>
+  <g fill="#bdb6a6">
+    <circle cx="860" cy="150" r="5"/>
+    <circle cx="1000" cy="175" r="4"/>
+    <circle cx="905" cy="205" r="6"/>
+  </g>
+  <circle cx="935" cy="95" r="6" fill="#e0552b"/>
+  <circle cx="955" cy="235" r="6" fill="#1f6fd0"/>
+
+  <!-- eyebrow -->
+  <text x="92" y="200" font-family="'SF Mono','Menlo',monospace" font-size="26" font-weight="700" letter-spacing="7" fill="#8a8578">&#8212; AI ENGINEERING</text>
+
+  <!-- headline -->
+  <g font-weight="900" letter-spacing="-2" xml:space="preserve">
+    <text x="88" y="360" font-size="108"><tspan fill="#1a1a1a">Stop </tspan><tspan fill="#e0552b">Prompting.</tspan></text>
+    <text x="88" y="486" font-size="108"><tspan fill="#1a1a1a">Start </tspan><tspan fill="#1f6fd0">Building.</tspan></text>
+  </g>
+
+  <!-- subhead with accent bar -->
+  <rect x="92" y="585" width="9" height="150" rx="2" fill="#e0552b"/>
+  <g font-weight="800" font-size="50" fill="#1a1a1a">
+    <text x="128" y="640">Build systems that work</text>
+    <text x="128" y="708">while <tspan fill="#1f6fd0">you sleep.</tspan></text>
+  </g>
+
+  <!-- footer divider -->
+  <line x1="92" y1="888" x2="988" y2="888" stroke="#cfc8ba" stroke-width="1.5"/>
+
+  <!-- handle (prominent, accent) -->
+  <text x="92" y="952" font-size="38" font-weight="900" fill="#e0552b">@teachmebro</text>
+
+  <!-- byline -->
+  <text x="92" y="998" font-size="24" font-weight="800" fill="#1a1a1a">Altaf Shaikh</text>
+  <text x="92" y="1028" font-family="'SF Mono','Menlo',monospace" font-size="19" font-weight="400" fill="#8a8578">// AI Engineering</text>
+
+  <!-- tagline bottom right -->
+  <text x="988" y="990" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="20" font-weight="400" fill="#8a8578">build once &#183;</text>
+  <text x="988" y="1018" text-anchor="end" font-family="'SF Mono','Menlo',monospace" font-size="20" font-weight="400" fill="#8a8578">run while you sleep</text>
+  <circle cx="938" cy="1042" r="7" fill="#e0552b"/>
+  <circle cx="962" cy="1042" r="7" fill="#1f6fd0"/>
+</svg>
