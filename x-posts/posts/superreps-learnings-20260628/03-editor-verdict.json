@@ -1,0 +1,22 @@
+{
+  "round": 1,
+  "format": "THREAD",
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "The 'Six screens in. UI looked clean. / Nothing worked.' opener is the sharpest hook of the three — concrete, creates an immediate curiosity gap in under 10 words, and earns every tweet that follows. Authenticity stays high across all four tweets; the story arc is complete and the CTA question lands naturally out of the lived experience. Variant B is also the most tweet-1-stands-alone: someone who never expands the thread still gets the full emotional hit.",
+  "scores": {
+    "A": { "hook_strength": 8, "scroll_stop": 7, "conciseness": 9, "authenticity": 7, "cta_clarity": 8, "avg": 7.8 },
+    "B": { "hook_strength": 10, "scroll_stop": 10, "conciseness": 8, "authenticity": 10, "cta_clarity": 8, "avg": 9.2 },
+    "C": { "hook_strength": 9, "scroll_stop": 9, "conciseness": 9, "authenticity": 7, "cta_clarity": 8, "avg": 8.4 }
+  },
+  "char_check": {
+    "A": "pass (t1=111, t2=127, t3=180, t4=164)",
+    "B": "pass (t1=123, t2=201, t3=218, t4=240)",
+    "C": "pass (t1=137, t2=191, t3=192, t4=148)"
+  },
+  "runner_up_notes": {
+    "C": "The 'Still think one prompt gets you a working app?' closer is sharper than Variant B's question. Consider swapping B's final CTA for C's framing on a future iteration. Variant A's theorem-first opener ('AI is fast at producing output. It is slow at producing usefulness.') is the most screenshot-able single line — could serve as a standalone single-tweet post on a separate day."
+  },
+  "issues": []
+}

@@ -3,7 +3,6 @@
 This is the X channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS **Done** MINUS **In Progress** MINUS **Skipped** below. The **Skipped** section holds ideas the X Fit Gate judged not worth an X post — move a line back to the queue to retry it.
 
 ## Queue (unprocessed for X)
-- [ ] 002-SuperReps-learnings.md — learnings from the SuperReps build
 - [ ] 003-claude-new-feature-loop.md — using Claude to ship new features in a loop
 - [ ] ROUTINES.MD — scheduled/recurring agent routines
 - [ ] ai drinks water more than humans do.md — the water cost of AI compute
@@ -19,6 +18,7 @@ This is the X channel's consumption ledger. Raw ideas live in `../raw-ideas/` (s
 _(none)_
 
 ## Done
+- [x] 002-SuperReps-learnings.md → [posts/superreps-learnings-20260628/final-post.md](./posts/superreps-learnings-20260628/final-post.md) — 2026-06-28
 - [x] 001-claude-vs-codex.md → [posts/claude-vs-codex-20260628/final-post.md](./posts/claude-vs-codex-20260628/final-post.md) — 2026-06-28
 
 ## Skipped (not a fit for X)
