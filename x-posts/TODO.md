@@ -1,6 +1,6 @@
 # X — Queue & Status
 
-This is the X channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS the filenames listed under **Done** below.
+This is the X channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS **Done** MINUS **In Progress** MINUS **Skipped** below. The **Skipped** section holds ideas the X Fit Gate judged not worth an X post — move a line back to the queue to retry it.
 
 ## Queue (unprocessed for X)
 - [ ] 002-SuperReps-learnings.md — learnings from the SuperReps build
@@ -20,3 +20,6 @@ _(none)_
 
 ## Done
 - [x] 001-claude-vs-codex.md → [posts/claude-vs-codex-20260628/final-post.md](./posts/claude-vs-codex-20260628/final-post.md) — 2026-06-28
+
+## Skipped (not a fit for X)
+_(none yet — the Fit Gate logs ideas here when it judges them not X-worthy, with a reason)_

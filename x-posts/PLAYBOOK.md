@@ -118,6 +118,22 @@ We can't measure our own best times (no analytics), so use sensible defaults: we
 
 ---
 
+## 10.5 Is this even worth posting on X? (the Fit Gate)
+
+X is not LinkedIn. A nuanced, long-form, professionally-framed idea can do great on LinkedIn and die on X. Before generating, the agent runs a fit check (skill Step 0.5). An idea is **X-worthy** when most of these are true:
+
+- [ ] There's a **punchy, quotable line** or a sharp contrast hiding in it (the screenshot-able moment)
+- [ ] It lands a clear **follow-reason** — TIL / FIRED-UP / LOL / HMM / FINALLY (see §11)
+- [ ] There's a **defensible contrarian take** or a **relatable build-in-public moment**
+- [ ] The core fits in **≤280 chars** (or a tight thread) without long-form nuance to avoid being misread
+- [ ] It does **not** depend on a link, a big visual, or heavy context to make sense
+
+If it fails most of these → **skip it** (log to TODO "Skipped" with a reason). Forcing a weak idea onto X trains the audience to scroll past you. Better to post nothing than post filler.
+
+**Borrow LinkedIn's signal.** X has no analytics here, but the same idea may already be live on LinkedIn. The gate reads (read-only) `../linkedin-posts/` to see if it published and whether analytics were synced — a LinkedIn winner is a strong reason to adapt it for X, and tells us which hook/angle already worked.
+
+---
+
 ## 11. Why people follow — every post must do one job
 
 People follow accounts for a reason. Each post should clearly deliver at least one of these (pick 1–2, don't try for all five):

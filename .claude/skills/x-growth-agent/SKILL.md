@@ -46,6 +46,7 @@ content-factory/                            ← project root
     ├── TODO.md                             ← Queue + In Progress + Done sections
     └── posts/                              ← one folder per generated post
         └── <slug>-<YYYYMMDD>/
+            ├── 00-x-fit.md                     ← X Fit Gate verdict + LinkedIn cross-channel signal
             ├── 01-post-plan.md
             ├── 02a-draft-<angle>.md
             ├── 02b-draft-<angle>.md
@@ -76,16 +77,17 @@ Identical mechanics to LinkedIn, but the channel token is `"x"`.
 **Mode A — Loop / autonomous run** (no idea content in args, or invoked via `/loop`):
 
 1. List files in `../raw-ideas/` (relative to `./x-posts/`). Accept `.md` and `.txt`.
-2. Read `./x-posts/TODO.md`. Extract filenames in the **Done** and **In Progress** sections.
+2. Read `./x-posts/TODO.md`. Extract filenames in the **Done**, **In Progress**, and **Skipped (not a fit for X)** sections.
 3. Compute the X queue:
    ```
-   queue = (files in ../raw-ideas/) MINUS (Done filenames) MINUS (In Progress filenames)
+   queue = (files in ../raw-ideas/) MINUS (Done) MINUS (In Progress) MINUS (Skipped)
    ```
 4. Filter: drop any file whose frontmatter declares `channels: [...]` without `"x"` in the list.
 5. If queue is empty → print `No new X ideas. Skipping.` and exit. **Generate nothing.**
 6. Otherwise pick the **oldest by filename sort** (lexical — `001-` before `002-`).
-7. Read the chosen file. Its content (minus frontmatter) is the **raw idea**.
+7. Read the chosen file. Its content (minus frontmatter) is the **candidate raw idea**.
 8. Derive `<slug>` from the filename (strip extension AND numeric prefix, kebab-case).
+9. **Do NOT create the post folder or move to In Progress yet.** First run **Step 0.5 — the X Fit Gate** on this candidate. Only an idea that PASSES the gate becomes the run's idea.
 
 **Mode B — Direct invocation with content in args** (`/x-growth-agent <idea text>`):
 
@@ -95,16 +97,77 @@ Identical mechanics to LinkedIn, but the channel token is `"x"`.
 
 **N parsing:** if args start with a small integer (`/x-growth-agent 2 ...`), that's N. Otherwise N=3 (the default). Max N=3.
 
-Create the per-post folder `./x-posts/posts/<slug>-<YYYYMMDD>/` and move the idea to **In Progress** in `./x-posts/TODO.md`.
+(Folder creation + In Progress move happen at the end of Step 0.5, only for an idea that passes the gate. For **Mode B** — direct invocation — the user explicitly asked for this topic, so run the gate in advisory mode: surface the fit verdict but DO NOT auto-skip; proceed to generate regardless.)
+
+---
+
+## Step 0.5 — X Fit Gate + Cross-Channel Signal (runs before every generation)
+
+Not every idea that works on LinkedIn works on X. **Before committing to generate, critically judge whether this topic is worth an X post** — and borrow signal from the LinkedIn channel, since X has no analytics of its own.
+
+### A. Cross-channel signal (READ-ONLY from LinkedIn)
+
+The X channel may **read** the LinkedIn channel for advisory signal. It must NEVER write there, move files, or alter LinkedIn state. (This is the one sanctioned cross-channel read — see project CLAUDE.md rule 3.)
+
+1. Open `../linkedin-posts/TODO.md`. Look for this idea's **source filename** in the **Done** section.
+   - **Not found** → LinkedIn hasn't published it. No cross-channel signal; judge on X-fit alone (Part B).
+   - **Found** → note the linked post folder. Continue.
+2. Open that LinkedIn post folder (`../linkedin-posts/posts/<slug>-<date>/`). Read `final-post.md` (the winning angle/hook) and, if present, `performance.md`.
+   - **`performance.md` has metrics AND an `## Agent Verdict`** → analytics were synced. Extract the real signal: engagement level, the hook/angle that won, what the verdict said to replicate or drop.
+   - **`performance.md` missing or has no verdict** → published but **analytics not yet synced**. Treat as a weak positive (it was worth publishing somewhere) but no performance data to lean on.
+
+### B. X-fit critical analysis
+
+Score the idea against what X rewards (use `./x-posts/PLAYBOOK.md` — the follow-reasons in §11 and the reach mechanics in §5). Ask honestly:
+
+- Is there a **punchy, quotable claim** or a sharp contrast in here? (X lives on the screenshot-able line.)
+- Can it land a clear **follow-reason** — TIL / FIRED-UP / LOL / HMM / FINALLY?
+- Is there a **defensible contrarian take** or a **relatable build-in-public moment**?
+- Can the core land in **≤280 chars** (single) or a tight thread — without needing long-form nuance to not be misread?
+- Is it **too inside-baseball, too caveated, or too dependent on a link/visual** to work as fast-scroll text?
+
+### C. Verdict → `worth_posting: yes | borderline | no`
+
+Print `[HANDOFF: X FIT GATE]` AND (only if the verdict is `yes`/`borderline`) save it to the post folder as `00-x-fit.md`. Format:
+
+```
+## X Fit Verdict
+worth_posting: <yes | borderline | no>
+fit_score: <0–10>
+
+## Why
+<2–4 sentences: what makes this land (or not) on X specifically>
+
+## Cross-channel signal (LinkedIn)
+Published on LinkedIn: <yes + folder | no>
+Analytics synced: <yes — summary of performance | no | n/a>
+Winning angle there: <angle/hook, or n/a>
+Implication for X: <one line — e.g. "strong LinkedIn comment-rate → lead with the same contrast on X" or "no signal yet, judge on merits">
+
+## Recommended X angle lean
+<which of the 3 angles to weight, and the candidate hook line(s)>
+```
+
+**Acting on the verdict:**
+
+- **`yes` / `borderline`** → this is the run's idea. NOW create the post folder `./x-posts/posts/<slug>-<YYYYMMDD>/`, write `00-x-fit.md` into it, move the idea to **In Progress** in TODO.md, and proceed to the Strategist (which reads `00-x-fit.md`).
+- **`no`** → do NOT generate. Add the idea to the **Skipped (not a fit for X)** section of `./x-posts/TODO.md` with a one-line reason and date. Then return to Step 0 and evaluate the **next** oldest queued idea. Repeat until an idea passes or the queue is exhausted (if exhausted → print `No X-worthy ideas in the queue right now. Skipping.` and exit).
+- **Mode B (direct invocation):** advisory only — print the verdict but always proceed, even on `no` (the user explicitly asked for this topic).
+
+A `no` is not permanent: the user can move an idea out of **Skipped** back to the queue any time, and direct invocation always overrides the gate.
 
 ---
 
 ## Pipeline overview
 
 ```
-[Raw Idea from ../raw-ideas/<NNN>-<slug>.md]
+[Queue pick: oldest unconsumed idea]
     ↓
-Strategist (once)           → 01-post-plan.md  (decides SINGLE vs THREAD)
+X Fit Gate (Step 0.5)       → 00-x-fit.md   (reads LinkedIn signal READ-ONLY; verdict yes/borderline/no)
+    ↓ no  → log to Skipped, try next idea        ↓ yes/borderline
+                                            (create folder, In Progress)
+    ↓
+Strategist (once)           → 01-post-plan.md  (reads 00-x-fit.md; decides SINGLE vs THREAD)
     ↓
 Copywriters × N (parallel)  → 02a..02c-draft-*.md   (all write in the chosen format)
     ↓
@@ -130,7 +193,7 @@ Max revision rounds: **2**.
 
 **Job:** Analyze the raw idea → decide the FORMAT → produce a master plan AND define N distinct angles.
 
-**Before planning, read `./x-posts/PLAYBOOK.md`.** It is the X craft baseline (this channel's substitute for a performance loop). Let it shape the format decision, the hook direction, and the angle choices. There is no analytics tracker to read.
+**Before planning, read `./x-posts/PLAYBOOK.md` AND `00-x-fit.md`** (the gate's verdict for this idea). The playbook is the craft baseline; `00-x-fit.md` carries the cross-channel signal and the recommended angle lean — let it bias which angle to weight and the candidate hook. There is no analytics tracker to read on X.
 
 ### Format decision (X-specific, do this FIRST)
 
@@ -330,9 +393,12 @@ This is the X channel's consumption ledger. Raw ideas live in `../raw-ideas/` (s
 
 ## Done
 - [x] <NNN>-<slug>.md → [posts/<slug>-<YYYYMMDD>/final-post.md](./posts/<slug>-<YYYYMMDD>/final-post.md) — <YYYY-MM-DD>
+
+## Skipped (not a fit for X)
+- [ ] <NNN>-<slug>.md — <one-line reason from the Fit Gate> — <YYYY-MM-DD>
 ```
 
-Regenerate the Queue section each run. Append to Done; never delete a Done entry unless the user asks to re-run an idea.
+Regenerate the Queue section each run. Append to Done and Skipped; never delete entries from either unless the user asks to re-run or re-queue an idea. The Skipped section is how the gate's `no` verdicts are remembered so they aren't re-evaluated every run.
 
 ---
 
@@ -384,9 +450,15 @@ Regenerate the Queue section each run. Append to Done; never delete a Done entry
 
 ## Conversation output (every run)
 
-**No-op:**
+**No-op (empty queue):**
 ```
 No new X ideas. Skipping.
+```
+
+**No-op (queue had ideas, but none passed the Fit Gate):**
+```
+No X-worthy ideas in the queue right now. Skipping.
+Skipped this run: <filename(s)> — see TODO.md "Skipped" for reasons.
 ```
 
 **Processed an idea:**

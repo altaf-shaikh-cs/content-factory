@@ -16,7 +16,7 @@ Full overview: [`README.md`](./README.md).
 
 1. **`./raw-ideas/` is immutable.** Files are never moved out, deleted, or renamed by any agent. Each channel tracks its own consumption in its own `TODO.md`. The library is append-only.
 2. **One channel = one folder = one CLAUDE.md.** When working on LinkedIn output, stay inside `linkedin-posts/`. Don't write LinkedIn artifacts into `x-posts/` or vice versa.
-3. **Channels don't talk to each other.** They share only `./raw-ideas/`. No cross-channel imports, no shared scratch space.
+3. **Channels don't WRITE to each other.** A channel never writes into, moves, renames, or deletes anything in another channel's folder. **Read-only cross-channel signal is allowed** as an advisory input: e.g. the X channel (which has no analytics on a free account) may READ the LinkedIn channel's `TODO.md` and a post's `performance.md` to judge topic fit and borrow what performed. Reads are advisory only; writes stay isolated to the channel's own folder.
 4. **Never invent statistics, quotes, or claims** that aren't in the source raw idea file.
 5. **Strip company names, internal tool names, and private details** from any generated content unless explicitly told otherwise.
 6. **No emojis** in generated content unless the user explicitly asks.

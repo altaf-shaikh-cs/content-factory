@@ -14,6 +14,7 @@ x-posts/
 ├── TODO.md                          ← queue + done ledger for this channel
 └── posts/
     └── <slug>-<YYYYMMDD>/
+        ├── 00-x-fit.md              ← Fit Gate verdict + LinkedIn cross-channel signal
         ├── 01-post-plan.md          ← Strategist output (incl. SINGLE vs THREAD decision)
         ├── 02a-draft-viral.md       ← Copywriter 1 — Viral / reach play
         ├── 02b-draft-story.md       ← Copywriter 2 — Story / build-in-public
@@ -35,7 +36,10 @@ Source ideas live ONE FOLDER UP at `../raw-ideas/`. They are shared with the Lin
 ```
 ../raw-ideas/<NNN>-<slug>.md
         ↓
-Strategist (decides SINGLE vs THREAD → 01-post-plan.md)
+X Fit Gate (is this worth an X post? reads LinkedIn signal read-only → 00-x-fit.md)
+        │  no  → logged to TODO "Skipped", try next idea
+        ↓  yes / borderline
+Strategist (reads 00-x-fit.md · decides SINGLE vs THREAD → 01-post-plan.md)
         ↓
 3 Copywriters in parallel (1: viral/reach · 2: story/build-in-public · 3: contrarian/debate)
         ↓
@@ -73,7 +77,7 @@ The two concepts always use **different formats**.
 
 An X queue at runtime =
 ```
-ls ../raw-ideas/  MINUS  filenames in TODO.md "Done" + "In Progress" sections
+ls ../raw-ideas/  MINUS  TODO.md "Done" + "In Progress" + "Skipped" sections
 ```
 
 ---

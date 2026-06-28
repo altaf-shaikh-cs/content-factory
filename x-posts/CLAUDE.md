@@ -18,20 +18,21 @@ Full skill definition: `.claude/skills/x-growth-agent/SKILL.md`.
 ## Hard rules (X-specific)
 
 1. **`../raw-ideas/` is read-only from this folder's perspective.** Never move, rename, or delete files there. Shared with other channels.
-2. **All writes stay inside `./x-posts/`.** No exceptions.
-3. **Consumption is tracked in `./TODO.md`** — Queue = `ls ../raw-ideas/` MINUS the filenames in this channel's Done + In Progress sections.
-4. **280 characters HARD per tweet.** Single tweet ≤ 280. Every thread tweet ≤ 280. Over-limit = invalid, never ship it.
-5. **Single tweet by default. Thread only when the idea breaks into ≥3 distinct sections.** The Strategist decides and states the rationale.
-6. **No hashtags by default.** They suppress reach and read as spam on X. At most 1, only if it's a real live community tag.
-7. **Links go in a reply, never the main tweet.** X downranks tweets with external links in the body.
-8. **Hook lives in the first ~7 words.** No "a thread 🧵", no "In this post". Open on the payload.
-9. **Never invent statistics, quotes, or claims** not in the source raw idea file.
-10. **Strip company names, internal tool names, and private details.** Keep the lesson; drop the specifics.
-11. **CTA must be public-shareable.** No "DM me to try the tool" for internal tooling. Prefer a reply-inviting question or a builder take.
-12. **One idea per run.** Even if queue has many, drain exactly one.
-13. **Every handoff is BOTH printed in the conversation AND saved to the per-post folder.** Never one without the other.
-14. **No emojis** unless the user explicitly asks.
-15. **Respect `channels:` frontmatter.** If a raw idea declares `channels: [...]` and "x" is not in the list, skip it silently.
+2. **All WRITES stay inside `./x-posts/`.** No exceptions. **Read-only access to `../linkedin-posts/` is allowed** for the Fit Gate (published status + `performance.md`) — never write there.
+3. **Run the X Fit Gate before generating.** Critically judge whether the topic is worth an X post (Step 0.5). A `no` goes to TODO's **Skipped** section, not the pipeline. Direct `/x-growth-agent <topic>` invocations override the gate (advisory only).
+4. **Consumption is tracked in `./TODO.md`** — Queue = `ls ../raw-ideas/` MINUS Done MINUS In Progress MINUS Skipped.
+5. **280 characters HARD per tweet.** Single tweet ≤ 280. Every thread tweet ≤ 280. Over-limit = invalid, never ship it.
+6. **Single tweet by default. Thread only when the idea breaks into ≥3 distinct sections.** The Strategist decides and states the rationale.
+7. **No hashtags by default.** They suppress reach and read as spam on X. At most 1, only if it's a real live community tag.
+8. **Links go in a reply, never the main tweet.** X downranks tweets with external links in the body.
+9. **Hook lives in the first ~7 words.** No "a thread 🧵", no "In this post". Open on the payload.
+10. **Never invent statistics, quotes, or claims** not in the source raw idea file.
+11. **Strip company names, internal tool names, and private details.** Keep the lesson; drop the specifics.
+12. **CTA must be public-shareable.** No "DM me to try the tool" for internal tooling. Prefer a reply-inviting question or a builder take.
+13. **One idea per run.** Even if queue has many, drain exactly one.
+14. **Every handoff is BOTH printed in the conversation AND saved to the per-post folder.** Never one without the other.
+15. **No emojis** unless the user explicitly asks.
+16. **Respect `channels:` frontmatter.** If a raw idea declares `channels: [...]` and "x" is not in the list, skip it silently.
 
 ---
 
@@ -39,7 +40,9 @@ Full skill definition: `.claude/skills/x-growth-agent/SKILL.md`.
 
 | User says...                                       | Do this                                                                |
 |----------------------------------------------------|------------------------------------------------------------------------|
-| "process my X ideas" / "/x-growth-agent"           | Trigger the `x-growth-agent` skill                                    |
+| "process my X ideas" / "/x-growth-agent"           | Trigger the `x-growth-agent` skill (runs the Fit Gate first)          |
+| "why was X idea skipped?"                           | Read its `00-x-fit.md` (if any) or the reason in TODO's **Skipped** section. |
+| "post this on X anyway" (a skipped idea)            | Move its line from **Skipped** back to the queue, or invoke `/x-growth-agent <topic>` (direct invocation overrides the gate). |
 | "write a tweet" / "draft a thread about X"         | Trigger the `x-growth-agent` skill                                    |
 | "run the loop" inside this folder                  | Use `../x.agent.md` prompt                                            |
 | Drops a new file in `../raw-ideas/`                | "Queued. Next loop tick picks it up — or invoke `/x-growth-agent` to run now." |
@@ -55,8 +58,13 @@ Full skill definition: `.claude/skills/x-growth-agent/SKILL.md`.
 ## Pipeline contract (quick reference)
 
 ```
+[queue pick: oldest unconsumed idea]
+  → X Fit Gate                       → 00-x-fit.md  (READS LinkedIn signal read-only; verdict yes/borderline/no)
+       no  → log to TODO Skipped, try next idea
+       yes/borderline → create folder, In Progress, continue ↓
+
 ../raw-ideas/<NNN>-<slug>.md
-  → Agent 1: Strategist              → 01-post-plan.md  (decides SINGLE vs THREAD)
+  → Agent 1: Strategist              → 01-post-plan.md  (reads 00-x-fit.md; decides SINGLE vs THREAD)
   → Copywriters × N parallel         → 02a-draft-viral, 02b-draft-story, 02c-draft-contrarian
   → Editor                           → 03-editor-verdict.json  (hard-fails over-limit / link-in-body / hashtags)
   → [revision loop, max 2 rounds]
