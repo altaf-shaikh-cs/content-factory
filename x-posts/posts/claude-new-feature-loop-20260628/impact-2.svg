@@ -1,0 +1,86 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="0.3" r="0.5">
+      <stop offset="0%"   stop-color="#22d3ee" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect width="1080" height="1080" fill="url(#glow)"/>
+
+  <!-- Decorative quotation mark (background) -->
+  <text x="48" y="360"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="360" font-weight="700" fill="url(#accent)" fill-opacity="0.08">&#8220;</text>
+
+  <!-- Top accent bar -->
+  <rect x="80" y="80" width="180" height="5" rx="3" fill="url(#accent)"/>
+
+  <!-- Label -->
+  <text x="80" y="150"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="700" letter-spacing="7" fill="#334155">
+    ON AI INFRASTRUCTURE
+  </text>
+
+  <!-- Quote: lines 1–2 (capability side, white) -->
+  <text x="80" y="385"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="58" font-weight="700" fill="#f1f5f9" letter-spacing="-1">
+    A tool you call
+  </text>
+  <text x="80" y="459"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="58" font-weight="700" fill="#f1f5f9" letter-spacing="-1">
+    is a capability.
+  </text>
+
+  <!-- Quote: lines 3–4 (infrastructure side — muted then gradient) -->
+  <text x="80" y="555"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="58" font-weight="700" fill="#94a3b8" letter-spacing="-1">
+    A process that runs
+  </text>
+  <text x="80" y="629"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="58" font-weight="700" fill="url(#accent)" letter-spacing="-1">
+    is infrastructure.
+  </text>
+
+  <!-- Rule -->
+  <rect x="80" y="688" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- Handle (prominent) -->
+  <text x="80" y="752"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="34" font-weight="700" fill="url(#accent)">
+    @teachmebro
+  </text>
+
+  <!-- Attribution -->
+  <text x="80" y="797"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" font-weight="400" fill="#475569">
+    Altaf Shaikh  &#183;  AI Engineering
+  </text>
+
+  <!-- Tagline -->
+  <text x="80" y="958"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="400" letter-spacing="5" fill="#334155">
+    SET IT. LET IT LOOP.
+  </text>
+
+  <!-- Bottom accent bar -->
+  <rect x="80" y="985" width="920" height="3" rx="2" fill="url(#accent)" fill-opacity="0.35"/>
+</svg>
