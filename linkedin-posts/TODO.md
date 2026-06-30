@@ -4,11 +4,11 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 ## Queue (unprocessed for LinkedIn)
 - [ ] just text.md — foundations vs AI tools, developer mindset (note: says "do not generate the image for this")
-- [ ] run-your-own-agent-acengy-with-paperclip.md — multi-agent setup with Paperclip, learning by doing
 
 ## In Progress
 
 ## Done
+- [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip-20260630/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip-20260630/final-post.md) — 2026-06-30
 - [x] iphone-shortcit-to-generate-slide-from-raw-ideas.md → [posts/iphone-shortcit-to-generate-slide-from-raw-ideas-20260628/final-post.md](./posts/iphone-shortcit-to-generate-slide-from-raw-ideas-20260628/final-post.md) — 2026-06-28
 - [x] first-autonoumsly-dveloped-todo-app.md → [posts/first-autonoumsly-dveloped-todo-app-20260624/final-post.md](./posts/first-autonoumsly-dveloped-todo-app-20260624/final-post.md) — 2026-06-24
 - [x] build-your-first-agents-team.md → [posts/build-your-first-agents-team-20260616/final-post.md](./posts/build-your-first-agents-team-20260616/final-post.md) — 2026-06-16

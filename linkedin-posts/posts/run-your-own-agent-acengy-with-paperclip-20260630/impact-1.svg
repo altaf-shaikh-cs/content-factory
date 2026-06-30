@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+
+  <!-- Cream background -->
+  <rect width="1080" height="1080" fill="#f5f0e8"/>
+
+  <!-- Top label: "— MULTI-AGENT AI" in small monospace caps -->
+  <line x1="68" y1="86" x2="98" y2="86" stroke="#aaa" stroke-width="2"/>
+  <text x="110" y="92"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="17" font-weight="600" fill="#aaaaaa" letter-spacing="5">MULTI-AGENT AI &#183; AI ENGINEERING</text>
+
+  <!-- Decoration: subtle network nodes top-right -->
+  <circle cx="970" cy="180" r="6" fill="#d0c8be"/>
+  <circle cx="1020" cy="140" r="4" fill="#d0c8be"/>
+  <circle cx="1000" cy="220" r="5" fill="#d0c8be"/>
+  <line x1="970" y1="180" x2="1020" y2="140" stroke="#d0c8be" stroke-width="1"/>
+  <line x1="970" y1="180" x2="1000" y2="220" stroke="#d0c8be" stroke-width="1"/>
+  <line x1="1020" y1="140" x2="1000" y2="220" stroke="#d0c8be" stroke-width="1"/>
+
+  <!-- Giant headline: "RUN IT." in near-black -->
+  <text x="68" y="370"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="238" font-weight="900" fill="#111111">RUN IT.</text>
+
+  <!-- Subtitle line 1: "before you" dark -->
+  <text x="68" y="462"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="66" font-weight="700" fill="#1a1a1a">before you</text>
+
+  <!-- Subtitle line 2: "build it." in orange -->
+  <text x="68" y="542"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="66" font-weight="700" fill="#d95e2a">build it.</text>
+
+  <!-- Left accent bar + supporting line -->
+  <rect x="68" y="610" width="7" height="52" rx="2" fill="#d95e2a"/>
+  <text x="90" y="630"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="24" font-weight="600" fill="#333333">Not reading about it. Not watching tutorials.</text>
+  <text x="90" y="660"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="24" font-weight="400" fill="#666666">Clone. Run. Break. Fix.</text>
+
+  <!-- Thin horizontal separator -->
+  <line x1="68" y1="878" x2="1012" y2="878" stroke="#d0c8be" stroke-width="1.5"/>
+
+  <!-- Handle in orange -->
+  <text x="68" y="944"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="30" font-weight="700" fill="#d95e2a">@teachmebro</text>
+
+  <!-- Author byline -->
+  <text x="68" y="992"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="18" font-weight="400" fill="#888888">Altaf Shaikh // AI Engineering</text>
+
+  <!-- Right: small tagline -->
+  <text x="1012" y="992"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="14" font-weight="400" fill="#bbbbbb" text-anchor="end">Run it before you build it.</text>
+
+</svg>
