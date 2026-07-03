@@ -66,6 +66,7 @@ A change is live for the routines once step 2 completes (their next run clones t
 | "blog post" / "write a blog"                  | Skill `idea-to-blog` (writes into `blog-post/`)                         |
 | "presentation" / "slides" / "deck"            | Skill `idea-to-presentation` then `anthropic-skills:pptx`              |
 | "add an idea" / "new idea: ..."               | Write to `./raw-ideas/<NNN>-<slug>.md` with the next available prefix   |
+| "sync my notes" / "sync the inbox" / "/sync-ideas" | Skill `sync-ideas` (pulls `raw-ideas-inbox/inbox.md` into `raw-ideas/`) |
 | "process my ideas" (ambiguous)                | Ask which channel, OR run all active channel loops in sequence          |
 | "/loop"                                       | Use the loop prompt file matching the channel (e.g. `linkedin.agent.md`)|
 | "generate image" / "redo the image" / "/image-gen-agent" | Skill `image-gen-agent` (reads `./agents/image-gen/inspiration/`) |
@@ -83,6 +84,12 @@ Agents that serve all channels live in `./agents/`. They are not channels — th
 
 **To edit an agent's behavior:** open its folder, read `AGENT.md` — it points to the project-local skill file.
 **To add inspiration styles:** drop a file (SVG/PNG/JPG/PDF/screenshot) into `agents/image-gen/inspiration/<style-slug>/` and add a row to `MANIFEST.md`.
+
+---
+
+## Quick idea capture
+
+For low-friction capture, jot rough notes anytime into `./raw-ideas-inbox/inbox.md` (separate multiple ideas with a `---` line). Run `/sync-ideas` to promote each note verbatim into `./raw-ideas/<NNN>-<slug>.md` and clear the inbox. `raw-ideas-inbox/` is a mutable scratch folder — only the promoted files in `raw-ideas/` are immutable.
 
 ---
 
