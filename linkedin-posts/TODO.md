@@ -3,7 +3,8 @@
 This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS the filenames listed under **Done** below.
 
 ## Queue (unprocessed for LinkedIn)
-- [ ] run-your-own-agent-acengy-with-paperclip.md — multi-agent setup with Paperclip, learning by doing
+- [ ] run-your-own-agent-acengy-with-paperclip.md — multi-agent setup with Paperclip, learning by doing (open PR #9)
+- [ ] ROUTINES.MD — Claude Code Routines feature content (open PR #12)
 
 ## In Progress
 
