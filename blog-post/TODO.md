@@ -22,4 +22,4 @@ _(none)_
 
 ## Done
 
-- [x] build-your-first-agents-team.md → [posts/build-your-first-agents-team/final-post.md](./posts/build-your-first-agents-team/final-post.md) — 2026-07-07
+- [x] first-autonoumsly-dveloped-todo-app.md → [posts/first-autonomous-todo-app/final-post.md](./posts/first-autonomous-todo-app/final-post.md) — 2026-07-08
