@@ -34,7 +34,7 @@ The democratization of AI narrative is true in one direction: access is easier. 
 
 That's not an argument against AI. It's an argument against pretending the cost doesn't exist.
 
-Do you think about what a single AI query actually costs — beyond the API bill?
+Next time you hit send on a prompt — ask yourself if it was worth asking.
 
 #AI #TechForGood #SoftwareDevelopment #AIInfrastructure #BuildersOfLinkedIn
 
