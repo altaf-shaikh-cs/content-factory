@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+
+  <!-- Warm cream background -->
+  <rect width="1080" height="1350" fill="#faf6f0"/>
+
+  <!-- ── Headline ── -->
+  <text x="70" y="150"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="86" font-weight="900" fill="#1a1a1a">Multi-Agent AI</text>
+
+  <text x="70" y="248"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="86" font-weight="900" fill="#1a1a1a">is learned by</text>
+
+  <text x="70" y="346"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="86" font-weight="900" fill="#d97c5e">running it.</text>
+
+  <!-- Underline accent on "running it." -->
+  <rect x="70" y="356" width="490" height="5" rx="2" fill="#d97c5e" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="70" y="404"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="24" font-weight="400" fill="#888888">Not reading about it.</text>
+
+  <!-- Thin divider -->
+  <line x1="70" y1="440" x2="1010" y2="440" stroke="#e0d8d0" stroke-width="1.5"/>
+
+  <!-- ── Step 1: Clone ── -->
+  <!-- Outer halo -->
+  <circle cx="118" cy="512" r="48" fill="#f9ede9" opacity="0.9"/>
+  <!-- Inner filled circle -->
+  <circle cx="118" cy="512" r="39" fill="#d97c5e"/>
+  <!-- Number -->
+  <text x="118" y="522"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+  <!-- Step title -->
+  <text x="190" y="505"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="34" font-weight="800" fill="#1a1a1a">Clone the repo</text>
+  <!-- Step description -->
+  <text x="190" y="543"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#777777">Get a real working system in hand.</text>
+  <!-- Connector to step 2 -->
+  <line x1="118" y1="560" x2="118" y2="658" stroke="#e0d8d0" stroke-width="2" stroke-dasharray="5,7"/>
+
+  <!-- ── Step 2: Run ── -->
+  <circle cx="118" cy="704" r="48" fill="#e9f6f2" opacity="0.9"/>
+  <circle cx="118" cy="704" r="39" fill="#4caf97"/>
+  <text x="118" y="714"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="190" y="697"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="34" font-weight="800" fill="#1a1a1a">Run it as designed</text>
+  <text x="190" y="735"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#777777">Watch agents hand work off to each other.</text>
+  <!-- Connector to step 3 -->
+  <line x1="118" y1="752" x2="118" y2="850" stroke="#e0d8d0" stroke-width="2" stroke-dasharray="5,7"/>
+
+  <!-- ── Step 3: Break ── -->
+  <circle cx="118" cy="896" r="48" fill="#f0edf8" opacity="0.9"/>
+  <circle cx="118" cy="896" r="39" fill="#9b8dc4"/>
+  <text x="118" y="906"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="900" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="190" y="889"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="34" font-weight="800" fill="#1a1a1a">Break it intentionally</text>
+  <text x="190" y="927"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#777777">Modify one component. Swap one thing.</text>
+  <!-- Connector to step 4 -->
+  <line x1="118" y1="944" x2="118" y2="1030" stroke="#e0d8d0" stroke-width="2" stroke-dasharray="5,7"/>
+
+  <!-- ── Step 4: Fix ── -->
+  <circle cx="118" cy="1076" r="48" fill="#e8f4f9" opacity="0.9"/>
+  <circle cx="118" cy="1076" r="39" fill="#5ab5d4"/>
+  <text x="118" y="1086"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="900" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="190" y="1069"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="34" font-weight="800" fill="#1a1a1a">Fix what broke</text>
+  <text x="190" y="1107"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="400" fill="#777777">That&#8217;s where orchestration clicks.</text>
+
+  <!-- ── Footer ── -->
+  <!-- Divider -->
+  <line x1="70" y1="1168" x2="1010" y2="1168" stroke="#e0d8d0" stroke-width="1.5"/>
+
+  <!-- Tagline -->
+  <text x="70" y="1220"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="28" font-weight="700" fill="#1a1a1a">Run it before you build it.</text>
+
+  <!-- Handle in coral -->
+  <text x="70" y="1268"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="27" font-weight="700" fill="#d97c5e">@teachmebro</text>
+
+  <!-- Author byline -->
+  <text x="70" y="1312"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="20" font-weight="400" fill="#aaaaaa">Altaf Shaikh &#183; AI Engineering</text>
+
+</svg>
