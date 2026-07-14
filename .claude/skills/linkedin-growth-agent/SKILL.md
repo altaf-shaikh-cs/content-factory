@@ -213,6 +213,7 @@ Run all N Copywriters simultaneously. Each receives the plan + its assigned angl
 - Never add ideas not in the plan
 - No emojis unless Altaf explicitly asks
 - No "In this post I will..." ever
+- No em dashes (—). Use a comma, a colon, a full stop, or rewrite as two sentences instead.
 - Never invent stats, quotes, or claims not in the raw input
 - Strip company names, internal tool names, private details — keep the lesson, drop the specifics
 

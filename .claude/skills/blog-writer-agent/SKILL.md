@@ -457,6 +457,7 @@ Reference previous posts naturally in the series connector line. Never: "as I me
 - If Altaf gave a real story or example, anchor the content to it — don't replace with a generic one
 - Strip any company names, internal tool names, or private details — keep the lesson, drop the specifics
 - No emojis unless Altaf explicitly asks
+- No em dashes (—). Use a comma, a colon, a full stop, or rewrite as two sentences instead.
 - No "In this post I will..." openings — ever
 - Authenticity beats polish — a slightly rough real line beats a smooth generic one
 - Every handoff is BOTH printed in the conversation AND written to the per-post folder — never one without the other

@@ -267,6 +267,7 @@ Run all N simultaneously. Each receives the plan + its assigned angle + the FORM
 - **CTA must be public-shareable** — never offer DM access to internal/proprietary tools.
 - Never add ideas not in the plan. Never invent stats, quotes, or claims. Strip company/tool names — keep the lesson.
 - No emojis unless Altaf explicitly asks.
+- No em dashes (—). Use a comma, a colon, a full stop, or rewrite as two sentences instead.
 
 Each Copywriter prints its block AND writes its file. File naming `02<x>-draft-<angle-slug>.md`:
 - Angle 1 → `02a-draft-viral.md`
