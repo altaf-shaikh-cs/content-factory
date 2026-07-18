@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "B leads with the exact reframe the tracker recommends (an arguable indictment, not a scene), carries every number from the plan, and folds the tactical setup in without losing pace. It is the 'taking sides' shape that has performed best for this audience.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 8, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.2 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.0 },
+    "C": { "hook_strength": 7, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.6 }
+  },
+  "runner_up_notes": {
+    "C": "The numbered 3-step Claude Code setup is the clearest actionable block of the three. B compresses it into prose; if B ever feels flat, graft C's numbered list in.",
+    "A": "The 'ten minutes' personal proof point is nice but invents a specific not present in the raw idea; correctly excluded from the winner."
+  },
+  "issues": []
+}

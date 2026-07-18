@@ -7,6 +7,7 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 ## In Progress
 
 ## Done
+- [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md](./posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md) — 2026-07-18
 - [x] ROUTINES.MD → [posts/routines-20260717/final-post.md](./posts/routines-20260717/final-post.md) — 2026-07-17
 - [x] just text.md → [posts/just-text-20260714/final-post.md](./posts/just-text-20260714/final-post.md) — 2026-07-14
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip-20260630/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip-20260630/final-post.md) — 2026-06-30
