@@ -1,0 +1,11 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C-revised",
+  "why_winner": "All Round 1 issues addressed. The grounding paragraph ('Every serious Claude session ends the same way') gives readers the recognition beat before the reveal — no longer abrupt. The replaced aphorism ('The best prompt you can give Claude is the one it already asked for') tightens the loop and is specific enough to stick. The borrowed self-implication from A ('I walked past it every time') keeps the authenticity without slowing the hook. CTA is strong and public-shareable. No internal tool references. Approved for image and final assembly.",
+  "scores": {
+    "C-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 9.0 }
+  },
+  "issues": []
+}

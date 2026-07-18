@@ -3,10 +3,12 @@
 This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS the filenames listed under **Done** below.
 
 ## Queue (unprocessed for LinkedIn)
+_(empty — all ideas have been processed)_
 
 ## In Progress
 
 ## Done
+- [x] joke-on-say-the-word-by-claude.md → [posts/joke-on-say-the-word-by-claude-20260718/final-post.md](./posts/joke-on-say-the-word-by-claude-20260718/final-post.md) — 2026-07-18
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md](./posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md) — 2026-07-18
 - [x] ROUTINES.MD → [posts/routines-20260717/final-post.md](./posts/routines-20260717/final-post.md) — 2026-07-17
 - [x] just text.md → [posts/just-text-20260714/final-post.md](./posts/just-text-20260714/final-post.md) — 2026-07-14
