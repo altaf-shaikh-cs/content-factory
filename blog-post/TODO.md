@@ -4,17 +4,7 @@ This is the Blog channel's consumption ledger. Raw ideas live in `../raw-ideas/`
 
 ## Queue (unprocessed for Blog)
 
-- [ ] 001-claude-vs-codex.md — open PR #7
-- [ ] 002-SuperReps-learnings.md — open PR #8
-- [ ] 003-claude-new-feature-loop.md — open PR #10
-- [ ] ROUTINES.MD — open PR #11
-- [ ] ai drinks water more than humans do.md — open PR #14
-- [ ] ai-non-deterministic-code-vs-program-deterministic-code.md — open PR #15
-- [ ] build-your-first-agents-team.md — open PR #16
-- [ ] first-autonoumsly-dveloped-todo-app.md — open PR #17
-- [ ] gen-ai-roadmap.md — open PR #18
-- [ ] iphone-shortcit-to-generate-slide-from-raw-ideas.md — open PR #19
-- [ ] run-your-own-agent-acengy-with-paperclip.md — no open blog PR yet
+_(none — every current raw idea has been processed)_
 
 ## In Progress
 
@@ -22,6 +12,17 @@ _(none)_
 
 ## Done
 
-- [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-12
+- [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-14
+- [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-14
+- [x] iphone-shortcit-to-generate-slide-from-raw-ideas.md → [posts/iphone-shortcut-slide-generator/final-post.md](./posts/iphone-shortcut-slide-generator/final-post.md) — 2026-07-14
+- [x] gen-ai-roadmap.md → [posts/gen-ai-roadmap/final-post.md](./posts/gen-ai-roadmap/final-post.md) — 2026-07-14
+- [x] first-autonoumsly-dveloped-todo-app.md → [posts/first-autonomous-todo-app/final-post.md](./posts/first-autonomous-todo-app/final-post.md) — 2026-07-14
+- [x] build-your-first-agents-team.md → [posts/build-your-first-agents-team/final-post.md](./posts/build-your-first-agents-team/final-post.md) — 2026-07-14
+- [x] ai-non-deterministic-code-vs-program-deterministic-code.md → [posts/ai-non-deterministic-code-vs-program-deterministic-code/final-post.md](./posts/ai-non-deterministic-code-vs-program-deterministic-code/final-post.md) — 2026-07-14
+- [x] ai drinks water more than humans do.md → [posts/ai-drinks-water/final-post.md](./posts/ai-drinks-water/final-post.md) — 2026-07-14
+- [x] ROUTINES.MD → [posts/routines/final-post.md](./posts/routines/final-post.md) — 2026-07-14
+- [x] 003-claude-new-feature-loop.md → [posts/claude-new-feature-loop/final-post.md](./posts/claude-new-feature-loop/final-post.md) — 2026-07-14
+- [x] 002-SuperReps-learnings.md → [posts/superreps-learnings/final-post.md](./posts/superreps-learnings/final-post.md) — 2026-07-14
+- [x] 001-claude-vs-codex.md → [posts/claude-vs-codex/final-post.md](./posts/claude-vs-codex/final-post.md) — 2026-06-30
 
-**Note:** all other ideas in `../raw-ideas/` (001-claude-vs-codex.md, 002-SuperReps-learnings.md, 003-claude-new-feature-loop.md, ROUTINES.MD, ai drinks water more than humans do.md, ai-non-deterministic-code-vs-program-deterministic-code.md, build-your-first-agents-team.md, first-autonoumsly-dveloped-todo-app.md, gen-ai-roadmap.md, iphone-shortcit-to-generate-slide-from-raw-ideas.md, just text.md) already have open blog PRs in flight on the fork (not yet merged, so not yet reflected here). This run picked the only remaining idea with no open blog PR: `run-your-own-agent-acengy-with-paperclip.md`.
+**Note (2026-07-16 run):** all 12 raw ideas currently in `../raw-ideas/` already have completed `final-post.md` outputs merged into `main` (confirmed via `git log` on `blog-post/posts/` and an empty result from `gh pr list` for any blog branch). The previous ledger was stale, listing these as "open PR" placeholders from an earlier in-flight state; those PRs have since merged. This run found nothing new to produce and made no branch/PR.

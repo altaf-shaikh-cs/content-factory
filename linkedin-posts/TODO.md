@@ -3,11 +3,12 @@
 This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS the filenames listed under **Done** below.
 
 ## Queue (unprocessed for LinkedIn)
-- [ ] just text.md — foundations vs AI tools, developer mindset (note: says "do not generate the image for this")
 
 ## In Progress
 
 ## Done
+- [x] ROUTINES.MD → [posts/routines-20260717/final-post.md](./posts/routines-20260717/final-post.md) — 2026-07-17
+- [x] just text.md → [posts/just-text-20260714/final-post.md](./posts/just-text-20260714/final-post.md) — 2026-07-14
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip-20260630/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip-20260630/final-post.md) — 2026-06-30
 - [x] iphone-shortcit-to-generate-slide-from-raw-ideas.md → [posts/iphone-shortcit-to-generate-slide-from-raw-ideas-20260628/final-post.md](./posts/iphone-shortcit-to-generate-slide-from-raw-ideas-20260628/final-post.md) — 2026-06-28
 - [x] first-autonoumsly-dveloped-todo-app.md → [posts/first-autonoumsly-dveloped-todo-app-20260624/final-post.md](./posts/first-autonoumsly-dveloped-todo-app-20260624/final-post.md) — 2026-06-24
