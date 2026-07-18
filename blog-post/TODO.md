@@ -12,6 +12,7 @@ _(none)_
 
 ## Done
 
+- [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns/final-post.md](./posts/fable5-hybrid-orchestration-patterns/final-post.md) — 2026-07-18
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-14
 - [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-14
 - [x] iphone-shortcit-to-generate-slide-from-raw-ideas.md → [posts/iphone-shortcut-slide-generator/final-post.md](./posts/iphone-shortcut-slide-generator/final-post.md) — 2026-07-14
@@ -26,3 +27,5 @@ _(none)_
 - [x] 001-claude-vs-codex.md → [posts/claude-vs-codex/final-post.md](./posts/claude-vs-codex/final-post.md) — 2026-06-30
 
 **Note (2026-07-16 run):** all 12 raw ideas currently in `../raw-ideas/` already have completed `final-post.md` outputs merged into `main` (confirmed via `git log` on `blog-post/posts/` and an empty result from `gh pr list` for any blog branch). The previous ledger was stale, listing these as "open PR" placeholders from an earlier in-flight state; those PRs have since merged. This run found nothing new to produce and made no branch/PR.
+
+**Note (2026-07-18 run):** `004-fable5-hybrid-orchestration-patterns.md` had been added to `../raw-ideas/` since the last run and had no post folder and no open PR. Picked as the next item.
