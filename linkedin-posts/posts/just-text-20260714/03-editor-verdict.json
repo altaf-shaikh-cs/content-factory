@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "The parallel developer portraits make the core insight structurally visible from line one — readers immediately recognise themselves in one of the two portraits. The specific detail ('The AI keeps producing the same bugs. They keep copy-pasting, hoping something sticks.') feels lived-in rather than constructed. The split-screen structure also aligns with the strongest performance signal in the tracker (comparison framing drove the account's top engagement rate).",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.6 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.6 },
+    "C": { "hook_strength": 9, "authenticity": 9, "readability": 10, "plan_compliance": 9, "cta_clarity": 9, "avg": 9.2 }
+  },
+  "runner_up_notes": {
+    "B": "The opening inversion ('The developer who ignores AI is not the one falling behind') is sharper than C's first line — not borrowed this round since C's parallel structure is the stronger overall frame, but worth noting for future bold-claim-first posts.",
+    "A": "The rhetorical questions in A add warmth and feel conversational; the pattern of answering real questions from developers grounds the advice in lived experience."
+  },
+  "issues": []
+}
