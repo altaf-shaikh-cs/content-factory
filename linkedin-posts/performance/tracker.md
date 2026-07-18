@@ -54,6 +54,7 @@ _Thresholds updated based on two periods of data — baseline moved up from 3.77
 
 | Post slug | Published | Impressions | Engagements | Eng. Rate | Tier | Angle used | Notes |
 |-----------|-----------|-------------|-------------|-----------|------|------------|-------|
+| fable5-hybrid-orchestration-patterns | ~2026-07-18 | — | — | — | awaiting data | Tactical/how-to-first (user pick over Editor's B) | First post of the Premium era. Demo gist + source links in first comment. Compare against a fresh Period 3 baseline, not the 4.0% pre-premium one. |
 | claude-vs-codex | 2026-06-07 | 452 | 23 | 5.09% | strong | Bold claim-first | Top performer in period 1. Comparison framing drove developer engagement. |
 | claude-new-feature-loop | 2026-06-13 | 38 | 1 | 2.63% | weak | Bold claim-first | Residual data only from period 2 export. Small sample. |
 | gen-ai-roadmap | 2026-06-21 | 755 | 58 | 7.69% | strong | Story-first | Top performer in period 2. Had external link in body (roadmap.sh) yet still strong — content strength overcame link suppression. |
@@ -119,6 +120,7 @@ _Thresholds updated based on two periods of data — baseline moved up from 3.77
 
 ## Import Notes
 
+- **Account change: LinkedIn Premium active from 2026-07-18** (starting with the fable5-hybrid-orchestration-patterns post). Posts published on or after this date sit in a different account context than the Period 1–2 baselines. When the next export lands, compare premium-era posts against the ~4.0% baseline cautiously and consider establishing a fresh Period 3 baseline before reading angle signals from the new data.
 - Period 2 export (6/18–7/15) processed 2026-07-15
 - Post published 2026-07-02 (URL: `softwaredevelopment-engineering`, 742 imp, 16 eng, 2.16%) could not be matched to a factory folder — hashtags don't align cleanly with any post in the factory. Logged as unmatched. User should identify this post manually.
 - routines-20260628 folder has only `exports/` subfolder and no `final-post.md` — content may have been abandoned or not published. No LinkedIn data found for it.
