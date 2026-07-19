@@ -1,0 +1,41 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+
+  <rect x="80" y="100" width="920" height="4" rx="2" fill="url(#accent)"/>
+  <text x="80" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" font-weight="700" letter-spacing="8" fill="#22d3ee">AI CODING, THE ONLY RULE</text>
+
+  <text x="80" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="92" font-weight="900" fill="#e2e8f0">AI amplifies</text>
+  <text x="80" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="92" font-weight="900" fill="url(#accent)">clarity</text>
+  <text x="80" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="92" font-weight="900" fill="#e2e8f0">or <tspan fill="#f87171">confusion</tspan>.</text>
+  <text x="80" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="92" font-weight="900" fill="#e2e8f0">Your choice.</text>
+
+  <rect x="80" y="724" width="920" height="1" fill="#ffffff" fill-opacity="0.12"/>
+
+  <text x="80" y="790" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="300" fill="#94a3b8">Clear spec. One feature per chat. Tests that</text>
+  <text x="80" y="832" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="300" fill="#94a3b8">actually pass. Commit every working step.</text>
+  <text x="80" y="898" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="600" fill="#e2e8f0">If you're confused, the AI is too.</text>
+
+  <text x="80" y="990" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="700" fill="#22d3ee">@teachmebro</text>
+  <text x="80" y="1024" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="600" fill="#64748b">Altaf Shaikh &#183; AI Engineering</text>
+</svg>

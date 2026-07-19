@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "B opens with the self-recognition indictment the tracker explicitly recommends, carries the full anatomy and the 4-question test, and lands the personal proof without slowing down. A's hook depends on an article the reader hasn't seen; C's hook reads like a tutorial header.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 9, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.4 },
+    "B": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.2 },
+    "C": { "hook_strength": 7, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.6 }
+  },
+  "runner_up_notes": {
+    "A": "The '18 million views described my system' recognition moment is a strong social-proof beat; B could borrow it as a middle line if revision were needed.",
+    "C": "The numbered build order is crisper than B's prose version."
+  },
+  "issues": []
+}

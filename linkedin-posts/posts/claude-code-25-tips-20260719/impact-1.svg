@@ -1,0 +1,57 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#f5efe6"/>
+
+  <!-- blueprint corner marks -->
+  <path d="M 40 70 L 40 40 L 70 40" stroke="#b9b1a2" stroke-width="2" fill="none"/>
+  <path d="M 1010 1280 L 1040 1280 L 1040 1310" stroke="#b9b1a2" stroke-width="2" fill="none"/>
+
+  <!-- orange badge -->
+  <rect x="80" y="84" width="220" height="56" fill="#e05e26"/>
+  <text x="190" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="800" text-anchor="middle" fill="#ffffff" letter-spacing="2">8 HABITS</text>
+
+  <!-- headline -->
+  <text x="80" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="76" font-weight="900" fill="#2b2b33">Discipline Beats</text>
+  <text x="80" y="316" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="76" font-weight="900" fill="#2b2b33">Prompting Tricks</text>
+
+  <!-- mono subline -->
+  <text x="80" y="376" font-family="Menlo, Consolas, monospace" font-size="25" fill="#2b2b33">Curated from 25 lessons shipping features</text>
+  <text x="80" y="410" font-family="Menlo, Consolas, monospace" font-size="25" fill="#2b2b33">with Claude Code<tspan fill="#e05e26">.</tspan></text>
+
+  <!-- terminal window -->
+  <rect x="80" y="452" width="920" height="700" rx="18" fill="#1c1c24"/>
+  <circle cx="122" cy="492" r="9" fill="#f26d5f"/>
+  <circle cx="152" cy="492" r="9" fill="#f2b64c"/>
+  <circle cx="182" cy="492" r="9" fill="#5fc26d"/>
+  <text x="540" y="500" font-family="Menlo, Consolas, monospace" font-size="19" text-anchor="middle" fill="#8a8a96">~/claude-code-habits</text>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="24">
+    <text x="120" y="570" fill="#e05e26">1.</text>
+    <text x="170" y="570" fill="#e8e6df">Write the spec BEFORE opening Claude</text>
+    <text x="120" y="640" fill="#e05e26">2.</text>
+    <text x="170" y="640" fill="#e8e6df">One feature per chat <tspan fill="#8a8a96"># mixing is coding drunk</tspan></text>
+    <text x="120" y="710" fill="#e05e26">3.</text>
+    <text x="170" y="710" fill="#e8e6df">Feed real context: screenshots, schemas, docs</text>
+    <text x="120" y="780" fill="#e05e26">4.</text>
+    <text x="170" y="780" fill="#e8e6df">Commit every working feature <tspan fill="#8a8a96"># revert &gt; fix</tspan></text>
+    <text x="120" y="850" fill="#e05e26">5.</text>
+    <text x="170" y="850" fill="#e8e6df">Loop tests <tspan fill="#8a8a96"># "should work" means it doesn't</tspan></text>
+    <text x="120" y="920" fill="#e05e26">6.</text>
+    <text x="170" y="920" fill="#e8e6df">"Review your work, list what might be broken"</text>
+    <text x="120" y="990" fill="#e05e26">7.</text>
+    <text x="170" y="990" fill="#e8e6df">"Fix this without changing anything else"</text>
+    <text x="120" y="1060" fill="#e05e26">8.</text>
+    <text x="170" y="1060" fill="#e8e6df">Keep DONT_DO.md <tspan fill="#8a8a96"># AI forgets, you shouldn't</tspan></text>
+    <text x="120" y="1122" fill="#5fc26d">&#10003;</text>
+    <text x="170" y="1122" fill="#5fc26d">if confused, the AI is too. clarify first.</text>
+  </g>
+
+  <!-- footer -->
+  <text x="80" y="1226" font-family="Menlo, Consolas, monospace" font-size="22" fill="#6b6357">AI amplifies clarity or confusion. Your choice<tspan fill="#e05e26">.</tspan></text>
+  <text x="80" y="1290" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="800" fill="#2b2b33">Altaf Shaikh</text>
+  <text x="80" y="1318" font-family="Menlo, Consolas, monospace" font-size="17" fill="#8a8375">// AI Engineering</text>
+  <text x="1000" y="1300" font-family="Menlo, Consolas, monospace" font-size="22" font-weight="700" text-anchor="end" fill="#e05e26">@teachmebro</text>
+</svg>

@@ -7,6 +7,9 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 ## In Progress
 
 ## Done
+- [x] claude code features.md → [posts/claude-code-25-tips-20260719/final-post.md](./posts/claude-code-25-tips-20260719/final-post.md) — 2026-07-19
+- [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-20260719/final-post.md](./posts/claude-four-building-blocks-20260719/final-post.md) — 2026-07-19
+- [x] 005-loops-explained-prompt-vs-loop-agent-anatomy.md → [posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md) — 2026-07-19
 - [x] joke-on-say-the-word-by-claude.md — dropped 2026-07-19, drafts reviewed and rejected by Altaf, do not re-process
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md](./posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md) — 2026-07-18
 - [x] ROUTINES.MD → [posts/routines-20260717/final-post.md](./posts/routines-20260717/final-post.md) — 2026-07-17

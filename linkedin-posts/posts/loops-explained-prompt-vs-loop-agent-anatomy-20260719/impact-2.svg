@@ -1,0 +1,50 @@
+<svg width="1200" height="627" viewBox="0 0 1200 627" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="627" fill="#f2ede3"/>
+
+  <!-- dot network decoration -->
+  <g stroke="#c9c2b4" stroke-width="1">
+    <line x1="980" y1="80" x2="1080" y2="140"/>
+    <line x1="1080" y1="140" x2="1030" y2="220"/>
+    <line x1="1030" y1="220" x2="1140" y2="260"/>
+  </g>
+  <circle cx="980" cy="80" r="5" fill="#2f7fd6"/>
+  <circle cx="1080" cy="140" r="4" fill="#b8b1a3"/>
+  <circle cx="1030" cy="220" r="6" fill="#d95f1e"/>
+  <circle cx="1140" cy="260" r="4" fill="#2f7fd6"/>
+
+  <!-- kicker -->
+  <rect x="80" y="74" width="34" height="3" fill="#8a8375"/>
+  <text x="128" y="82" font-family="Menlo, Consolas, monospace" font-size="19" letter-spacing="6" fill="#8a8375">AGENT LOOPS, EXPLAINED</text>
+
+  <!-- headline -->
+  <text x="76" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="96" font-weight="900" fill="#2b2620">Stop <tspan fill="#d95f1e">Prompting</tspan>.</text>
+  <text x="76" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="96" font-weight="900" fill="#2b2620">Design <tspan fill="#2f7fd6">Loops</tspan>.</text>
+
+  <!-- sub-claim with orange bar -->
+  <rect x="80" y="342" width="5" height="74" fill="#d95f1e"/>
+  <text x="104" y="374" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="700" fill="#2b2620">A prompt is an instruction. A loop is a goal</text>
+  <text x="104" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="700" fill="#2b2620">with a <tspan fill="#d95f1e">verifier</tspan>, <tspan fill="#2f7fd6">state</tspan>, and a stop rule.</text>
+
+  <!-- mono stats row -->
+  <g font-family="Menlo, Consolas, monospace">
+    <text x="80" y="490" font-size="40" font-weight="700" fill="#d95f1e">verify</text>
+    <text x="80" y="522" font-size="18" fill="#8a8375">or it grades its own homework</text>
+    <line x1="400" y1="458" x2="400" y2="524" stroke="#c9c2b4" stroke-width="1"/>
+    <text x="432" y="490" font-size="40" font-weight="700" fill="#d95f1e">state</text>
+    <text x="432" y="522" font-size="18" fill="#8a8375">resume, don't restart</text>
+    <line x1="720" y1="458" x2="720" y2="524" stroke="#c9c2b4" stroke-width="1"/>
+    <text x="752" y="490" font-size="40" font-weight="700" fill="#d95f1e">stop rule</text>
+    <text x="752" y="522" font-size="18" fill="#8a8375">never all night for nothing</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="80" y1="556" x2="1120" y2="556" stroke="#c9c2b4" stroke-width="1"/>
+  <text x="80" y="596" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" font-weight="800" fill="#2b2620">Altaf Shaikh</text>
+  <text x="80" y="618" font-family="Menlo, Consolas, monospace" font-size="16" fill="#8a8375">// AI Engineering</text>
+  <text x="1120" y="600" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="700" text-anchor="end" fill="#2f7fd6">@teachmebro</text>
+</svg>

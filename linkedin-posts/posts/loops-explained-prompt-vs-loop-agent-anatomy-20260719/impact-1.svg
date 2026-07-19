@@ -1,0 +1,83 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#fdfcf8"/>
+
+  <text x="540" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="46" font-weight="800" text-anchor="middle" fill="#1f2937">Prompt vs Loop</text>
+  <text x="540" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="23" text-anchor="middle" fill="#6b7280">one waits for you, the other works until it's done</text>
+
+  <!-- Left card: Prompt -->
+  <rect x="70" y="180" width="450" height="360" rx="20" fill="#fef2f2" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="100" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="800" fill="#991b1b">Prompt</text>
+  <text x="100" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="600" fill="#b91c1c" letter-spacing="2">YOU ARE THE ENGINE</text>
+  <text x="100" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="23" fill="#7f1d1d">type a request</text>
+  <text x="100" y="374" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="23" fill="#7f1d1d">wait</text>
+  <text x="100" y="418" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="23" fill="#7f1d1d">fix it</text>
+  <text x="100" y="462" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="23" fill="#7f1d1d">ask again</text>
+  <text x="100" y="514" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" fill="#b91c1c">you stop, it stops</text>
+
+  <!-- Right card: Loop -->
+  <rect x="560" y="180" width="450" height="360" rx="20" fill="#ecfdf5" stroke="#047857" stroke-width="2.5"/>
+  <text x="590" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="800" fill="#065f46">Loop</text>
+  <text x="590" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="600" fill="#047857" letter-spacing="2">THE GOAL IS THE ENGINE</text>
+
+  <!-- cycle diagram -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="700">
+    <rect x="600" y="300" width="170" height="52" rx="10" fill="#ffffff" stroke="#047857" stroke-width="2"/>
+    <text x="685" y="333" text-anchor="middle" fill="#065f46">PLAN</text>
+    <rect x="810" y="300" width="170" height="52" rx="10" fill="#ffffff" stroke="#047857" stroke-width="2"/>
+    <text x="895" y="333" text-anchor="middle" fill="#065f46">EXECUTE</text>
+    <rect x="810" y="400" width="170" height="52" rx="10" fill="#065f46"/>
+    <text x="895" y="433" text-anchor="middle" fill="#d1fae5">VERIFY</text>
+    <rect x="600" y="400" width="170" height="52" rx="10" fill="#ffffff" stroke="#047857" stroke-width="2"/>
+    <text x="685" y="433" text-anchor="middle" fill="#065f46">ITERATE</text>
+  </g>
+  <path d="M 772 326 L 806 326" stroke="#047857" stroke-width="3" fill="none"/>
+  <path d="M 798 318 L 810 326 L 798 334" stroke="#047857" stroke-width="3" fill="none"/>
+  <path d="M 895 354 L 895 396" stroke="#047857" stroke-width="3" fill="none"/>
+  <path d="M 887 388 L 895 400 L 903 388" stroke="#047857" stroke-width="3" fill="none"/>
+  <path d="M 806 426 L 772 426" stroke="#047857" stroke-width="3" fill="none"/>
+  <path d="M 780 418 L 768 426 L 780 434" stroke="#047857" stroke-width="3" fill="none"/>
+  <path d="M 685 396 L 685 356" stroke="#047857" stroke-width="3" fill="none" stroke-dasharray="6 5"/>
+  <path d="M 677 366 L 685 354 L 693 366" stroke="#047857" stroke-width="3" fill="none"/>
+  <text x="785" y="514" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" font-weight="700" text-anchor="middle" fill="#047857">runs until the goal is met</text>
+
+  <!-- Three organs -->
+  <text x="540" y="612" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="800" text-anchor="middle" fill="#1f2937">A real loop has three organs</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="70" y="644" width="296" height="170" rx="16" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="218" y="696" font-size="25" font-weight="800" text-anchor="middle" fill="#b91c1c">VERIFIER</text>
+    <text x="218" y="730" font-size="19" text-anchor="middle" fill="#4b5563">the heart: a gate that</text>
+    <text x="218" y="756" font-size="19" text-anchor="middle" fill="#4b5563">can fail the work,</text>
+    <text x="218" y="782" font-size="19" text-anchor="middle" fill="#4b5563">or it grades itself</text>
+
+    <rect x="392" y="644" width="296" height="170" rx="16" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="540" y="696" font-size="25" font-weight="800" text-anchor="middle" fill="#0e7490">STATE</text>
+    <text x="540" y="730" font-size="19" text-anchor="middle" fill="#4b5563">the memory: done,</text>
+    <text x="540" y="756" font-size="19" text-anchor="middle" fill="#4b5563">failed, next, so runs</text>
+    <text x="540" y="782" font-size="19" text-anchor="middle" fill="#4b5563">resume, not restart</text>
+
+    <rect x="714" y="644" width="296" height="170" rx="16" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="862" y="696" font-size="25" font-weight="800" text-anchor="middle" fill="#6d28d9">STOP RULE</text>
+    <text x="862" y="730" font-size="19" text-anchor="middle" fill="#4b5563">the sanity: succeed,</text>
+    <text x="862" y="756" font-size="19" text-anchor="middle" fill="#4b5563">or hard limit, never</text>
+    <text x="862" y="782" font-size="19" text-anchor="middle" fill="#4b5563">all night for nothing</text>
+  </g>
+
+  <!-- Divider + test -->
+  <rect x="140" y="856" width="800" height="1" fill="#d1d5db"/>
+  <text x="540" y="906" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" text-anchor="middle" fill="#6b7280">Build one only if: it repeats weekly &#183; bad output auto-rejects &#183; agent goes end-to-end &#183; done is objective</text>
+
+  <text x="540" y="972" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="25" font-weight="300" text-anchor="middle" fill="#6b7280" letter-spacing="1">Stop prompting agents. Design loops that prompt them.</text>
+  <text x="540" y="1016" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" font-weight="800" text-anchor="middle" fill="#0891b2">@teachmebro <tspan fill="#9ca3af" font-weight="500" font-size="19">&#183; Altaf Shaikh &#183; AI Engineering</tspan></text>
+</svg>
