@@ -4,7 +4,7 @@ This is the Blog channel's consumption ledger. Raw ideas live in `../raw-ideas/`
 
 ## Queue (unprocessed for Blog)
 
-_(none — every current raw idea has been processed)_
+- [ ] joke-on-say-the-word-by-claude.md — LinkedIn joke about Claude Code "say the word" workflow
 
 ## In Progress
 
@@ -12,6 +12,7 @@ _(none)_
 
 ## Done
 
+- [x] claude code features.md → [posts/claude-code-features/final-post.md](./posts/claude-code-features/final-post.md) — 2026-07-19
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns/final-post.md](./posts/fable5-hybrid-orchestration-patterns/final-post.md) — 2026-07-18
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-14
 - [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-14
