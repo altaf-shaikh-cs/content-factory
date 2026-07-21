@@ -4,6 +4,8 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 ## Queue (unprocessed for LinkedIn)
 
+_Empty — all .md/.txt ideas consumed. Three PDFs in raw-ideas/ are not accepted by this skill (.md/.txt only). Sync them to raw-ideas/ as .md files via /sync-inspiration if they contain new ideas._
+
 ## In Progress
 
 ## Done
