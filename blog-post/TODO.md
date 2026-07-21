@@ -12,6 +12,7 @@ _(none)_
 
 ## Done
 
+- [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md](./posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md) — 2026-07-21
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns/final-post.md](./posts/fable5-hybrid-orchestration-patterns/final-post.md) — 2026-07-18
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-14
 - [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-14

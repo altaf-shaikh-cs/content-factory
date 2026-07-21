@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6f1e6"/>
+      <stop offset="100%" stop-color="#efe8d9"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="url(#bgGrad)"/>
+
+  <!-- decorative node cluster, top right: four building blocks as connected nodes -->
+  <g stroke="#d8d0bc" stroke-width="1.5" fill="none">
+    <line x1="1240" y1="150" x2="1340" y2="90"/>
+    <line x1="1340" y1="90" x2="1440" y2="140"/>
+    <line x1="1440" y1="140" x2="1500" y2="70"/>
+    <line x1="1340" y1="90" x2="1380" y2="200"/>
+  </g>
+  <circle cx="1240" cy="150" r="6" fill="#d2601f"/>
+  <circle cx="1340" cy="90" r="6" fill="#2563eb"/>
+  <circle cx="1440" cy="140" r="5" fill="#d2601f"/>
+  <circle cx="1500" cy="70" r="5" fill="#2563eb"/>
+  <circle cx="1380" cy="200" r="5" fill="#94a3b8"/>
+
+  <!-- eyebrow -->
+  <line x1="90" y1="96" x2="130" y2="96" stroke="#8a8272" stroke-width="3"/>
+  <text x="150" y="103" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="700" letter-spacing="6" fill="#7a7261">AI ADOPTION, RECONSIDERED</text>
+
+  <!-- headline -->
+  <text x="90" y="235" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="86" font-weight="900"><tspan fill="#1c1917">Claude Isn&#8217;t The</tspan><tspan fill="#d2601f" dx="20">Bottleneck.</tspan></text>
+  <text x="90" y="335" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="86" font-weight="900"><tspan fill="#1c1917">Your Setup</tspan><tspan fill="#2563eb" dx="20">Is.</tspan></text>
+
+  <!-- sub-headline with accent bar -->
+  <rect x="90" y="418" width="6" height="98" rx="2" fill="#d2601f"/>
+  <text x="125" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="600" fill="#1c1917">The model was never the <tspan fill="#d2601f">limit</tspan>.</text>
+  <text x="125" y="505" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="600" fill="#1c1917">The setup around it <tspan fill="#2563eb">was</tspan>.</text>
+
+  <!-- divider above building blocks row -->
+  <line x1="90" y1="595" x2="1510" y2="595" stroke="#d8d0bc" stroke-width="1.5"/>
+
+  <!-- four building blocks -->
+  <text x="90" y="670" font-family="Menlo, Consolas, monospace" font-size="40" font-weight="800" fill="#d2601f">Skills</text>
+  <text x="90" y="705" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#6b6558">consistency</text>
+
+  <line x1="427" y1="630" x2="427" y2="720" stroke="#d8d0bc" stroke-width="1.5"/>
+  <text x="463" y="670" font-family="Menlo, Consolas, monospace" font-size="40" font-weight="800" fill="#2563eb">Plugins</text>
+  <text x="463" y="705" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#6b6558">capability</text>
+
+  <line x1="800" y1="630" x2="800" y2="720" stroke="#d8d0bc" stroke-width="1.5"/>
+  <text x="836" y="670" font-family="Menlo, Consolas, monospace" font-size="40" font-weight="800" fill="#d2601f">Projects</text>
+  <text x="836" y="705" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#6b6558">separation</text>
+
+  <line x1="1173" y1="630" x2="1173" y2="720" stroke="#d8d0bc" stroke-width="1.5"/>
+  <text x="1209" y="670" font-family="Menlo, Consolas, monospace" font-size="40" font-weight="800" fill="#2563eb">Artifacts</text>
+  <text x="1209" y="705" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#6b6558">output</text>
+
+  <!-- footer divider -->
+  <line x1="90" y1="795" x2="1510" y2="795" stroke="#d8d0bc" stroke-width="1.5"/>
+
+  <!-- footer: tagline, handle (prominent), author/domain byline -->
+  <text x="1510" y="825" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-style="italic" fill="#8a8272">Claude isn&#8217;t the bottleneck. Your setup is.</text>
+  <text x="1510" y="858" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="800" fill="#2563eb">@teachmebro</text>
+  <text x="1510" y="884" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" fill="#6b6558">Altaf Shaikh &#183; AI Engineering</text>
+</svg>
