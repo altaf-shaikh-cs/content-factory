@@ -3,6 +3,7 @@
 This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS the filenames listed under **Done** below.
 
 ## Queue (unprocessed for LinkedIn)
+_No ideas remaining — all .md ideas in raw-ideas/ have been processed._
 
 ## In Progress
 
