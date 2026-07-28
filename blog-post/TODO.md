@@ -12,6 +12,7 @@ _(none)_
 
 ## Done
 
+- [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips/final-post.md](./posts/25-claude-code-tips/final-post.md) — 2026-07-28
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns/final-post.md](./posts/fable5-hybrid-orchestration-patterns/final-post.md) — 2026-07-18
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-14
 - [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-14
@@ -29,3 +30,5 @@ _(none)_
 **Note (2026-07-16 run):** all 12 raw ideas currently in `../raw-ideas/` already have completed `final-post.md` outputs merged into `main` (confirmed via `git log` on `blog-post/posts/` and an empty result from `gh pr list` for any blog branch). The previous ledger was stale, listing these as "open PR" placeholders from an earlier in-flight state; those PRs have since merged. This run found nothing new to produce and made no branch/PR.
 
 **Note (2026-07-18 run):** `004-fable5-hybrid-orchestration-patterns.md` had been added to `../raw-ideas/` since the last run and had no post folder and no open PR. Picked as the next item.
+
+**Note (2026-07-28 run):** four other raw ideas already had open blog PRs and were skipped to avoid duplication: `005-loops-explained-prompt-vs-loop-agent-anatomy.md` (PR #28), `006-claude-four-building-blocks-skills-plugins-projects-artifacts.md` (PR #29), `claude code features.md` (PR #27), and `joke-on-say-the-word-by-claude.md` (PR #30). `25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf` was the only raw idea with no post folder and no open PR, so it was picked. This ledger's Done section is otherwise stale relative to those 4 in-flight PRs — it will self-correct once they merge and their filenames get added here.
