@@ -4,6 +4,11 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 ## Queue (unprocessed for LinkedIn)
 
+> All `.md` / `.txt` ideas consumed. 3 PDF files remain in `../raw-ideas/` that require manual conversion or `/sync-inspiration` before they can be queued:
+> - `(6) Anatoli Kopadze on X_ _Loops explained_ Claude, GPT, Mira and what actually works_ _ X.pdf`
+> - `25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf`
+> - `The Four Claude Features That Turn AI From Toy to Tool.pdf`
+
 ## In Progress
 
 ## Done
