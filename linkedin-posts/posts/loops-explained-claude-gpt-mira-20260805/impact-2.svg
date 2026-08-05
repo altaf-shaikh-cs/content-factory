@@ -1,0 +1,169 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: cream -->
+  <rect width="1080" height="1080" fill="#f8f7f4"/>
+
+  <!-- Top accent line -->
+  <rect x="60" y="50" width="960" height="4" rx="2" fill="url(#accent2)"/>
+
+  <!-- Category label -->
+  <text x="60" y="96"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="700" letter-spacing="8" fill="#22d3ee">AI ENGINEERING</text>
+
+  <!-- Headline line 1 -->
+  <text x="60" y="178"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="66" font-weight="900" fill="#1a1a2e">Most loops skip</text>
+
+  <!-- Headline line 2 -->
+  <text x="60" y="258"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="66" font-weight="900" fill="#1a1a2e">the Verify step.</text>
+
+  <!-- Sub-headline -->
+  <text x="60" y="298"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" font-weight="400" fill="#6b7280">Here is what the 5 parts look like. And why only one makes it real.</text>
+
+  <!-- Loop cycle: 5 boxes, dims 155w x 90h, start x=113, y=320 -->
+
+  <!-- Box 1: DISCOVER -->
+  <rect x="113" y="320" width="155" height="90" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="190" y="362"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="4" text-anchor="middle" fill="#6b7280">DISCOVER</text>
+  <text x="190" y="392"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="13" text-anchor="middle" fill="#9ca3af">what needs doing</text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="270" y1="365" x2="289" y2="365" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="289,361 295,365 289,369" fill="#94a3b8"/>
+
+  <!-- Box 2: PLAN -->
+  <rect x="295" y="320" width="155" height="90" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="372" y="362"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="4" text-anchor="middle" fill="#6b7280">PLAN</text>
+  <text x="372" y="392"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="13" text-anchor="middle" fill="#9ca3af">decide how</text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="452" y1="365" x2="471" y2="365" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="471,361 477,365 471,369" fill="#94a3b8"/>
+
+  <!-- Box 3: EXECUTE -->
+  <rect x="477" y="320" width="155" height="90" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="554" y="362"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="4" text-anchor="middle" fill="#6b7280">EXECUTE</text>
+  <text x="554" y="392"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="13" text-anchor="middle" fill="#9ca3af">do the work</text>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="634" y1="365" x2="653" y2="365" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="653,361 659,365 653,369" fill="#94a3b8"/>
+
+  <!-- Box 4: VERIFY (highlighted — slightly taller, extended top/bottom) -->
+  <rect x="659" y="313" width="155" height="104" rx="10" fill="#f0fafb" stroke="#22d3ee" stroke-width="3"/>
+  <rect x="659" y="313" width="155" height="4" rx="2" fill="url(#accent2)"/>
+  <text x="736" y="357"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="4" text-anchor="middle" fill="#22d3ee">VERIFY</text>
+  <text x="736" y="385"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="13" text-anchor="middle" fill="#374151">check against goal</text>
+  <text x="736" y="404"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle" fill="#22d3ee">THE GATE</text>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="816" y1="365" x2="835" y2="365" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="835,361 841,365 835,369" fill="#94a3b8"/>
+
+  <!-- Box 5: ITERATE -->
+  <rect x="841" y="320" width="155" height="90" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="918" y="362"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" letter-spacing="4" text-anchor="middle" fill="#6b7280">ITERATE</text>
+  <text x="918" y="392"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="13" text-anchor="middle" fill="#9ca3af">not done? loop back</text>
+
+  <!-- Verify callout -->
+  <text x="540" y="458"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="700" text-anchor="middle" fill="#1a1a2e">Without Verify: the agent grades its own homework.</text>
+  <text x="540" y="490"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" text-anchor="middle" fill="#6b7280">No gate = no loop. Just an expensive spinner.</text>
+
+  <!-- Criteria section -->
+  <rect x="60" y="522" width="960" height="1" fill="#e2e8f0"/>
+  <text x="60" y="554"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="700" letter-spacing="6" fill="#9ca3af">THE 4-CRITERIA TEST</text>
+
+  <!-- Criterion 1 -->
+  <rect x="60" y="572" width="18" height="18" rx="4" fill="#22d3ee"/>
+  <text x="96" y="587"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="600" fill="#1a1a2e">Repeats at least weekly</text>
+  <text x="96" y="612"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" fill="#6b7280">less than that: setup cost never pays back</text>
+
+  <!-- Criterion 2 -->
+  <rect x="60" y="630" width="18" height="18" rx="4" fill="#22d3ee"/>
+  <text x="96" y="645"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="600" fill="#1a1a2e">Something can auto-reject bad output</text>
+  <text x="96" y="670"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" fill="#6b7280">a test, a type check, a hard rule</text>
+
+  <!-- Criterion 3 -->
+  <rect x="60" y="688" width="18" height="18" rx="4" fill="#22d3ee"/>
+  <text x="96" y="703"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="600" fill="#1a1a2e">Agent can do the work end to end</text>
+  <text x="96" y="728"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" fill="#6b7280">not hand half of it back to you</text>
+
+  <!-- Criterion 4 -->
+  <rect x="60" y="746" width="18" height="18" rx="4" fill="#22d3ee"/>
+  <text x="96" y="761"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="600" fill="#1a1a2e">&#8220;Done&#8221; is objective</text>
+  <text x="96" y="786"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" fill="#6b7280">if quality is a judgment call, a human still wins</text>
+
+  <!-- Footer divider -->
+  <rect x="60" y="822" width="960" height="1" fill="#e2e8f0"/>
+
+  <!-- Handle -->
+  <text x="540" y="878"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="32" font-weight="700" text-anchor="middle" fill="#22d3ee">@teachmebro</text>
+
+  <!-- Tagline -->
+  <text x="540" y="930"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" font-weight="300" text-anchor="middle" fill="#9ca3af">A loop without a verifier is just a spinner.</text>
+
+  <!-- Byline -->
+  <text x="540" y="978"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="600" text-anchor="middle" fill="#9ca3af">Altaf Shaikh &#183; AI Engineering</text>
+</svg>
