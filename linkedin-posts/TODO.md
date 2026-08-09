@@ -4,9 +4,12 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 ## Queue (unprocessed for LinkedIn)
 
+_Empty. The two remaining PDFs in `../raw-ideas/` are reference captures of ideas already processed via their synthesized `.md` files (see Done), so they are not queue items._
+
 ## In Progress
 
 ## Done
+- [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → [posts/claude-four-building-blocks-20260805/final-post.md](./posts/claude-four-building-blocks-20260805/final-post.md) — 2026-08-05 (second take on the same source as 006, requested directly; comparison/onboarding angle instead of the 2026-07-19 contrarian one)
 - [x] claude code features.md → [posts/claude-code-25-tips-20260719/final-post.md](./posts/claude-code-25-tips-20260719/final-post.md) — 2026-07-19
 - [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-20260719/final-post.md](./posts/claude-four-building-blocks-20260719/final-post.md) — 2026-07-19
 - [x] 005-loops-explained-prompt-vs-loop-agent-anatomy.md → [posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md) — 2026-07-19
@@ -24,3 +27,5 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 - [x] 003-claude-new-feature-loop.md → [posts/claude-new-feature-loop-20260609/final-post.md](./posts/claude-new-feature-loop-20260609/final-post.md) — 2026-06-09
 - [x] 002-SuperReps-learnings.md → [posts/superreps-learnings-20260608/final-post.md](./posts/superreps-learnings-20260608/final-post.md) — 2026-06-08
 - [x] 001-claude-vs-codex.md → [posts/claude-vs-codex-20260607/final-post.md](./posts/claude-vs-codex-20260607/final-post.md) — 2026-06-07
+
+**Reference captures (not queue items):** `(6) Anatoli Kopadze on X_ _Loops explained...pdf` was consumed as `005-loops-explained-...md`; `25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf` was consumed as `claude code features.md`. Do not process these PDFs separately, they would duplicate shipped posts.

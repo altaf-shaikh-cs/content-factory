@@ -1,0 +1,22 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "The split lands in the first line, the first-person paragraph earns the rest, and the body now ends on cost rather than restating the thesis. No overlap with the 2026-07-19 post's hook or structure beyond the four feature names, which are the subject matter.",
+  "scores": {
+    "C-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.2 }
+  },
+  "runner_up_notes": {},
+  "issues": [],
+  "checks": {
+    "em_dashes": "none",
+    "emojis": "none",
+    "links_in_body": "none, source URL goes to first comment",
+    "company_or_internal_tool_names": "none",
+    "invented_stats": "none, every claim traces to the source PDF",
+    "cta_public_shareable": "yes, open question inviting peers to share their own Skills",
+    "cta_matches_plan": "yes, verbatim",
+    "distinct_from_prior_post_on_this_idea": "yes, comparison/onboarding frame vs prior contrarian/subscriptions frame"
+  }
+}

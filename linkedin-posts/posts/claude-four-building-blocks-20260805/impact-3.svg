@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <rect width="1080" height="1350" fill="#f2efe9"/>
+
+  <!-- decorative node constellation, top right -->
+  <g stroke="#d6d1c6" stroke-width="2" fill="none">
+    <path d="M 812 214 L 902 158 L 962 206 L 1004 132"/>
+  </g>
+  <circle cx="812" cy="214" r="7" fill="#e0511f"/>
+  <circle cx="902" cy="158" r="6" fill="#c9c4b8"/>
+  <circle cx="962" cy="206" r="7" fill="#1a6fd4"/>
+  <circle cx="1004" cy="132" r="6" fill="#c9c4b8"/>
+
+  <!-- eyebrow -->
+  <rect x="80" y="112" width="42" height="4" rx="2" fill="#8b877e"/>
+  <text x="138" y="124" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" font-weight="700" fill="#8b877e" letter-spacing="6">CLAUDE BUILDING BLOCKS</text>
+
+  <!-- headline -->
+  <text x="80" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="92" font-weight="900" fill="#1a1a18">Four features.</text>
+  <text x="80" y="342" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="92" font-weight="900" fill="#1a1a18">Four completely</text>
+  <text x="80" y="436" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="92" font-weight="900" fill="#e0511f">different jobs.</text>
+
+  <!-- subhead with accent bar -->
+  <rect x="80" y="490" width="8" height="112" rx="4" fill="#e0511f"/>
+  <text x="120" y="536" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="36" font-weight="700" fill="#1a1a18">Skills, Plugins, Projects, Artifacts.</text>
+  <text x="120" y="588" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="36" font-weight="700" fill="#1a1a18">Here is <tspan fill="#1a6fd4">which one does what</tspan>.</text>
+
+  <!-- row 1: Skills, emphasised -->
+  <rect x="80" y="654" width="920" height="118" rx="16" fill="#1a1a18"/>
+  <text x="120" y="704" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="700" fill="#e0511f">01</text>
+  <text x="184" y="712" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="46" font-weight="900" fill="#ffffff">Skills</text>
+  <text x="184" y="748" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" fill="#a9a49a">consistency</text>
+  <rect x="792" y="686" width="168" height="52" rx="8" fill="#e0511f"/>
+  <text x="876" y="720" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="2">START HERE</text>
+
+  <!-- row 2 -->
+  <rect x="80" y="788" width="920" height="106" rx="16" fill="#fbfaf7" stroke="#ddd8cc" stroke-width="2"/>
+  <text x="120" y="836" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="700" fill="#b8b2a6">02</text>
+  <text x="184" y="844" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" font-weight="800" fill="#1a1a18">Plugins</text>
+  <text x="960" y="844" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" fill="#e0511f">capability</text>
+
+  <!-- row 3 -->
+  <rect x="80" y="910" width="920" height="106" rx="16" fill="#fbfaf7" stroke="#ddd8cc" stroke-width="2"/>
+  <text x="120" y="958" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="700" fill="#b8b2a6">03</text>
+  <text x="184" y="966" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" font-weight="800" fill="#1a1a18">Projects</text>
+  <text x="960" y="966" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" fill="#e0511f">separation</text>
+
+  <!-- row 4 -->
+  <rect x="80" y="1032" width="920" height="106" rx="16" fill="#fbfaf7" stroke="#ddd8cc" stroke-width="2"/>
+  <text x="120" y="1080" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="700" fill="#b8b2a6">04</text>
+  <text x="184" y="1088" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="42" font-weight="800" fill="#1a1a18">Artifacts</text>
+  <text x="960" y="1088" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" fill="#e0511f">output</text>
+
+  <!-- footer -->
+  <rect x="80" y="1204" width="920" height="3" rx="2" fill="#ddd8cc"/>
+  <text x="80" y="1256" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="700" fill="#3f3c36">Start with Skills. Write one this week.</text>
+  <text x="80" y="1304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="900" fill="#e0511f">@teachmebro</text>
+  <text x="1000" y="1266" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#1a1a18">Altaf Shaikh</text>
+  <text x="1000" y="1302" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" fill="#8b877e">// AI Engineering</text>
+  <circle cx="1000" cy="1330" r="8" fill="#1a6fd4"/>
+  <circle cx="972" cy="1330" r="8" fill="#e0511f"/>
+</svg>
