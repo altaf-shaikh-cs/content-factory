@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">7 / 8</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">FIND YOUR RUNG</text>
+  <text x="88" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#1A1A18">One symptom.</text>
+  <text x="88" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#1A1A18">One next move.</text>
+  <rect x="88" y="414" width="152" height="58" fill="#DDD9CF" rx="10"/>
+  <text x="164" y="452" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="900" fill="#1A1A18" text-anchor="middle" letter-spacing="1">RUNG 1</text>
+  <text x="270" y="442" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="700" fill="#1A1A18">You retype the same context every session</text>
+  <text x="270" y="484" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="24" font-weight="400" fill="#E14B16">&#8594;  save it as a skill, not an agent team</text>
+  <line x1="88" y1="528" x2="992" y2="528" stroke="#D2CEC4" stroke-width="2"/>
+  <rect x="88" y="566" width="152" height="58" fill="#C3D8EF" rx="10"/>
+  <text x="164" y="604" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="900" fill="#1A1A18" text-anchor="middle" letter-spacing="1">RUNG 2</text>
+  <text x="270" y="594" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="700" fill="#1A1A18">Rules are saved, you still read every output</text>
+  <text x="270" y="636" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="24" font-weight="400" fill="#E14B16">&#8594;  add a verifier, not a bigger model</text>
+  <line x1="88" y1="680" x2="992" y2="680" stroke="#D2CEC4" stroke-width="2"/>
+  <rect x="88" y="718" width="152" height="58" fill="#C9DCC2" rx="10"/>
+  <text x="164" y="756" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="900" fill="#1A1A18" text-anchor="middle" letter-spacing="1">RUNG 3</text>
+  <text x="270" y="746" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="700" fill="#1A1A18">Bad output gets rejected, you still press go</text>
+  <text x="270" y="788" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="24" font-weight="400" fill="#E14B16">&#8594;  put it on a schedule</text>
+  <line x1="88" y1="832" x2="992" y2="832" stroke="#D2CEC4" stroke-width="2"/>
+  <rect x="88" y="870" width="152" height="58" fill="#F6D6B8" rx="10"/>
+  <text x="164" y="908" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="900" fill="#1A1A18" text-anchor="middle" letter-spacing="1">RUNG 4</text>
+  <text x="270" y="898" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="700" fill="#1A1A18">Runs without you, one agent grades itself</text>
+  <text x="270" y="940" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="24" font-weight="400" fill="#E14B16">&#8594;  split the maker from the checker</text>
+  <line x1="88" y1="984" x2="992" y2="984" stroke="#D2CEC4" stroke-width="2"/>
+  <rect x="88" y="1022" width="152" height="58" fill="#D5C4EC" rx="10"/>
+  <text x="164" y="1060" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="900" fill="#1A1A18" text-anchor="middle" letter-spacing="1">NOT 5</text>
+  <text x="270" y="1050" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="700" fill="#1A1A18">You jumped straight to a team of agents</text>
+  <text x="270" y="1092" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="24" font-weight="400" fill="#E14B16">&#8594;  go back and earn rung 3 first</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">A rung only holds if the</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">one below it is reliable.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

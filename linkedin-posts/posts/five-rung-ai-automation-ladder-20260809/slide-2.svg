@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">2 / 8</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">THE LADDER</text>
+  <text x="88" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="56" font-weight="900" fill="#1A1A18">Five rungs. Each one is</text>
+  <text x="88" y="324" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="56" font-weight="900" fill="#1A1A18">work you stopped doing.</text>
+  <rect x="88" y="986" width="420" height="122" fill="#DDD9CF" rx="14"/>
+  <rect x="88" y="986" width="8" height="122" fill="#8A8578" rx="4"/>
+  <text x="122" y="1042" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="900" fill="#8A8578">01</text>
+  <text x="184" y="1044" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#1A1A18">PROMPT</text>
+  <text x="184" y="1082" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="400" fill="#8A8578">you are the checker</text>
+  <rect x="88" y="836" width="541" height="122" fill="#C3D8EF" rx="14"/>
+  <rect x="88" y="836" width="8" height="122" fill="#8A8578" rx="4"/>
+  <text x="122" y="892" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="900" fill="#8A8578">02</text>
+  <text x="184" y="894" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#1A1A18">SKILL</text>
+  <text x="184" y="932" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="400" fill="#8A8578">saved once, reused</text>
+  <rect x="88" y="686" width="662" height="122" fill="#C9DCC2" rx="14"/>
+  <rect x="88" y="686" width="8" height="122" fill="#E14B16" rx="4"/>
+  <text x="122" y="742" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="900" fill="#8A8578">03</text>
+  <text x="184" y="744" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#1A1A18">LOOP</text>
+  <text x="184" y="782" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="400" fill="#8A8578">something else checks</text>
+  <rect x="88" y="536" width="783" height="122" fill="#F6D6B8" rx="14"/>
+  <rect x="88" y="536" width="8" height="122" fill="#E14B16" rx="4"/>
+  <text x="122" y="592" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="900" fill="#8A8578">04</text>
+  <text x="184" y="594" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#1A1A18">ROUTINE</text>
+  <text x="184" y="632" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="400" fill="#8A8578">the trigger is not you</text>
+  <rect x="88" y="386" width="904" height="122" fill="#D5C4EC" rx="14"/>
+  <rect x="88" y="386" width="8" height="122" fill="#E14B16" rx="4"/>
+  <text x="122" y="442" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="900" fill="#8A8578">05</text>
+  <text x="184" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#1A1A18">AGENT TEAM</text>
+  <text x="184" y="482" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="400" fill="#8A8578">maker split from checker</text>
+  <text x="992" y="1160" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="700" fill="#8A8578" text-anchor="end">more handed over  &#8594;</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">A rung only holds if the</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">one below it is reliable.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

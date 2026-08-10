@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">1 / 8</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">THE FIVE-RUNG LADDER</text>
+  <text x="88" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="104" font-weight="900" fill="#1A1A18">Your AI</text>
+  <text x="88" y="452" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="104" font-weight="900" fill="#1A1A18">automation</text>
+  <text x="88" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="104" font-weight="900" fill="#1A1A18">didn&#8217;t fail.</text>
+  <rect x="78" y="748" width="700" height="74" fill="#F6C9A8" rx="4" opacity="0.95"/>
+  <text x="88" y="806" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#1A1A18">You skipped a rung.</text>
+  <rect x="88" y="892" width="6" height="96" fill="#E14B16" rx="3"/>
+  <text x="122" y="934" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#1A1A18">Five rungs. Most people jump.</text>
+  <text x="122" y="976" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#1A1A18">The rung you skipped is the work you kept.</text>
+  <text x="88" y="1080" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="700" fill="#8A8578" letter-spacing="2">prompt  &#183;  skill  &#183;  loop  &#183;  routine  &#183;  agent team</text>
+  <line x1="742" y1="300" x2="860" y2="246" stroke="#8A8578" stroke-width="2" opacity="0.4"/>
+  <line x1="860" y1="246" x2="952" y2="322" stroke="#8A8578" stroke-width="2" opacity="0.4"/>
+  <line x1="952" y1="322" x2="884" y2="404" stroke="#8A8578" stroke-width="2" opacity="0.4"/>
+  <line x1="884" y1="404" x2="790" y2="386" stroke="#8A8578" stroke-width="2" opacity="0.4"/>
+  <circle cx="742" cy="300" r="7" fill="#E14B16" opacity="0.8"/>
+  <circle cx="860" cy="246" r="7" fill="#1668D6" opacity="0.8"/>
+  <circle cx="952" cy="322" r="7" fill="#E14B16" opacity="0.8"/>
+  <circle cx="884" cy="404" r="7" fill="#1668D6" opacity="0.8"/>
+  <circle cx="790" cy="386" r="7" fill="#E14B16" opacity="0.8"/>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">A rung only holds if the</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">one below it is reliable.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">3 / 8</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">RUNGS 1 AND 2</text>
+  <text x="88" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="60" font-weight="900" fill="#1A1A18">Typed every time,</text>
+  <text x="88" y="336" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="60" font-weight="900" fill="#1A1A18">then saved once.</text>
+  <rect x="88" y="452" width="904" height="316" fill="#DDD9CF" rx="18"/>
+  <text x="132" y="530" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="44" font-weight="900" fill="#8A8578">01</text>
+  <text x="216" y="532" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#1A1A18">PROMPT</text>
+  <text x="132" y="604" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="33" font-weight="400" fill="#1A1A18">You are the memory, the planner</text>
+  <text x="132" y="648" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="33" font-weight="400" fill="#1A1A18">and the checker. All of it.</text>
+  <rect x="132" y="698" width="5" height="44" fill="#E14B16" rx="3"/>
+  <text x="158" y="730" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578">close the tab and it is gone</text>
+  <rect x="88" y="808" width="904" height="316" fill="#C3D8EF" rx="18"/>
+  <text x="132" y="886" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="44" font-weight="900" fill="#8A8578">02</text>
+  <text x="216" y="888" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#1A1A18">SKILL</text>
+  <text x="132" y="960" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="33" font-weight="400" fill="#1A1A18">Your rules written down once,</text>
+  <text x="132" y="1004" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="33" font-weight="400" fill="#1A1A18">picked up every time they fit.</text>
+  <rect x="132" y="1054" width="5" height="44" fill="#E14B16" rx="3"/>
+  <text x="158" y="1086" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578">no re-explaining it every Monday</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">A rung only holds if the</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">one below it is reliable.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

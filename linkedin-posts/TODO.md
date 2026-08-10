@@ -6,9 +6,12 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 _Empty. The two remaining PDFs in `../raw-ideas/` are reference captures of ideas already processed via their synthesized `.md` files (see Done), so they are not queue items._
 
+**Note on a drained queue:** when every source idea is consumed, the next move is a DERIVED idea, a pattern that runs across several ideas but is not written in any single one. Read the whole library at once, find the recurring structure, and register it as a new `raw-ideas/<NNN>-*.md` so other channels can consume it too. `007-five-rung-ai-automation-ladder.md` is the first of these.
+
 ## In Progress
 
 ## Done
+- [x] 007-five-rung-ai-automation-ladder.md → [posts/five-rung-ai-automation-ladder-20260809/final-post.md](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 2026-08-09 (DERIVED cross-idea, synthesized from 15 library ideas rather than sourced from one. First document carousel on the account, 8 slides + caption.)
 - [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → [posts/claude-four-building-blocks-20260805/final-post.md](./posts/claude-four-building-blocks-20260805/final-post.md) — 2026-08-05 (second take on the same source as 006, requested directly; comparison/onboarding angle instead of the 2026-07-19 contrarian one)
 - [x] claude code features.md → [posts/claude-code-25-tips-20260719/final-post.md](./posts/claude-code-25-tips-20260719/final-post.md) — 2026-07-19
 - [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-20260719/final-post.md](./posts/claude-four-building-blocks-20260719/final-post.md) — 2026-07-19

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">6 / 8</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">THE RULE</text>
+  <text x="88" y="316" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="76" font-weight="900" fill="#1A1A18">A rung only holds</text>
+  <text x="88" y="408" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="76" font-weight="900" fill="#1A1A18">if the one below it</text>
+  <text x="88" y="500" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="76" font-weight="900" fill="#E14B16">is reliable.</text>
+  <text x="88" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#8A8578">So the order is not negotiable:</text>
+  <rect x="88" y="716" width="58" height="58" fill="#C3D8EF" rx="29"/>
+  <text x="117" y="755" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="900" fill="#1A1A18" text-anchor="middle">1</text>
+  <text x="176" y="756" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A18">one manual run you trust</text>
+  <line x1="117" y1="774" x2="117" y2="804" stroke="#8A8578" stroke-width="3" opacity="0.6"/>
+  <rect x="88" y="804" width="58" height="58" fill="#C9DCC2" rx="29"/>
+  <text x="117" y="843" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="900" fill="#1A1A18" text-anchor="middle">2</text>
+  <text x="176" y="844" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A18">save it as a skill</text>
+  <line x1="117" y1="862" x2="117" y2="892" stroke="#8A8578" stroke-width="3" opacity="0.6"/>
+  <rect x="88" y="892" width="58" height="58" fill="#F6D6B8" rx="29"/>
+  <text x="117" y="931" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="900" fill="#1A1A18" text-anchor="middle">3</text>
+  <text x="176" y="932" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A18">wrap it in a loop with a gate</text>
+  <line x1="117" y1="950" x2="117" y2="980" stroke="#8A8578" stroke-width="3" opacity="0.6"/>
+  <rect x="88" y="980" width="58" height="58" fill="#D5C4EC" rx="29"/>
+  <text x="117" y="1019" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="900" fill="#1A1A18" text-anchor="middle">4</text>
+  <text x="176" y="1020" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1A1A18">then put it on a schedule</text>
+  <rect x="88" y="1076" width="6" height="76" fill="#E14B16" rx="3"/>
+  <text x="122" y="1108" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#8A8578">Scheduling what you never made reliable by hand</text>
+  <text x="122" y="1142" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#8A8578">is how automations burn money overnight.</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">A rung only holds if the</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">one below it is reliable.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

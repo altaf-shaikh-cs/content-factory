@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "variants_reviewed": ["B-revised"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "The revision keeps the indictment hook and the load-bearing rule inside the first three lines, which is everything above the see-more fold, and it hands the teaching job to the deck instead of duplicating it. The caption now works on its own and still leaves a reason to swipe.",
+  "scores": {
+    "B-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.2 }
+  },
+  "runner_up_notes": {},
+  "issues": [
+    {
+      "type": "too_long",
+      "severity": "low",
+      "description": "176 words against a 130 to 160 target. The overage sits entirely in the build-evidence paragraph, which is also the only concrete proof in the caption.",
+      "action": "Accepted as-is. Cutting further would trade the post's only piece of real evidence for 16 words. Flag as an unresolved low-severity issue rather than resolving it."
+    },
+    {
+      "type": "off_plan",
+      "severity": "low",
+      "description": "The caption names the five rungs inline, which slide 2 also carries.",
+      "action": "Accepted. Naming the rungs is what makes the claim parseable to someone who never swipes, and the deck expands each rung rather than repeating a bare list. Not a duplication in substance."
+    }
+  ]
+}
