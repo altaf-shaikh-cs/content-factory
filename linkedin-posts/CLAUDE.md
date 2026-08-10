@@ -43,6 +43,8 @@ Full skill definition: `.claude/skills/linkedin-growth-agent/SKILL.md`.
 | "add performance data" / drops CSV in csv-imports/    | Run `/linkedin-growth-agent` — Agent 0 will detect and process the CSV automatically. |
 | "how do I export from LinkedIn?"                      | Point to [`performance/HOWTO.md`](./performance/HOWTO.md).             |
 | "what's working?" / "show me patterns"                | Read [`performance/tracker.md`](./performance/tracker.md) Pattern Summary section. |
+| A post gets big impressions (>1,000)                  | Ask for the **single-post** export too. Aggregate alone can't tell a breakout from rented reach. See [`performance/HOWTO.md`](./performance/HOWTO.md) Path A2. |
+| "this format is working" / "let's do more X"          | Check capture rate before agreeing. High impressions with <0.1% capture is rented reach, not a win. |
 
 ---
 

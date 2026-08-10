@@ -81,6 +81,20 @@ content-stratergy/                          ← project root
 
 **N parsing:** if the args start with a small integer (e.g. `/linkedin-growth-agent 3 ...`), that's N. Otherwise N=2. Max N=4.
 
+### Step 0.5 — Unshipped inventory check (runs before generating anything)
+
+Read the `## Unshipped register` section of `./linkedin-posts/performance/tracker.md`.
+
+**If it lists any post, print this before continuing:**
+
+```
+[UNSHIPPED INVENTORY]
+<N> finished posts have never been published: <slugs>
+Generation is not the bottleneck. Ship these before adding more.
+```
+
+Then continue with the run — do not block. The user decides. But never generate silently on top of a backlog of finished, unpublished work; the 2026-08 import found four such posts while the pipeline kept producing.
+
 If the idea is too vague to plan around, ask ONE clarifying question. Otherwise start immediately.
 
 Create the per-post folder: `./linkedin-posts/posts/<slug>-<YYYYMMDD>/`.
@@ -172,9 +186,14 @@ Print `[HANDOFF: STRATEGIST]` AND save to `01-post-plan.md`:
 ## Image Brief
 <3-6 numbers/data points the image should carry · 1 tagline · before/after framing if applicable>
 
+## Format
+<one of: text-only | text + image | carousel | meme/reach — chosen via the Format Selection rules below, with a one-line rationale>
+
 ## Performance Context
 <only include if tracker.md has ≥3 posts with data — omit block entirely if not>
 - Best performing angle so far: <angle type + avg engagement rate>
+- Best capture rate so far: <slug + %> — the post that actually grew the account
+- Format trade: <what the reach format costs in conversion, from tracker's Format performance table>
 - Hook styles that drove comments: <observation>
 - Hook styles that drove passive reactions only: <observation>
 - Topics/themes that resonated: <pattern>
@@ -197,6 +216,35 @@ If N=4, add a second adaptive angle — pick the next-best match from the same l
 
 State the chosen Angle C (and D if N=4) here AND give a one-line rationale: "Chose <angle> because <which decision rule matched + brief evidence from the idea>."
 ```
+
+### Format Selection (Strategist decides, before angles)
+
+Formats do different jobs. Pick the job first, then the angle.
+
+| Format | Job | Grade it on |
+|---|---|---|
+| Text-only / text + image | **Conversion** — the account's engagement lives here | Engagement rate, comment rate |
+| Carousel | **Depth** — frameworks, diagnostics, step-by-step | Saves, then capture rate |
+| Meme / reach post | **Distribution** — buys cold audience nothing else reaches | Capture rate and reposts. **Never engagement rate.** |
+
+**Rules:**
+
+1. **Default to text + image.** It is where this account converts (4.47% avg vs 0.70% for the one meme on record).
+2. **Budget reach posts at roughly 1 in 4–5.** Count back through `TODO.md` Done and the tracker's log. If the last 4+ posts were all text, a meme is due. If the previous post was a meme, this one is not.
+3. **A reach post must be sequenced.** Never ship a meme with nothing behind it. Note in the plan: "Follow within 24–48h with <the next conversion post>." The 2026-08-09 meme reached 4,113 strangers, was followed by nothing, and captured zero of them.
+4. **Carousel only for genuine frameworks** with a diagnostic or checklist worth saving. Put the saveable slide at **position 2, not the end** — if people don't swipe, a slide-7 payoff is never seen.
+5. **Choose on the idea's shape, not on variety for its own sake.** A tactical framework is not a meme. A cultural joke is not a carousel.
+
+### Reach-post track (when Format = meme/reach)
+
+Skips the standard N-copywriter pipeline. Produce a concept plus a caption, and enforce all four bridge requirements — the 8/9 meme met none of them and captured nobody:
+
+1. **Visual signature** — the same frame, type treatment, and corner mark every time, so repeat exposure compounds into recognition instead of evaporating. Check previous reach posts and reuse their signature.
+2. **A converting caption line** — after the joke lands, one plain line saying what Altaf actually builds. Not a hard CTA. A reason the follow makes sense to someone who just met him.
+3. **A shared enemy or a real pain**, not observational nostalgia. Reposts happen when a reader wants their team to see it. Ask: "would someone send this to a colleague to make a point?" If no, it will get reactions and go nowhere.
+4. **A named follow-up post** in the plan, to ship within 24–48h.
+
+Editor scores a reach post on: signature present, converting line present, repost-worthiness, and whether the humour is on-topic enough that laughing at it implies interest in Altaf's subject. Hook/authenticity/readability scoring does not apply.
 
 ---
 

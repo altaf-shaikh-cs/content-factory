@@ -10,7 +10,19 @@ _Empty. The two remaining PDFs in `../raw-ideas/` are reference captures of idea
 
 ## In Progress
 
+## Ready to ship (generated, never published)
+
+Confirmed against the 2026-08-10 analytics export: these have a finished `final-post.md` and **zero LinkedIn impressions**. The export lists posts down to a single impression, so absence means unpublished, not underperforming. **Shipping these outranks generating anything new.**
+
+- [ ] [five-rung-ai-automation-ladder-20260809](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 8-slide document carousel + caption. Would be the account's first carousel. Note before posting: move the diagnostic (slide 7) to slide 2.
+- [ ] [claude-code-25-tips-20260719](./posts/claude-code-25-tips-20260719/final-post.md)
+- [ ] [claude-four-building-blocks-20260719](./posts/claude-four-building-blocks-20260719/final-post.md) — contrarian angle. The 8/5 second take on the same source shipped and hit 5.15%, the best rate of the period.
+- [ ] [loops-explained-prompt-vs-loop-agent-anatomy-20260719](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md)
+
+Also never seen in any export across three periods, presume unpublished: `superreps-learnings-20260608`, `build-your-first-agents-team-20260616`, `just-text-20260629`, `just-text-20260714`, `run-your-own-agent-acengy-with-paperclip-20260630`.
+
 ## Done
+- [x] _(off-pipeline)_ → [posts/parle-g-ai-meme-20260809/final-post.md](./posts/parle-g-ai-meme-20260809/final-post.md) — 2026-08-09. Not from `raw-ideas/`, made directly by Altaf. Logged because it is the account's highest-reaching post ever: 6,387 impressions, 4,113 reached, **0 followers gained**. Established the reach-vs-capture distinction now encoded in the tracker and both skills.
 - [x] 007-five-rung-ai-automation-ladder.md → [posts/five-rung-ai-automation-ladder-20260809/final-post.md](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 2026-08-09 (DERIVED cross-idea, synthesized from 15 library ideas rather than sourced from one. First document carousel on the account, 8 slides + caption.)
 - [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → [posts/claude-four-building-blocks-20260805/final-post.md](./posts/claude-four-building-blocks-20260805/final-post.md) — 2026-08-05 (second take on the same source as 006, requested directly; comparison/onboarding angle instead of the 2026-07-19 contrarian one)
 - [x] claude code features.md → [posts/claude-code-25-tips-20260719/final-post.md](./posts/claude-code-25-tips-20260719/final-post.md) — 2026-07-19
