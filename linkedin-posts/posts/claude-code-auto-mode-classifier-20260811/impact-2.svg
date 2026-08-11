@@ -1,0 +1,189 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="termBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cream background -->
+  <rect width="1080" height="1080" fill="#faf6f0"/>
+
+  <!-- Orange top stripe -->
+  <rect x="0" y="0" width="1080" height="7" fill="url(#orangeGrad)"/>
+
+  <!-- Category badge -->
+  <rect x="80" y="48" width="265" height="42" rx="4" fill="url(#orangeGrad)"/>
+  <text x="96" y="75"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" font-weight="700" letter-spacing="5" fill="#ffffff">CLAUDE CODE</text>
+
+  <!-- "AUTO MODE" secondary badge -->
+  <rect x="359" y="48" width="178" height="42" rx="4" fill="#0f172a"/>
+  <text x="375" y="75"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" font-weight="700" letter-spacing="5" fill="#94a3b8">AUTO MODE</text>
+
+  <!-- Left column: big numbers (x=80 to x=530) -->
+
+  <!-- HUMAN label -->
+  <text x="80" y="148"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="6" fill="#9ca3af">HUMAN REVIEWER</text>
+
+  <!-- 13.6% in red -->
+  <text x="80" y="278"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="118" font-weight="900" fill="#dc2626">13.6%</text>
+
+  <!-- catch rate sub -->
+  <text x="80" y="310"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" fill="#9ca3af">catch rate on dangerous commands</text>
+
+  <!-- Orange divider -->
+  <rect x="80" y="342" width="440" height="3" rx="1" fill="url(#orangeGrad)"/>
+
+  <!-- AI CLASSIFIER label -->
+  <text x="80" y="390"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="6" fill="#9ca3af">AI CLASSIFIER</text>
+
+  <!-- 89% in orange -->
+  <text x="80" y="538"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="148" font-weight="900" fill="#ea580c">89%</text>
+
+  <!-- catch rate sub -->
+  <text x="80" y="570"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" fill="#9ca3af">catch rate &#183; auto mode &#183; consistent</text>
+
+  <!-- Three stat mini-badges: 1053 | 5% | Aug 14 -->
+  <!-- Badge 1 -->
+  <rect x="80" y="604" width="135" height="64" rx="8" fill="#f0ebe3"/>
+  <text x="147" y="630"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="900" text-anchor="middle" fill="#0f172a">1,053</text>
+  <text x="147" y="653"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="12" font-weight="600" letter-spacing="3" text-anchor="middle" fill="#9ca3af">TESTERS</text>
+
+  <!-- Badge 2 -->
+  <rect x="228" y="604" width="135" height="64" rx="8" fill="#f0ebe3"/>
+  <text x="295" y="630"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="900" text-anchor="middle" fill="#dc2626">5%</text>
+  <text x="295" y="653"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="12" font-weight="600" letter-spacing="3" text-anchor="middle" fill="#9ca3af">AT PROMPT 50</text>
+
+  <!-- Badge 3 -->
+  <rect x="376" y="604" width="143" height="64" rx="8" fill="#f0ebe3"/>
+  <text x="447" y="630"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="900" text-anchor="middle" fill="#ea580c">Aug 14</text>
+  <text x="447" y="653"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="12" font-weight="600" letter-spacing="3" text-anchor="middle" fill="#9ca3af">NEW DEFAULT</text>
+
+  <!-- Right column: dark terminal panel (x=570 to x=1000, y=115 to y=695) -->
+  <rect x="570" y="115" width="430" height="560" rx="10" fill="url(#termBg)"/>
+  <!-- Terminal header bar -->
+  <rect x="570" y="115" width="430" height="44" rx="10" fill="#1e293b"/>
+  <rect x="570" y="144" width="430" height="15" fill="#1e293b"/>
+  <!-- Traffic lights -->
+  <circle cx="602" cy="137" r="7" fill="#ef4444" fill-opacity="0.75"/>
+  <circle cx="622" cy="137" r="7" fill="#f59e0b" fill-opacity="0.75"/>
+  <circle cx="642" cy="137" r="7" fill="#22c55e" fill-opacity="0.75"/>
+  <!-- Terminal text -->
+  <text x="590" y="192"
+        font-family="'Courier New', Courier, monospace"
+        font-size="13" fill="#22d3ee">$ classifier blocks:</text>
+  <text x="590" y="216"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; curl | bash executions</text>
+  <text x="590" y="236"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; production deploys</text>
+  <text x="590" y="256"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; force-push / hard reset</text>
+  <text x="590" y="276"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; terraform destroy</text>
+  <text x="590" y="296"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; live credentials</text>
+  <text x="590" y="316"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; IAM / DNS changes</text>
+  <!-- separator -->
+  <rect x="590" y="334" width="388" height="1" fill="#334155"/>
+  <text x="590" y="360"
+        font-family="'Courier New', Courier, monospace"
+        font-size="13" fill="#22d3ee">$ allows without prompt:</text>
+  <text x="590" y="384"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; local file operations</text>
+  <text x="590" y="404"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; installing from lockfile</text>
+  <text x="590" y="424"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; pushing to working repo</text>
+  <text x="590" y="444"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">&#x2022; read-only HTTP</text>
+  <!-- separator -->
+  <rect x="590" y="462" width="388" height="1" fill="#334155"/>
+  <text x="590" y="490"
+        font-family="'Courier New', Courier, monospace"
+        font-size="13" fill="#a78bfa">$ architecture:</text>
+  <text x="590" y="514"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">Layer 1: your settings.json rules</text>
+  <text x="590" y="534"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">Layer 2: Sonnet 5 classifier</text>
+  <text x="590" y="558"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">Blocks 3x in a row? Falls back.</text>
+  <!-- separator -->
+  <rect x="590" y="575" width="388" height="1" fill="#334155"/>
+  <text x="590" y="598"
+        font-family="'Courier New', Courier, monospace"
+        font-size="13" fill="#ea580c">$ default: Aug 14, 2026</text>
+  <text x="590" y="622"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#64748b">Pro &#183; Max &#183; Team plans</text>
+  <text x="590" y="646"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#22d3ee">1 classifier. Consistent. &#x25AE;</text>
+
+  <!-- Footer section -->
+  <!-- Full-width divider -->
+  <rect x="0" y="735" width="1080" height="2" fill="#e8e0d5"/>
+
+  <!-- Tagline (left) -->
+  <text x="80" y="798"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="300" fill="#6b7280">Auto mode doesn&#8217;t skip the check. It upgrades who runs it.</text>
+
+  <!-- Handle prominent (orange) -->
+  <text x="80" y="864"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="36" font-weight="700" fill="#ea580c">@teachmebro</text>
+
+  <!-- Byline smaller -->
+  <text x="80" y="916"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="500" fill="#9ca3af">Altaf Shaikh &#183; AI Engineering / Developer Tools</text>
+
+  <!-- Bottom orange stripe -->
+  <rect x="0" y="1073" width="1080" height="7" fill="url(#orangeGrad)"/>
+</svg>

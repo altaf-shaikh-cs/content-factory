@@ -4,9 +4,7 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 ## Queue (unprocessed for LinkedIn)
 
-_Empty. The two remaining PDFs in `../raw-ideas/` are reference captures of ideas already processed via their synthesized `.md` files (see Done), so they are not queue items._
-
-**Note on a drained queue:** when every source idea is consumed, the next move is a DERIVED idea, a pattern that runs across several ideas but is not written in any single one. Read the whole library at once, find the recurring structure, and register it as a new `raw-ideas/<NNN>-*.md` so other channels can consume it too. `007-five-rung-ai-automation-ladder.md` is the first of these.
+_Empty after this run. (The two PDFs in `../raw-ideas/` are reference captures already processed via their `.md` equivalents — see Done.)_
 
 ## In Progress
 
@@ -22,6 +20,7 @@ Confirmed against the 2026-08-10 analytics export: these have a finished `final-
 Also never seen in any export across three periods, presume unpublished: `superreps-learnings-20260608`, `build-your-first-agents-team-20260616`, `just-text-20260629`, `just-text-20260714`, `run-your-own-agent-acengy-with-paperclip-20260630`.
 
 ## Done
+- [x] 007-claude-code-auto-mode-classifier.md → [posts/claude-code-auto-mode-classifier-20260811/final-post.md](./posts/claude-code-auto-mode-classifier-20260811/final-post.md) — 2026-08-11
 - [x] _(off-pipeline)_ → [posts/parle-g-ai-meme-20260809/final-post.md](./posts/parle-g-ai-meme-20260809/final-post.md) — 2026-08-09. Not from `raw-ideas/`, made directly by Altaf. Logged because it is the account's highest-reaching post ever: 6,387 impressions, 4,113 reached, **0 followers gained**. Established the reach-vs-capture distinction now encoded in the tracker and both skills.
 - [x] 007-five-rung-ai-automation-ladder.md → [posts/five-rung-ai-automation-ladder-20260809/final-post.md](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 2026-08-09 (DERIVED cross-idea, synthesized from 15 library ideas rather than sourced from one. First document carousel on the account, 8 slides + caption.)
 - [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips-20260809/final-post.md](./posts/25-claude-code-tips-20260809/final-post.md) — 2026-08-09
