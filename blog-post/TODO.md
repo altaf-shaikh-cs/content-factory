@@ -13,6 +13,7 @@ _(none)_
 ## Done
 
 - [x] 007-claude-code-auto-mode-classifier.md → [posts/claude-code-auto-mode-classifier/final-post.md](./posts/claude-code-auto-mode-classifier/final-post.md) — 2026-08-11
+- [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips/final-post.md](./posts/25-claude-code-tips/final-post.md) — 2026-07-28
 - [x] joke-on-say-the-word-by-claude.md → [posts/joke-on-say-the-word-by-claude/final-post.md](./posts/joke-on-say-the-word-by-claude/final-post.md) — 2026-07-22
 - [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md](./posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md) — 2026-07-21
 - [x] 005-loops-explained-prompt-vs-loop-agent-anatomy.md → [posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md) — 2026-07-20
@@ -36,3 +37,5 @@ _(none)_
 **Note (2026-07-18 run):** `004-fable5-hybrid-orchestration-patterns.md` had been added to `../raw-ideas/` since the last run and had no post folder and no open PR. Picked as the next item.
 
 **Note (2026-07-22 run):** checked `gh pr list` on the fork before picking. `005-loops-explained-prompt-vs-loop-agent-anatomy.md` (PR #28) and `006-claude-four-building-blocks-skills-plugins-projects-artifacts.md` (PR #29) already have open, unmerged blog PRs from prior runs, whose branches update this file's Done section themselves once merged, so they're intentionally not listed here yet to avoid duplicating that entry. `claude code features.md` also already has an open PR (#27). The only raw idea with no post folder and no open PR was `joke-on-say-the-word-by-claude.md`, picked for this run. Once PRs #27, #28, #29 merge, their Done entries will land with them; this run adds only its own.
+
+**Note (2026-07-28 run):** four other raw ideas already had open blog PRs and were skipped to avoid duplication: `005-loops-explained-prompt-vs-loop-agent-anatomy.md` (PR #28), `006-claude-four-building-blocks-skills-plugins-projects-artifacts.md` (PR #29), `claude code features.md` (PR #27), and `joke-on-say-the-word-by-claude.md` (PR #30). `25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf` was the only raw idea with no post folder and no open PR, so it was picked. This ledger's Done section is otherwise stale relative to those 4 in-flight PRs — it will self-correct once they merge and their filenames get added here.
