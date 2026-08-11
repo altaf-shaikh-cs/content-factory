@@ -1,0 +1,24 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "The opening two lines present the key comparison as a cold fact before any framing arrives — 13.6% vs 89%, no context needed, reader is already processing. Strongest hook of the three and the cleanest structure throughout. The allowed/blocked bullet lists make the practical implications scan faster than the prose equivalents in A or the numbered-list structure in B. Performance data supports this angle: comparison/split-screen hit 5.15% on the account's strongest Period 3 conversion post.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 9, "readability": 9, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.6 },
+    "B": { "hook_strength": 8, "authenticity": 7, "readability": 7, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.2 },
+    "C": { "hook_strength": 10, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.2 }
+  },
+  "runner_up_notes": {
+    "A": "A's 'not because you're careless — because that's how attention works' is the most human-sounding line of the three. Worth noting for future posts on fatigue/attention themes.",
+    "B": "B's numbered-list layer explanation (1. rules, 2. classifier) is clean but the overall register skews toward product announcement. The bold claim opener is strong; execution slightly too formal."
+  },
+  "issues": [
+    {
+      "type": "jargon",
+      "severity": "low",
+      "description": "The two-layers section in C uses 'Layer 1/Layer 2' as formal labels, which feel slightly mechanical for a LinkedIn audience used to plain prose.",
+      "action": "Simplify to: 'Your explicit allow/deny rules in settings.json run first. Deterministic. Absolute. / The classifier covers everything you didn't write a rule for.' — removes the label formality while keeping the logical sequence intact."
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="acc1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tile1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2538"/>
+      <stop offset="100%" stop-color="#141e2d"/>
+    </linearGradient>
+    <linearGradient id="humanTile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#200c0c"/>
+      <stop offset="100%" stop-color="#141e2d"/>
+    </linearGradient>
+    <linearGradient id="classifierTile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#061a20"/>
+      <stop offset="100%" stop-color="#141e2d"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg1)"/>
+
+  <!-- Top accent line -->
+  <rect x="80" y="80" width="920" height="4" rx="2" fill="url(#acc1)"/>
+
+  <!-- Category label -->
+  <text x="80" y="154"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" letter-spacing="8" fill="#22d3ee">AI ENGINEERING</text>
+
+  <!-- Hero section label -->
+  <text x="540" y="202"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#475569">SAFETY CATCH RATE</text>
+
+  <!-- Left hero tile: HUMAN REVIEWER -->
+  <rect x="80" y="220" width="438" height="305" rx="16" fill="url(#humanTile)"/>
+  <rect x="80" y="220" width="438" height="4" rx="2" fill="#ef4444"/>
+  <text x="299" y="278"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" font-weight="700" letter-spacing="6" text-anchor="middle" fill="#ef4444">HUMAN</text>
+  <text x="299" y="395"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="96" font-weight="900" text-anchor="middle" fill="#ef4444">13.6%</text>
+  <text x="299" y="438"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="400" text-anchor="middle" fill="#94a3b8">catch rate</text>
+  <text x="299" y="466"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" text-anchor="middle" fill="#64748b">manual permission prompts</text>
+  <text x="299" y="490"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" text-anchor="middle" fill="#64748b">declines to 5% by prompt 50</text>
+
+  <!-- VS -->
+  <text x="540" y="388"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" text-anchor="middle" fill="#334155">vs</text>
+
+  <!-- Right hero tile: AI CLASSIFIER -->
+  <rect x="562" y="220" width="438" height="305" rx="16" fill="url(#classifierTile)"/>
+  <rect x="562" y="220" width="438" height="4" rx="2" fill="url(#acc1)"/>
+  <text x="781" y="278"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" font-weight="700" letter-spacing="6" text-anchor="middle" fill="#22d3ee">AI CLASSIFIER</text>
+  <text x="781" y="395"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="120" font-weight="900" text-anchor="middle" fill="url(#acc1)">89%</text>
+  <text x="781" y="438"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="400" text-anchor="middle" fill="#94a3b8">catch rate</text>
+  <text x="781" y="466"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" text-anchor="middle" fill="#64748b">auto mode · Claude Code</text>
+  <text x="781" y="490"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" text-anchor="middle" fill="#64748b">stays consistent</text>
+
+  <!-- Section divider -->
+  <rect x="80" y="568" width="920" height="1" fill="#ffffff" fill-opacity="0.08"/>
+
+  <!-- Stat tiles: 3 columns -->
+  <!-- Tile 1: study size -->
+  <rect x="80" y="592" width="277" height="228" rx="16" fill="url(#tile1)"/>
+  <rect x="80" y="592" width="277" height="4" rx="2" fill="url(#acc1)"/>
+  <text x="218" y="688"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="52" font-weight="900" text-anchor="middle" fill="url(#acc1)">1,053</text>
+  <text x="218" y="728"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">TESTERS</text>
+  <text x="218" y="760"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" text-anchor="middle" fill="#475569">in Anthropic&#8217;s study</text>
+  <text x="218" y="780"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" text-anchor="middle" fill="#475569">on permission fatigue</text>
+
+  <!-- Tile 2: fatigue decay -->
+  <rect x="401" y="592" width="277" height="228" rx="16" fill="url(#tile1)"/>
+  <rect x="401" y="592" width="277" height="4" rx="2" fill="#ef4444"/>
+  <text x="539" y="688"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="52" font-weight="900" text-anchor="middle" fill="#ef4444">5%</text>
+  <text x="539" y="728"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">BY PROMPT 50</text>
+  <text x="539" y="760"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" text-anchor="middle" fill="#475569">human catch rate</text>
+  <text x="539" y="780"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" text-anchor="middle" fill="#475569">after fatigue sets in</text>
+
+  <!-- Tile 3: rollout date -->
+  <rect x="722" y="592" width="278" height="228" rx="16" fill="url(#tile1)"/>
+  <rect x="722" y="592" width="278" height="4" rx="2" fill="url(#acc1)"/>
+  <text x="861" y="680"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="44" font-weight="900" text-anchor="middle" fill="url(#acc1)">Aug 14</text>
+  <text x="861" y="728"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">DEFAULT</text>
+  <text x="861" y="760"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" text-anchor="middle" fill="#475569">Pro, Max &#38; Team</text>
+  <text x="861" y="780"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="15" text-anchor="middle" fill="#475569">plans, 2026</text>
+
+  <!-- Comparison bars section -->
+  <rect x="80" y="870" width="920" height="1" fill="#ffffff" fill-opacity="0.06"/>
+
+  <!-- Bar 1: Human -->
+  <text x="80" y="912"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="4" fill="#94a3b8">HUMAN</text>
+  <!-- Track -->
+  <rect x="240" y="894" width="670" height="20" rx="10" fill="#1e2a3a"/>
+  <!-- Fill: 13.6% of 670 = 91.1 px -->
+  <rect x="240" y="894" width="91" height="20" rx="10" fill="#ef4444" fill-opacity="0.75"/>
+  <text x="920" y="910"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" text-anchor="end" fill="#ef4444">13.6%</text>
+
+  <!-- Bar 2: Classifier -->
+  <text x="80" y="960"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="4" fill="#94a3b8">CLASSIFIER</text>
+  <!-- Track -->
+  <rect x="240" y="942" width="670" height="20" rx="10" fill="#1e2a3a"/>
+  <!-- Fill: 89% of 670 = 596.3 px -->
+  <rect x="240" y="942" width="596" height="20" rx="10" fill="url(#acc1)"/>
+  <text x="920" y="958"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" text-anchor="end" fill="#22d3ee">89%</text>
+
+  <!-- Insight line -->
+  <text x="540" y="1025"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="300" text-anchor="middle" fill="#64748b" letter-spacing="1">Same action. Different reviewer.</text>
+
+  <!-- Footer divider -->
+  <rect x="80" y="1075" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- Tagline -->
+  <text x="540" y="1140"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="24" font-weight="300" text-anchor="middle" fill="#94a3b8" letter-spacing="1">Auto mode doesn&#8217;t skip the check. It upgrades who runs it.</text>
+
+  <!-- Handle -->
+  <text x="540" y="1205"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="32" font-weight="700" text-anchor="middle" fill="#22d3ee">@teachmebro</text>
+
+  <!-- Byline -->
+  <text x="540" y="1258"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="21" font-weight="600" text-anchor="middle" fill="#475569">Altaf Shaikh &#183; AI Engineering</text>
+</svg>
