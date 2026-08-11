@@ -1,0 +1,79 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c65a1e" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#c65a1e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5b4bd6" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#5b4bd6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#f2ede3"/>
+
+  <!-- constellation flourish, top right -->
+  <g stroke="#c9c1b2" stroke-width="1.5" fill="none" opacity="0.8">
+    <line x1="1180" y1="240" x2="1290" y2="150"/>
+    <line x1="1290" y1="150" x2="1420" y2="95"/>
+    <line x1="1290" y1="150" x2="1330" y2="260"/>
+    <line x1="1330" y1="260" x2="1250" y2="320"/>
+  </g>
+  <circle cx="1180" cy="240" r="6" fill="#c65a1e"/>
+  <circle cx="1290" cy="150" r="4" fill="#c9c1b2"/>
+  <circle cx="1420" cy="95" r="4" fill="#c9c1b2"/>
+  <circle cx="1330" cy="260" r="6" fill="#5b4bd6"/>
+  <circle cx="1250" cy="320" r="4" fill="#c9c1b2"/>
+  <rect x="1500" y="120" width="1600" height="0" opacity="0"/>
+  <circle cx="1500" cy="120" r="7" fill="#c65a1e"/>
+  <circle cx="1518" cy="120" r="7" fill="#5b4bd6"/>
+  <circle cx="1500" cy="120" r="7" fill="none" stroke="#c65a1e" stroke-opacity="0.3" stroke-width="6"/>
+
+  <rect x="1050" y="80" width="500" height="400" fill="url(#glow1)"/>
+  <rect x="1200" y="200" width="400" height="400" fill="url(#glow2)"/>
+
+  <!-- eyebrow -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" >
+    <line x1="96" y1="132" x2="140" y2="132" stroke="#8a8275" stroke-width="3"/>
+    <text x="156" y="139" font-size="24" font-weight="700" letter-spacing="6" fill="#6b6456">AI AUTOMATION, RUNG BY RUNG</text>
+  </g>
+
+  <!-- headline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="900">
+    <text x="92" y="298" font-size="132" fill="#1c1a17">Five <tspan fill="#c65a1e">Rungs</tspan>.</text>
+    <text x="92" y="430" font-size="132" fill="#1c1a17">One <tspan fill="#5b4bd6">Order</tspan>.</text>
+  </g>
+
+  <!-- accent bar + sub claim -->
+  <rect x="96" y="486" width="6" height="72" fill="#c65a1e"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="700" font-size="38" fill="#1c1a17">
+    <text x="128" y="518">It&#8217;s not the model. It&#8217;s the <tspan fill="#5b4bd6">rung you skipped</tspan>.</text>
+    <text x="128" y="562">Climb out of order and the routine collapses.</text>
+  </g>
+
+  <line x1="96" y1="630" x2="1504" y2="630" stroke="#d9d2c3" stroke-width="1.5"/>
+
+  <!-- tiles -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace">
+    <text x="96" y="712" font-size="58" font-weight="700" fill="#c65a1e">5 RUNGS</text>
+    <text x="96" y="748" font-size="23" font-weight="400" letter-spacing="1" fill="#6b6456">prompt, skill, loop, routine, agent team</text>
+
+    <line x1="756" y1="668" x2="756" y2="750" stroke="#d9d2c3" stroke-width="1.5"/>
+
+    <text x="800" y="712" font-size="58" font-weight="700" fill="#5b4bd6">1 ORDER</text>
+    <text x="800" y="748" font-size="23" font-weight="400" letter-spacing="1" fill="#6b6456">each rung only holds if the one below it does</text>
+  </g>
+
+  <line x1="96" y1="800" x2="1504" y2="800" stroke="#d9d2c3" stroke-width="1.5"/>
+
+  <!-- footer -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="96" y="846" font-size="30" font-weight="800" fill="#1c1a17">Altaf Shaikh</text>
+    <text x="330" y="846" font-size="27" font-weight="800" fill="#c65a1e">@teachmebro</text>
+    <text x="96" y="876" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="20" fill="#8a8275">// AI Engineering</text>
+
+    <text x="1504" y="852" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="20" font-style="italic" fill="#8a8275">the rung only holds if the one below it does</text>
+    <circle cx="1478" cy="874" r="6" fill="#c65a1e"/>
+    <circle cx="1500" cy="874" r="6" fill="#5b4bd6"/>
+  </g>
+</svg>

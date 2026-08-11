@@ -4,7 +4,7 @@ This is the Blog channel's consumption ledger. Raw ideas live in `../raw-ideas/`
 
 ## Queue (unprocessed for Blog)
 
-_(none — every current raw idea is either Done below or already has an open PR in flight, see note)_
+_(two PDFs remain: `(6) Anatoli Kopadze on X..._.pdf` and `The Four Claude Features That Turn AI From Toy to Tool.pdf` — out of scope per Step 0 file-type filter, .md/.txt only)_
 
 ## In Progress
 
@@ -12,6 +12,7 @@ _(none)_
 
 ## Done
 
+- [x] 007-five-rung-ai-automation-ladder.md → [posts/five-rung-ai-automation-ladder/final-post.md](./posts/five-rung-ai-automation-ladder/final-post.md) — 2026-08-11
 - [x] 007-claude-code-auto-mode-classifier.md → [posts/claude-code-auto-mode-classifier/final-post.md](./posts/claude-code-auto-mode-classifier/final-post.md) — 2026-08-11
 - [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips/final-post.md](./posts/25-claude-code-tips/final-post.md) — 2026-07-28
 - [x] joke-on-say-the-word-by-claude.md → [posts/joke-on-say-the-word-by-claude/final-post.md](./posts/joke-on-say-the-word-by-claude/final-post.md) — 2026-07-22
