@@ -1,0 +1,11 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C-revised",
+  "why_winner": "The revised draft resolves the hook issue from round 1. Opening with the uncomfortable claim ('Most engineers building AI loops are running expensive spinners.') creates immediate stakes. The bridge line ('Not because loops are hard to build. Because they skip the one thing that makes them work.') earns the pivot to the test without losing structural clarity. All four criteria, the compounding cost explanation, and the build order are intact. No invented stats. CTA is public-shareable. Build order delivers a replicable takeaway the audience can act on today.",
+  "scores": {
+    "C-revised": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 8, "avg": 8.8 }
+  },
+  "issues": []
+}
