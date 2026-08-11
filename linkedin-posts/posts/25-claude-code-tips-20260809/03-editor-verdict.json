@@ -1,0 +1,38 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "Variant C opens with a line the audience will immediately recognize as naming something they do ('I've saved them. I've bookmarked threads'). The self-implication makes it more uncomfortable and more honest than A or B, which both observe the problem from outside the narrator. C earns the contrarian conclusion rather than asserting it. The billion-token rule lands harder when it arrives as a discovery rather than a claim.",
+  "scores": {
+    "A": {
+      "hook_strength": 7,
+      "authenticity": 8,
+      "readability": 9,
+      "plan_compliance": 9,
+      "cta_clarity": 9,
+      "avg": 8.4
+    },
+    "B": {
+      "hook_strength": 8,
+      "authenticity": 7,
+      "readability": 8,
+      "plan_compliance": 9,
+      "cta_clarity": 9,
+      "avg": 8.2
+    },
+    "C": {
+      "hook_strength": 9,
+      "authenticity": 10,
+      "readability": 9,
+      "plan_compliance": 9,
+      "cta_clarity": 9,
+      "avg": 9.2
+    }
+  },
+  "runner_up_notes": {
+    "A": "The context-overflow scene in variant A is vivid and specific. The 'three hours in' opening is strong. If the winner were revised, grafting the specific breakdown detail (responses getting shorter, having to re-explain things) into C's second paragraph would add concrete texture.",
+    "B": "The direct opening claim structure in B is clean. The framing of engineering instincts transferring directly is well-executed. The 'manage the context' conclusion is tight."
+  },
+  "issues": []
+}

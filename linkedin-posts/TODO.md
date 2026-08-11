@@ -3,10 +3,13 @@
 This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ideas/` (shared across all channels). Queue = files in `../raw-ideas/` MINUS the filenames listed under **Done** below.
 
 ## Queue (unprocessed for LinkedIn)
+_(empty — all ideas have been processed)_
 
 ## In Progress
 
 ## Done
+- [x] joke-on-say-the-word-by-claude.md → [posts/joke-on-say-the-word-by-claude-20260718/final-post.md](./posts/joke-on-say-the-word-by-claude-20260718/final-post.md) — 2026-07-18
+- [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips-20260809/final-post.md](./posts/25-claude-code-tips-20260809/final-post.md) — 2026-08-09
 - [x] claude code features.md → [posts/claude-code-25-tips-20260719/final-post.md](./posts/claude-code-25-tips-20260719/final-post.md) — 2026-07-19
 - [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-20260719/final-post.md](./posts/claude-four-building-blocks-20260719/final-post.md) — 2026-07-19
 - [x] 005-loops-explained-prompt-vs-loop-agent-anatomy.md → [posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md) — 2026-07-19
