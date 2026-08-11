@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "C's hook is an indictment with two sides ('bought subscriptions' vs 'adopted AI'), exactly the shape the tracker's top performers share, and it carries the full taxonomy without losing bite. The tracker explicitly flags Contrarian as underused and strong on tool topics.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.6 },
+    "B": { "hook_strength": 8, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.8 },
+    "C": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.0 }
+  },
+  "runner_up_notes": {
+    "B": "The 'recipe card vs cookbook' Plugin explanation is the clearest of the three; C uses a compressed version.",
+    "A": "The day-one new hire scene is warm but slower; better suited to the blog channel's version of this idea."
+  },
+  "issues": []
+}

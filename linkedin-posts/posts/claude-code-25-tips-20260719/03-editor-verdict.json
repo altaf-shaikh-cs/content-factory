@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "B's hook is genuinely arguable (people believe prompting tricks matter) which passes the tracker's bold-claim filter, and it reframes the listicle as an insight rather than a link dump. C is the most save-worthy but its numbered-list hook is generic; A's personal traceback is strong but slower.",
+  "scores": {
+    "A": { "hook_strength": 8, "authenticity": 9, "readability": 8, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.8 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.0 },
+    "C": { "hook_strength": 7, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 8.6 }
+  },
+  "runner_up_notes": {
+    "A": "The 'I traced every bad AI day back to myself' beat is the most authentic moment across all three; worth reusing on the blog version.",
+    "C": "The numbered 8-item format is the most screenshot-able; the image should carry the checklist instead."
+  },
+  "issues": []
+}

@@ -1,0 +1,74 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2538"/>
+      <stop offset="100%" stop-color="#141e2d"/>
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <ellipse cx="540" cy="330" rx="440" ry="220" fill="url(#heroGlow)"/>
+  <rect x="80" y="80" width="920" height="4" rx="2" fill="url(#accent)"/>
+
+  <text x="80" y="154" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" letter-spacing="8" fill="#22d3ee">CLAUDE'S BUILDING BLOCKS</text>
+
+  <text x="540" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="260" font-weight="900" text-anchor="middle" fill="url(#accent)">4</text>
+  <text x="540" y="472" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="38" font-weight="300" text-anchor="middle" fill="#cbd5e1" letter-spacing="1">
+    features between a chatbot and a work environment
+  </text>
+
+  <rect x="80" y="540" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- 2x2 tiles -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="80" y="580" width="450" height="250" rx="16" fill="url(#tile)"/>
+    <rect x="80" y="580" width="450" height="4" rx="2" fill="url(#accent)"/>
+    <text x="305" y="690" font-size="56" font-weight="900" text-anchor="middle" fill="url(#accent)">SKILLS</text>
+    <text x="305" y="742" font-size="21" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">CONSISTENCY</text>
+    <text x="305" y="780" font-size="18" text-anchor="middle" fill="#475569">your standards, applied automatically</text>
+
+    <rect x="550" y="580" width="450" height="250" rx="16" fill="url(#tile)"/>
+    <rect x="550" y="580" width="450" height="4" rx="2" fill="url(#accent)"/>
+    <text x="775" y="690" font-size="56" font-weight="900" text-anchor="middle" fill="url(#accent)">PLUGINS</text>
+    <text x="775" y="742" font-size="21" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">CAPABILITY</text>
+    <text x="775" y="780" font-size="18" text-anchor="middle" fill="#475569">whole workflows, one install</text>
+
+    <rect x="80" y="860" width="450" height="250" rx="16" fill="url(#tile)"/>
+    <rect x="80" y="860" width="450" height="4" rx="2" fill="url(#accent)"/>
+    <text x="305" y="970" font-size="56" font-weight="900" text-anchor="middle" fill="url(#accent)">PROJECTS</text>
+    <text x="305" y="1022" font-size="21" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">SEPARATION</text>
+    <text x="305" y="1060" font-size="18" text-anchor="middle" fill="#475569">walled contexts, nothing leaks</text>
+
+    <rect x="550" y="860" width="450" height="250" rx="16" fill="url(#tile)"/>
+    <rect x="550" y="860" width="450" height="4" rx="2" fill="url(#accent)"/>
+    <text x="775" y="970" font-size="56" font-weight="900" text-anchor="middle" fill="url(#accent)">ARTIFACTS</text>
+    <text x="775" y="1022" font-size="21" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">OUTPUT</text>
+    <text x="775" y="1060" font-size="18" text-anchor="middle" fill="#475569">real files, not chat text</text>
+  </g>
+
+  <rect x="80" y="1160" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <text x="540" y="1226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="300" text-anchor="middle" fill="#94a3b8" letter-spacing="1">
+    Configured, a work environment. Unconfigured, a toy.
+  </text>
+  <text x="540" y="1272" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" text-anchor="middle" fill="#22d3ee">@teachmebro</text>
+  <text x="540" y="1306" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="600" text-anchor="middle" fill="#475569">Altaf Shaikh &#183; AI Engineering</text>
+</svg>
