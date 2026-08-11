@@ -13,6 +13,7 @@ _(none)_
 ## Done
 
 - [x] claude code features.md → [posts/claude-code-features/final-post.md](./posts/claude-code-features/final-post.md) — 2026-07-19
+- [x] 007-claude-code-auto-mode-classifier.md → [posts/claude-code-auto-mode-classifier/final-post.md](./posts/claude-code-auto-mode-classifier/final-post.md) — 2026-08-11
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns/final-post.md](./posts/fable5-hybrid-orchestration-patterns/final-post.md) — 2026-07-18
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-14
 - [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-14

@@ -2,7 +2,7 @@
 Guides / Tutorials
 Planning is 80% of success. Write your feature spec BEFORE opening Claude. AI amplifies clarity or confusion, your choice
 
-AI can build anything with the right context. Give screenshots, file structures, database schemas, API docs, everything
+/AI can build anything with the right context. Give screenshots, file structures, database schemas, API docs, everything
 
 XML formatted prompts work 3x better than plaintext. LLMs parse structured data natively
 
