@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="orangeGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4521e"/>
+      <stop offset="100%" stop-color="#e8783c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cream background -->
+  <rect width="1080" height="1350" fill="#f0ebe2"/>
+
+  <!-- ──── BADGE ──── -->
+  <rect x="80" y="72" width="380" height="54" rx="8" fill="url(#orangeGrad2)"/>
+  <text x="270" y="107"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="26" font-weight="700" letter-spacing="1.5"
+    fill="#ffffff" text-anchor="middle">BILLION-TOKEN RULE</text>
+
+  <!-- ──── HEADLINE ──── -->
+  <text x="80" y="225"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="100" font-weight="900"
+    fill="#1c1c1c" text-anchor="start">The tips you keep</text>
+
+  <text x="80" y="340"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="100" font-weight="900"
+    fill="#1c1c1c" text-anchor="start">are the ones</text>
+
+  <text x="80" y="455"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="100" font-weight="900"
+    fill="#1c1c1c" text-anchor="start">you rediscovered</text>
+
+  <!-- "yourself." in orange — the punch word -->
+  <text x="80" y="570"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="100" font-weight="900"
+    fill="#d4521e" text-anchor="start">yourself.</text>
+
+  <!-- ──── CONTRAST CARDS ──── -->
+
+  <!-- LEFT CARD: Read 25 tips → vocabulary -->
+  <rect x="80" y="638" width="440" height="215" rx="12" fill="#ffffff" stroke="#ddd5c5" stroke-width="1.5"/>
+  <!-- Orange header strip (rounded top, square bottom) -->
+  <rect x="80" y="638" width="440" height="46" rx="12" fill="#d4521e"/>
+  <rect x="80" y="662" width="440" height="22" fill="#d4521e"/>
+  <text x="300" y="671"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="700" letter-spacing="1"
+    fill="#ffffff" text-anchor="middle">READ 25 TIPS</text>
+  <!-- Big keyword -->
+  <text x="300" y="768"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="54" font-weight="900"
+    fill="#1c1c1c" text-anchor="middle">vocabulary</text>
+  <!-- Description -->
+  <text x="300" y="815"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="24" font-weight="400"
+    fill="#8a7f72" text-anchor="middle">shortcut to the words</text>
+
+  <!-- RIGHT CARD: Do 1B tokens → intuition (dark card) -->
+  <rect x="560" y="638" width="440" height="215" rx="12" fill="#1c1c1c"/>
+  <!-- Orange header strip on dark card -->
+  <rect x="560" y="638" width="440" height="46" rx="12" fill="#d4521e"/>
+  <rect x="560" y="662" width="440" height="22" fill="#d4521e"/>
+  <text x="780" y="671"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22" font-weight="700" letter-spacing="1"
+    fill="#ffffff" text-anchor="middle">DO 1B TOKENS</text>
+  <!-- Big keyword -->
+  <text x="780" y="768"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="54" font-weight="900"
+    fill="#ffffff" text-anchor="middle">intuition</text>
+  <!-- Description -->
+  <text x="780" y="815"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="24" font-weight="400"
+    fill="#c9bdb0" text-anchor="middle">the only real shortcut</text>
+
+  <!-- VS separator circle (drawn last — on top of both cards) -->
+  <circle cx="540" cy="746" r="28" fill="#f0ebe2" stroke="#ddd5c5" stroke-width="2"/>
+  <text x="540" y="754"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="20" font-weight="900"
+    fill="#1c1c1c" text-anchor="middle">VS</text>
+
+  <!-- ──── STATS BOXES ──── -->
+
+  <!-- Box 1: 25 TIPS -->
+  <rect x="80" y="905" width="280" height="112" rx="10" fill="#ffffff" stroke="#ddd5c5" stroke-width="1.5"/>
+  <text x="220" y="980"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="60" font-weight="900"
+    fill="#d4521e" text-anchor="middle">25</text>
+  <text x="220" y="1007"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="21" font-weight="700" letter-spacing="2"
+    fill="#8a7f72" text-anchor="middle">TIPS</text>
+
+  <!-- Box 2: 11 MONTHS -->
+  <rect x="400" y="905" width="280" height="112" rx="10" fill="#ffffff" stroke="#ddd5c5" stroke-width="1.5"/>
+  <text x="540" y="980"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="60" font-weight="900"
+    fill="#d4521e" text-anchor="middle">11</text>
+  <text x="540" y="1007"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="21" font-weight="700" letter-spacing="2"
+    fill="#8a7f72" text-anchor="middle">MONTHS</text>
+
+  <!-- Box 3: 569 UPVOTES -->
+  <rect x="720" y="905" width="280" height="112" rx="10" fill="#ffffff" stroke="#ddd5c5" stroke-width="1.5"/>
+  <text x="860" y="980"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="60" font-weight="900"
+    fill="#d4521e" text-anchor="middle">569</text>
+  <text x="860" y="1007"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="21" font-weight="700" letter-spacing="2"
+    fill="#8a7f72" text-anchor="middle">UPVOTES</text>
+
+  <!-- ──── FOOTER ──── -->
+
+  <!-- Separator line -->
+  <line x1="80" y1="1068" x2="1000" y2="1068" stroke="#ddd5c5" stroke-width="1.5"/>
+
+  <!-- Tagline -->
+  <text x="80" y="1128"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="46" font-weight="700"
+    fill="#1c1c1c" text-anchor="start">Volume beats tips lists.</text>
+
+  <!-- Handle -->
+  <text x="80" y="1212"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="40" font-weight="700"
+    fill="#d4521e" text-anchor="start">@teachmebro</text>
+
+  <!-- Author -->
+  <text x="80" y="1260"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="26" font-weight="400"
+    fill="#8a7f72" text-anchor="start">Altaf Shaikh &#183; AI Engineering</text>
+</svg>

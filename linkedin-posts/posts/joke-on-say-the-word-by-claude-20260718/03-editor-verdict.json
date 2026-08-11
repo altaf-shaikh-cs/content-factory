@@ -1,0 +1,30 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "needs_revision",
+  "winner": "C",
+  "why_winner": "Contrarian has the sharpest hook — 'You don't need better prompts' directly challenges a belief every developer in this audience holds. Per pattern data, this angle drives comments, not just passive reactions. It also self-implicates the author (I walked past it every time), which gives it authenticity without being slow.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 9, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.4 },
+    "B": { "hook_strength": 7, "authenticity": 7, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.0 },
+    "C": { "hook_strength": 9, "authenticity": 8, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.6 }
+  },
+  "runner_up_notes": {
+    "A": "Strong personal-recognition beat — 'I walked past it every single time' is the most human line across all three drafts. Already partially borrowed into C. The opening scene-setup is slightly slow for the hook slot, but what follows is genuine.",
+    "B": "Clean structure, but the hook ('Claude's most powerful phrase isn't a capability') is abstract. Needs a concrete referent. The insight about skill being in recognition, not prompting, is worth holding."
+  },
+  "issues": [
+    {
+      "type": "weak_hook",
+      "severity": "medium",
+      "description": "The second paragraph 'You need to stop ignoring the ones Claude already gave you.' is strong, but the transition into the example is abrupt. The reader lands on the phrase example without enough of a bridge.",
+      "action": "Add one grounding line between 'the ones Claude already gave you' and the specific phrase example — something that makes the reader nod before the reveal."
+    },
+    {
+      "type": "inauthentic",
+      "severity": "low",
+      "description": "'The best use of AI isn't in the question. It's in the follow-through.' reads as a slightly generic aphorism — it doesn't tie back to the specific 'say the word' mechanic.",
+      "action": "Replace with a more specific line: something like 'The best prompt you can give Claude is the one it already asked for.' Tightens the loop back to the core insight."
+    }
+  ]
+}
