@@ -1,0 +1,156 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2538"/>
+      <stop offset="100%" stop-color="#141e2d"/>
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+
+  <!-- Hero glow -->
+  <ellipse cx="540" cy="330" rx="380" ry="190" fill="url(#heroGlow)"/>
+
+  <!-- Top accent line -->
+  <rect x="80" y="80" width="920" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- Category label -->
+  <text x="80" y="154"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" letter-spacing="8" fill="#22d3ee">AI ENGINEERING</text>
+
+  <!-- Hero stat: &lt;50% -->
+  <text x="540" y="360"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="200" font-weight="900" text-anchor="middle" fill="url(#accent)">&lt;50%</text>
+
+  <!-- Hero sub-label -->
+  <text x="540" y="412"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="34" font-weight="300" text-anchor="middle" fill="#cbd5e1" letter-spacing="1">acceptance rate minimum</text>
+
+  <!-- Hero note -->
+  <text x="540" y="454"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" text-anchor="middle" fill="#64748b">below this: your loop costs more than manual work</text>
+
+  <!-- Section divider -->
+  <rect x="80" y="484" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- Tile 1: 50K+ tokens -->
+  <rect x="80" y="504" width="293" height="240" rx="16" fill="url(#tile)"/>
+  <rect x="80" y="504" width="293" height="4" rx="2" fill="url(#accent)"/>
+  <text x="226" y="608"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="62" font-weight="900" text-anchor="middle" fill="url(#accent)">50K+</text>
+  <text x="226" y="653"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">TOKENS MIN</text>
+  <text x="226" y="690"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" text-anchor="middle" fill="#475569">per single loop run</text>
+  <text x="226" y="720"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" text-anchor="middle" fill="#475569">grows with each pass</text>
+
+  <!-- Tile 2: 4 criteria -->
+  <rect x="393" y="504" width="293" height="240" rx="16" fill="url(#tile)"/>
+  <rect x="393" y="504" width="293" height="4" rx="2" fill="url(#accent)"/>
+  <text x="539" y="608"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="62" font-weight="900" text-anchor="middle" fill="url(#accent)">4</text>
+  <text x="539" y="653"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">CRITERIA</text>
+  <text x="539" y="690"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" text-anchor="middle" fill="#475569">all must be true</text>
+  <text x="539" y="720"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" text-anchor="middle" fill="#475569">miss one: stay manual</text>
+
+  <!-- Tile 3: 5 loop parts -->
+  <rect x="706" y="504" width="294" height="240" rx="16" fill="url(#tile)"/>
+  <rect x="706" y="504" width="294" height="4" rx="2" fill="url(#accent)"/>
+  <text x="853" y="608"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="62" font-weight="900" text-anchor="middle" fill="url(#accent)">5</text>
+  <text x="853" y="653"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18" font-weight="700" letter-spacing="5" text-anchor="middle" fill="#64748b">LOOP PARTS</text>
+  <text x="853" y="690"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" text-anchor="middle" fill="#475569">Discover &#183; Plan &#183; Execute</text>
+  <text x="853" y="720"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="17" text-anchor="middle" fill="#475569">Verify &#183; Iterate</text>
+
+  <!-- Build Order section -->
+  <rect x="80" y="768" width="920" height="1" fill="#ffffff" fill-opacity="0.06"/>
+  <text x="80" y="812"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="700" letter-spacing="6" fill="#475569">BUILD ORDER</text>
+
+  <!-- Step 1 -->
+  <text x="80" y="864"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="900" fill="url(#accent)">01</text>
+  <text x="140" y="864"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="25" font-weight="400" fill="#cbd5e1">Get one manual run reliable first</text>
+
+  <!-- Step 2 -->
+  <text x="80" y="914"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="900" fill="url(#accent)">02</text>
+  <text x="140" y="914"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="25" font-weight="400" fill="#cbd5e1">Save instructions as a reusable file</text>
+
+  <!-- Step 3 -->
+  <text x="80" y="964"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="900" fill="url(#accent)">03</text>
+  <text x="140" y="964"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="25" font-weight="400" fill="#cbd5e1">Add a gate and a stop condition</text>
+
+  <!-- Step 4 -->
+  <text x="80" y="1014"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="900" fill="url(#accent)">04</text>
+  <text x="140" y="1014"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="25" font-weight="400" fill="#cbd5e1">Then schedule it. Not before.</text>
+
+  <!-- Footer divider -->
+  <rect x="80" y="1062" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <!-- Handle -->
+  <text x="540" y="1124"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="34" font-weight="700" text-anchor="middle" fill="url(#accent)">@teachmebro</text>
+
+  <!-- Tagline -->
+  <text x="540" y="1184"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="27" font-weight="300" text-anchor="middle" fill="#94a3b8" letter-spacing="1">A loop without a verifier is just a spinner.</text>
+
+  <!-- Byline -->
+  <text x="540" y="1238"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20" font-weight="600" text-anchor="middle" fill="#475569">Altaf Shaikh &#183; AI Engineering</text>
+</svg>

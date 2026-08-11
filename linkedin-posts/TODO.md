@@ -24,11 +24,14 @@ Also never seen in any export across three periods, presume unpublished: `superr
 ## Done
 - [x] _(off-pipeline)_ → [posts/parle-g-ai-meme-20260809/final-post.md](./posts/parle-g-ai-meme-20260809/final-post.md) — 2026-08-09. Not from `raw-ideas/`, made directly by Altaf. Logged because it is the account's highest-reaching post ever: 6,387 impressions, 4,113 reached, **0 followers gained**. Established the reach-vs-capture distinction now encoded in the tracker and both skills.
 - [x] 007-five-rung-ai-automation-ladder.md → [posts/five-rung-ai-automation-ladder-20260809/final-post.md](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 2026-08-09 (DERIVED cross-idea, synthesized from 15 library ideas rather than sourced from one. First document carousel on the account, 8 slides + caption.)
+- [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips-20260809/final-post.md](./posts/25-claude-code-tips-20260809/final-post.md) — 2026-08-09
 - [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → [posts/claude-four-building-blocks-20260805/final-post.md](./posts/claude-four-building-blocks-20260805/final-post.md) — 2026-08-05 (second take on the same source as 006, requested directly; comparison/onboarding angle instead of the 2026-07-19 contrarian one)
+- [x] (6) Anatoli Kopadze on X_ _Loops explained_ Claude, GPT, Mira and what actually works_ _ X.pdf → [posts/loops-explained-claude-gpt-mira-20260805/final-post.md](./posts/loops-explained-claude-gpt-mira-20260805/final-post.md) — 2026-08-05
 - [x] claude code features.md → [posts/claude-code-25-tips-20260719/final-post.md](./posts/claude-code-25-tips-20260719/final-post.md) — 2026-07-19
 - [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-20260719/final-post.md](./posts/claude-four-building-blocks-20260719/final-post.md) — 2026-07-19
 - [x] 005-loops-explained-prompt-vs-loop-agent-anatomy.md → [posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md) — 2026-07-19
 - [x] joke-on-say-the-word-by-claude.md — dropped 2026-07-19, drafts reviewed and rejected by Altaf, do not re-process
+- [x] joke-on-say-the-word-by-claude.md → [posts/joke-on-say-the-word-by-claude-20260718/final-post.md](./posts/joke-on-say-the-word-by-claude-20260718/final-post.md) — 2026-07-18
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md](./posts/fable5-hybrid-orchestration-patterns-20260718/final-post.md) — 2026-07-18
 - [x] ROUTINES.MD → [posts/routines-20260717/final-post.md](./posts/routines-20260717/final-post.md) — 2026-07-17
 - [x] just text.md → [posts/just-text-20260714/final-post.md](./posts/just-text-20260714/final-post.md) — 2026-07-14
