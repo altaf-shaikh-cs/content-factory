@@ -12,7 +12,11 @@ _(none)_
 
 ## Done
 
+- [x] 007-claude-code-auto-mode-classifier.md → [posts/claude-code-auto-mode-classifier/final-post.md](./posts/claude-code-auto-mode-classifier/final-post.md) — 2026-08-11
 - [x] joke-on-say-the-word-by-claude.md → [posts/joke-on-say-the-word-by-claude/final-post.md](./posts/joke-on-say-the-word-by-claude/final-post.md) — 2026-07-22
+- [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md](./posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md) — 2026-07-21
+- [x] 005-loops-explained-prompt-vs-loop-agent-anatomy.md → [posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md) — 2026-07-20
+- [x] claude code features.md → [posts/claude-code-features/final-post.md](./posts/claude-code-features/final-post.md) — 2026-07-19
 - [x] 004-fable5-hybrid-orchestration-patterns.md → [posts/fable5-hybrid-orchestration-patterns/final-post.md](./posts/fable5-hybrid-orchestration-patterns/final-post.md) — 2026-07-18
 - [x] run-your-own-agent-acengy-with-paperclip.md → [posts/run-your-own-agent-acengy-with-paperclip/final-post.md](./posts/run-your-own-agent-acengy-with-paperclip/final-post.md) — 2026-07-14
 - [x] just text.md → [posts/just-text/final-post.md](./posts/just-text/final-post.md) — 2026-07-14

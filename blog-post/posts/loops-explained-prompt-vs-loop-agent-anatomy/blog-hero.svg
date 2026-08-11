@@ -1,0 +1,53 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3eee3"/>
+      <stop offset="100%" stop-color="#ece4d5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- decorative network, top right -->
+  <g stroke="#c7bda9" stroke-width="1.5" fill="none" opacity="0.8">
+    <path d="M1330 90 L1400 180 L1370 260 L1460 340"/>
+    <path d="M1400 180 L1500 230"/>
+  </g>
+  <circle cx="1330" cy="90" r="4" fill="#94a3b8"/>
+  <circle cx="1400" cy="180" r="5" fill="#cc5a1e"/>
+  <circle cx="1370" cy="260" r="4" fill="#94a3b8"/>
+  <circle cx="1460" cy="340" r="6" fill="#1f66c9"/>
+  <circle cx="1500" cy="230" r="4" fill="#94a3b8"/>
+
+  <!-- eyebrow label -->
+  <line x1="90" y1="108" x2="128" y2="108" stroke="#8a8377" stroke-width="3"/>
+  <text x="146" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700" letter-spacing="7" fill="#8a8377">PROMPT VS LOOP</text>
+
+  <!-- headline -->
+  <text x="88" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="112" font-weight="900" fill="#211c16">Stop <tspan fill="#cc5a1e">Prompting,</tspan></text>
+  <text x="88" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="112" font-weight="900" fill="#211c16">Start <tspan fill="#1f66c9">Looping</tspan></text>
+
+  <!-- subtitle -->
+  <rect x="90" y="452" width="6" height="70" fill="#cc5a1e"/>
+  <text x="120" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="600" fill="#2b2620">A prompt is one <tspan fill="#cc5a1e">instruction</tspan>.</text>
+  <text x="120" y="530" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="600" fill="#2b2620">A loop is a <tspan fill="#1f66c9">goal</tspan> it keeps working toward.</text>
+
+  <!-- stat tiles -->
+  <text x="90" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="64" font-weight="900" fill="#cc5a1e">50K&#8211;200K</text>
+  <text x="90" y="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="400" fill="#5c564a">tokens spent per medium loop run</text>
+
+  <line x1="620" y1="600" x2="620" y2="705" stroke="#cfc7b8" stroke-width="2"/>
+
+  <text x="670" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="64" font-weight="900" fill="#1f66c9">50%</text>
+  <text x="670" y="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="400" fill="#5c564a">accept-rate floor before a loop costs more than it gives</text>
+
+  <line x1="90" y1="762" x2="1510" y2="762" stroke="#cfc7b8" stroke-width="1.5"/>
+
+  <!-- byline -->
+  <text x="90" y="812" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="700" fill="#211c16">Altaf Shaikh</text>
+  <text x="90" y="842" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="400" fill="#8a8377">AI Engineering</text>
+
+  <!-- tagline + handle -->
+  <text x="1510" y="800" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="400" fill="#5c564a">Stop prompting agents. Start designing loops.</text>
+  <text x="1510" y="834" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="800" fill="#1f66c9">@teachmebro</text>
+</svg>
