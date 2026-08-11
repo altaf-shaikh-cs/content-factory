@@ -10,6 +10,7 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 ## Done
 - [x] (6) Anatoli Kopadze on X_ _Loops explained_ Claude, GPT, Mira and what actually works_ _ X.pdf → [posts/loops-explained-claude-gpt-mira-20260805/final-post.md](./posts/loops-explained-claude-gpt-mira-20260805/final-post.md) — 2026-08-05
+- [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips-20260809/final-post.md](./posts/25-claude-code-tips-20260809/final-post.md) — 2026-08-09
 - [x] claude code features.md → [posts/claude-code-25-tips-20260719/final-post.md](./posts/claude-code-25-tips-20260719/final-post.md) — 2026-07-19
 - [x] 006-claude-four-building-blocks-skills-plugins-projects-artifacts.md → [posts/claude-four-building-blocks-20260719/final-post.md](./posts/claude-four-building-blocks-20260719/final-post.md) — 2026-07-19
 - [x] 005-loops-explained-prompt-vs-loop-agent-anatomy.md → [posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md) — 2026-07-19
