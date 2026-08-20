@@ -18,10 +18,12 @@ Confirmed against the 2026-08-10 analytics export: these have a finished `final-
 - [ ] [claude-code-25-tips-20260719](./posts/claude-code-25-tips-20260719/final-post.md)
 - [ ] [claude-four-building-blocks-20260719](./posts/claude-four-building-blocks-20260719/final-post.md) — contrarian angle. The 8/5 second take on the same source shipped and hit 5.15%, the best rate of the period.
 - [ ] [loops-explained-prompt-vs-loop-agent-anatomy-20260719](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md)
+- [ ] [andrew-ng-four-software-skills-2026-20260820](./posts/andrew-ng-four-software-skills-2026-20260820/final-post.md) — 8-slide document carousel + caption. Second carousel produced, none shipped yet — this account still has zero real carousel data.
 
 Also never seen in any export across three periods, presume unpublished: `superreps-learnings-20260608`, `build-your-first-agents-team-20260616`, `just-text-20260629`, `just-text-20260714`, `run-your-own-agent-acengy-with-paperclip-20260630`.
 
 ## Done
+- [x] 008-andrew-ng-four-software-skills-2026.md → [posts/andrew-ng-four-software-skills-2026-20260820/final-post.md](./posts/andrew-ng-four-software-skills-2026-20260820/final-post.md) — 2026-08-20 (second carousel on the account; requested directly as a "multi slide post")
 - [x] _(off-pipeline)_ → [posts/parle-g-ai-meme-20260809/final-post.md](./posts/parle-g-ai-meme-20260809/final-post.md) — 2026-08-09. Not from `raw-ideas/`, made directly by Altaf. Logged because it is the account's highest-reaching post ever: 6,387 impressions, 4,113 reached, **0 followers gained**. Established the reach-vs-capture distinction now encoded in the tracker and both skills.
 - [x] 007-five-rung-ai-automation-ladder.md → [posts/five-rung-ai-automation-ladder-20260809/final-post.md](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 2026-08-09 (DERIVED cross-idea, synthesized from 15 library ideas rather than sourced from one. First document carousel on the account, 8 slides + caption.)
 - [x] 25 Claude Code Tips from 11 Months of Intense Use _ r_ClaudeAI.pdf → [posts/25-claude-code-tips-20260809/final-post.md](./posts/25-claude-code-tips-20260809/final-post.md) — 2026-08-09
