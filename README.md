@@ -34,6 +34,8 @@ content-stratergy/
 │   ├── ai drinks water more than humans do.md
 │   └── ai-non-deterministic-code-vs-program-deterministic-code.md
 ├── inspiration-inbox/               ← scratch capture folder (mutable) — inbox.md, synced via /sync-inspiration
+├── runs/                         ← append-only heartbeat, one file per channel, one row per run
+│   └── README.md                 ← the contract every channel agent follows
 ├── agents/                       ← shared service agents (not channels)
 │   └── image-gen/                ← image generation agent + inspiration library
 │       └── inspiration/          ← style samples (SVG, JPEG) + MANIFEST.md
@@ -90,11 +92,13 @@ This means:
 
 | Channel       | Skill                                | Loop prompt           | Folder            | Status      |
 |---------------|--------------------------------------|------------------------|-------------------|-------------|
-| LinkedIn      | `linkedin-growth-agent`              | `linkedin.agent.md`   | `linkedin-posts/` | ✅ active   |
-| X (Twitter)   | `x-growth-agent`                     | `x.agent.md`          | `x-posts/`        | ✅ active   |
-| Instagram     | `instagram-reels-agent`             | `instagram.agent.md`  | `instagram-reels/`| ✅ active   |
-| Blog          | `blog-writer-agent`                          | `blog.agent.md`        | `blog-post/`      | ✅ active   |
+| LinkedIn      | `linkedin-growth-agent`              | `linkedin.agent.md`   | `linkedin-posts/` | ✅ active — ship gate armed |
+| X (Twitter)   | `x-growth-agent`                     | `x.agent.md`          | `x-posts/`        | 🔴 dark since 2026-06-30 |
+| Instagram     | `instagram-reels-agent`             | `instagram.agent.md`  | `instagram-reels/`| 🔴 dark since 2026-06-28 |
+| Blog          | `blog-writer-agent`                          | `blog.agent.md`        | `blog-post/`      | ✅ active (no cloud routine) |
 | Presentation  | (TBD — `idea-to-presentation`)       | (not yet)             | (not yet)         | ⚪ planned   |
+
+> **Status is checked, not assumed.** X and Instagram have opened zero PRs on the fork in the life of the repo despite being scheduled daily. Run [`/factory-health`](./.claude/skills/factory-health/SKILL.md) for the live picture, and see [`runs/`](./runs/README.md) for the per-channel heartbeat that backs it. LinkedIn's ship gate is currently blocking generation because 9 finished posts are unpublished; publishing them opens it.
 
 > **Instagram is the odd one out.** Every other channel drains the *oldest single unconsumed idea* into one post. Instagram **mines the whole library** and ranks reel candidates by reel-worthiness across three types — **Direct** (1 idea → 1 reel), **Combo** (several ideas merged), and **Pattern** (a new angle derived across ideas, in no single file). Ideas are never "used up"; the channel tracks produced reels + coverage. Live menu: [`instagram-reels/reel-map.md`](./instagram-reels/reel-map.md).
 

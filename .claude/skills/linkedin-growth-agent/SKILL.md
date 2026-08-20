@@ -67,7 +67,7 @@ content-stratergy/                          ← project root
    queue = (files in ../raw-ideas/) MINUS (Done filenames) MINUS (In Progress filenames)
    ```
 4. Filter the queue: drop any file whose frontmatter declares `channels: [...]` without `"linkedin"` in the list.
-5. If queue is empty → print one line: `No new LinkedIn ideas. Skipping.` and exit. **Do not generate anything.**
+5. If queue is empty → print one line: `No new LinkedIn ideas. Skipping.`, write the run-log row with outcome `skipped` (see **Run log** below), and exit. **Do not generate anything.**
 6. Otherwise pick the **oldest by filename sort** (lexical — so `001-` runs before `002-`).
 7. Read the chosen file. Its full content (minus frontmatter) is the **raw idea**.
 8. Derive `<slug>` from the filename (strip extension AND any numeric prefix, kebab-case it).
@@ -81,19 +81,61 @@ content-stratergy/                          ← project root
 
 **N parsing:** if the args start with a small integer (e.g. `/linkedin-growth-agent 3 ...`), that's N. Otherwise N=2. Max N=4.
 
-### Step 0.5 — Unshipped inventory check (runs before generating anything)
+### Step 0.5 — THE SHIP GATE (hard stop, runs before generating anything)
 
-Read the `## Unshipped register` section of `./linkedin-posts/performance/tracker.md`.
+This gate is not advisory. It stops the run.
 
-**If it lists any post, print this before continuing:**
+**Why it is hard.** The account's own analytics settled this: publishing frequency is the highest-leverage variable on this account, ahead of angle, hook, and format. The floor is ~5 impressions/day when nothing ships, and a 17-day silence in Period 3 cost more reach than any creative choice recovered. Meanwhile 9 finished posts have never been published. The factory's constraint is the ship step, not the generate step, and an advisory warning did not hold the line: the earlier soft version of this check printed its warning and the pipeline generated three more posts on top of the backlog anyway.
+
+**Build the unshipped set.** Take the union, deduplicated by post-folder name, of:
+- the entries under `## Ready to ship` in `./linkedin-posts/TODO.md`
+- the rows in the `## Unshipped register` of `./linkedin-posts/performance/tracker.md`
+
+Call the count `U`. **Threshold is 3.**
+
+#### If `U >= 3` → STOP. Generate nothing.
+
+Do not create a post folder. Do not touch `TODO.md`. Do not create a branch or open a PR. Print exactly this and exit:
 
 ```
-[UNSHIPPED INVENTORY]
-<N> finished posts have never been published: <slugs>
-Generation is not the bottleneck. Ship these before adding more.
+[SHIP GATE — BLOCKED]
+<U> finished LinkedIn posts have never been published.
+
+Ship this one today:
+  <post-folder>  →  <one-line reason it is the right one to ship first>
+
+Also waiting: <other slugs, comma separated>
+
+Generation is blocked until the backlog is under 3. This account's data says
+cadence beats creative. Publish, then this gate opens by itself.
+Override for one run: /linkedin-growth-agent --force
 ```
 
-Then continue with the run — do not block. The user decides. But never generate silently on top of a backlog of finished, unpublished work; the 2026-08 import found four such posts while the pipeline kept producing.
+Then write the run-log row with outcome `blocked` (see **Run log** below) and stop.
+
+**Choosing the one to recommend.** Rank the unshipped set by:
+1. A post whose format the tracker shows converts, over an untested format. Text + image averages 4.47% engagement; the one carousel and the one meme are unproven or proven not to capture
+2. Any post carrying an explicit pre-publish note in `TODO.md`, since it is ready with a known tweak
+3. Freshness of the source idea, newest first, because timeliness decays
+
+Give one reason, not a ranked list. The point is to make shipping a single decision.
+
+#### If `U` is 1 or 2 → warn, then continue
+
+```
+[SHIP GATE — WARNING]
+<U> finished post(s) unpublished: <slugs>. One more and generation blocks.
+```
+
+#### Override
+
+The gate is skipped when **either**:
+- the run is **Mode B** (a human passed idea content directly). A person asking for a specific post now has already made the call
+- the args contain `--force`
+
+An overridden gate still prints the warning block, and its run-log row gets outcome `produced` with `Detail` noting `ship gate overridden`.
+
+The gate never applies to the Performance Agent, which should still run and update the tracker even on a blocked run. Fresh data is exactly what a blocked run needs.
 
 If the idea is too vague to plan around, ask ONE clarifying question. Otherwise start immediately.
 
@@ -496,5 +538,41 @@ To process multiple ideas in one day, invoke the skill manually as many times as
 - No "In this post I will..." openings — ever
 - Authenticity beats polish — a slightly rough real line beats a smooth generic one
 - Every handoff is BOTH printed in the conversation AND written to the per-post folder — never one without the other
-- Never write outside `./linkedin-posts/` (except: Mode B may write a NEW file to `../raw-ideas/<NNN>-<slug>.md` to register a direct-args idea for other channels). No extra folders. No scratch files elsewhere.
+- Never write outside `./linkedin-posts/` (except: Mode B may write a NEW file to `../raw-ideas/<NNN>-<slug>.md` to register a direct-args idea for other channels, and every run appends exactly one row to `./runs/linkedin.md`). No extra folders. No scratch files elsewhere.
 - Never move, rename, or delete anything in `../raw-ideas/`. It's shared and immutable.
+
+---
+
+## Run log (heartbeat) — write this on EVERY run
+
+**The last action of every run, on every path, including early exits and blocked runs.** Full contract: `runs/README.md` at the repo root.
+
+Append ONE row to `./runs/linkedin.md` (repo root, not the channel folder). Newest at the bottom:
+
+```
+| <YYYY-MM-DD> | <outcome> | <one short line, no trailing period> | <link to post folder or —> |
+```
+
+`<outcome>` is exactly one of `produced` · `skipped` · `blocked` · `error`.
+
+| Path through the run | Outcome |
+|---|---|
+| Generated a post and opened a PR | `produced` |
+| Empty queue, or every candidate already has an open PR | `skipped` |
+| Ship gate stopped the run (Step 0.5) | `blocked` |
+| The run failed. Put the failure in `Detail` | `error` |
+
+**Committing the row:**
+
+- **Produced a post** → include `runs/linkedin.md` in the same content branch and commit. Nothing extra to push.
+- **Produced nothing** (`skipped`, `blocked`, recoverable `error`) → there is no branch and no PR, so commit this one file alone and push it straight to the fork's `main`:
+
+  ```bash
+  git add runs/linkedin.md
+  git commit -m "runs: linkedin <YYYY-MM-DD> <outcome>"
+  git pull --rebase origin main && git push origin main
+  ```
+
+  This is the ONE exception to "never push to main directly," and it is safe only because the commit is a single appended line in a file that no other agent writes. **It must never carry any other file.** If the push fails, say so and finish the run anyway. A missing heartbeat row is a nuisance; a run that dies trying to write one is worse.
+
+Why this is mandatory: a quiet exit and a routine that never fired look identical from outside. X and Instagram were dark for seven weeks under exactly that cover. `skipped` is a healthy outcome. A missing row is not.

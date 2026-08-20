@@ -50,6 +50,26 @@ Schedules are staggered so the daily runs don't collide.
 
 If the user names a different time, convert IST → UTC (subtract 5:30) and **confirm the conversion** before creating.
 
+### Non-channel routine: Factory Health
+
+Not a channel and it produces no content, but it uses the same config block, so it is set up here.
+
+| Routine | Invocation | Default time (IST) | Cron (UTC) |
+|---------|-----------|--------------------|------------|
+| `health` | `/factory-health` | Mondays 9:00 AM | `30 3 * * 1` |
+
+Its prompt is **not** the channel template above. Use this instead:
+
+```
+Run /factory-health.
+
+You are the weekly health check for a multi-channel content factory. Follow .claude/skills/factory-health/SKILL.md exactly. You are READ-ONLY: do not generate content, do not write to raw-ideas/ or any channel folder, do not create a branch, do not open a PR, do not push anything.
+
+Read the run logs in ./runs/, the open PR list on this fork (gh pr list --state open), and the LinkedIn unshipped register, then report which channels are dark, starved, or gated, which PRs are stuck in review, and the single highest-leverage next action. Your report is delivered as a push notification, so the first two lines have to carry the verdict on their own.
+```
+
+Because it is read-only and pushes nothing, this routine is safe to run as often as the user wants. Weekly is the default so it stays a signal rather than noise.
+
 ---
 
 ## Prompt template (per run)
@@ -63,15 +83,24 @@ Run <AGENT INVOCATION>.
 
 This repo IS the fork and the integration point. Before generating, run `gh pr list --state open --json headRefName` to see which ideas already have content in flight. Use the skill to select the single best next item to produce, and derive a STABLE kebab slug for it from its source raw-idea (NOT today's date), so the same idea always maps to the same branch: claude/<channel>-<slug>.
 
-If that branch already has an open PR, or the skill determines there is nothing new worth producing, STOP NOW — do not create a branch or PR; just report that there was nothing new. Otherwise:
+If that branch already has an open PR, or the skill determines there is nothing new worth producing, or a gate in the skill blocks the run, then STOP — do not create a branch or PR. Write the run-log row (see below) and report that there was nothing new. Otherwise:
 1. git checkout -b claude/<channel>-<slug>
-2. Stage and commit only the new/changed files with a clear message.
+2. Stage and commit only the new/changed files with a clear message. Include the run-log row for this run (see below) in this same commit.
 3. Push the branch to origin (the fork): git push -u origin claude/<channel>-<slug>
 4. Open a pull request into the fork's own main for review:
      gh pr create --base main --head claude/<channel>-<slug> \
        --title "content: <channel> — <slug>" \
        --body "Routine-generated <channel> content. Review and merge into the fork's main; the personal mirror syncs automatically."
-This is a same-repo PR on the fork, which your gh account owns, so it succeeds. Do NOT push to main directly. Do NOT touch the personal upstream.
+This is a same-repo PR on the fork, which your gh account owns, so it succeeds. Do NOT touch the personal upstream.
+
+HEARTBEAT — do this on EVERY run, including runs that produce nothing. It is the last thing you do. Append exactly one row to ./runs/<channel>.md following the contract in runs/README.md:
+  | <YYYY-MM-DD UTC> | <produced|skipped|blocked|error> | <one short line why> | <link to output or —> |
+If you opened a PR, that row is already in the branch (step 2) and there is nothing more to do. If you did NOT open a PR, commit that single file on its own and push it straight to main:
+  git add runs/<channel>.md
+  git commit -m "runs: <channel> <YYYY-MM-DD> <outcome>"
+  git pull --rebase origin main && git push origin main
+This single-line append is the ONLY thing you may ever push to main directly, and the commit must contain no other file. If that push fails, say so and finish anyway.
+A quiet exit and a routine that never fired look identical from outside; two channels went dark for seven weeks under exactly that cover. A `skipped` row is a healthy result. A missing row is not.
 ```
 
 ## Sync model (fork `main` = single source of truth)

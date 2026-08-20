@@ -21,7 +21,8 @@ Full overview: [`README.md`](./README.md).
 5. **Strip company names, internal tool names, and private details** from any generated content unless explicitly told otherwise.
 6. **No emojis** in generated content unless the user explicitly asks.
 7. **Filesystem is the source of truth.** Don't invent sidecar state files or JSON manifests. `TODO.md` per channel is enough.
-8. **Code ships to the FORK, not personal.** The fork `altaf-shaikh-cs/content-factory` is the single integration point — cloud routines clone it, and you merge content into it. Push code/config changes with `bash scripts/deploy-code.sh` (after committing locally). The personal repo `altafshaikh/content-factory` (this local `origin`) is a downstream MIRROR, refreshed by `bash scripts/mirror-personal.sh` (also the daily cron). **Don't `git push origin main` for code** — that diverges the mirror. Push to the fork; the mirror follows. See **Deploy & routines** below.
+8. **Every channel run writes a heartbeat.** One row in `./runs/<channel>.md`, on every run, including runs that produce nothing. See [`runs/README.md`](./runs/README.md) for the contract. A quiet exit and a dead routine are indistinguishable without it, which is how X and Instagram went dark for seven weeks. This row is the **only** thing a routine may push directly to the fork's `main`, and that commit must carry no other file.
+9. **Code ships to the FORK, not personal.** The fork `altaf-shaikh-cs/content-factory` is the single integration point — cloud routines clone it, and you merge content into it. Push code/config changes with `bash scripts/deploy-code.sh` (after committing locally). The personal repo `altafshaikh/content-factory` (this local `origin`) is a downstream MIRROR, refreshed by `bash scripts/mirror-personal.sh` (also the daily cron). **Don't `git push origin main` for code** — that diverges the mirror. Push to the fork; the mirror follows. See **Deploy & routines** below.
 
 ---
 
@@ -48,11 +49,33 @@ A change is live for the routines once step 2 completes (their next run clones t
 
 **Set up / change a routine:** use the repo-scoped skill `setup-channel-routine` (`.claude/skills/setup-channel-routine/SKILL.md`) — `/setup-channel-routine <linkedin|x|instagram>`. It bakes in the canonical config (environment, fork repo, tools, no MCP connectors, the within-fork-PR prompt) and staggered schedules. Manage/disable routines at https://claude.ai/code/routines.
 
-| Channel | Routine name | Schedule (IST) |
-|---------|--------------|----------------|
-| LinkedIn | Daily Linkedin Post Creator | 8:30 PM |
-| Instagram | Daily Instagram Reel Creator | 9:00 PM |
-| X | Daily X Post Creator | 10:00 AM |
+| Channel | Routine name | Schedule (IST) | Verified producing |
+|---------|--------------|----------------|--------------------|
+| LinkedIn | Daily Linkedin Post Creator | 8:30 PM | Yes, last PR 2026-08-11 |
+| Instagram | Daily Instagram Reel Creator | 9:00 PM | **No. Zero PRs ever. Unverified** |
+| X | Daily X Post Creator | 10:00 AM | **No. Zero PRs ever. Unverified** |
+| _(none)_ | Blog | manual / `/loop` | Yes, last PR 2026-08-11 |
+| _(health)_ | Factory Health | Mon 9:00 AM | Set up 2026-08-15 |
+
+**Do not trust the first three columns alone.** As of 2026-08-15, the X and Instagram routines have never opened a single PR on the fork, and their last output was 2026-06-28 / 2026-06-30. Either they were never created or they fail before they can push. Verify at https://claude.ai/code/routines before assuming a channel is running. The `runs/` heartbeat and `/factory-health` exist so this column can never again be wrong for seven weeks.
+
+---
+
+## Health & gates
+
+Two mechanisms exist because the factory's real constraint is throughput at the human gate, not generation capacity. Both were added 2026-08-15.
+
+### The heartbeat (`runs/`)
+
+Append-only run log, one file per channel, one row per run, written **even when the run produces nothing**. Contract and outcome vocabulary: [`runs/README.md`](./runs/README.md). Read by `/factory-health`; nothing reads it to make a production decision. It is a log, not state, so the per-channel `TODO.md` remains the source of truth for what has been consumed.
+
+`/factory-health` (weekly routine, also invocable by hand) turns those logs into a verdict: which channels are **dark** (no row in >2 days, meaning the routine is broken or missing), **starved** (alive but out of ideas), or **gated**, plus PRs stuck in review for >3 days and the LinkedIn unshipped count. It is strictly read-only.
+
+### The LinkedIn ship gate
+
+`linkedin-growth-agent` Step 0.5 **hard-stops** when 3 or more finished LinkedIn posts have never been published. It generates nothing, creates no branch, opens no PR, and instead names the single post to publish today. The threshold is 3; the override is `--force`, or any Mode B run where a human passed idea content directly.
+
+This is deliberate and it is not a bug when it fires. The account's own tracker settled the question: cadence beats creative on this account, the impression floor is ~5/day when nothing ships, and 9 finished posts sat unpublished while the pipeline kept producing. A soft warning was already in place and did not hold. When the gate blocks, the fix is to publish, never to bypass.
 
 ---
 
@@ -71,6 +94,7 @@ A change is live for the routines once step 2 completes (their next run clones t
 | "/loop"                                       | Use the loop prompt file matching the channel (e.g. `linkedin.agent.md`)|
 | "generate image" / "redo the image" / "/image-gen-agent" | Skill `image-gen-agent` (reads `./agents/image-gen/inspiration/`) |
 | "sync the mirror" / "update personal repo" / "/mirror-personal" | Skill `mirror-personal` (runs `scripts/mirror-personal.sh`) |
+| "is the factory healthy" / "which channels are dark" / "why is X not posting" / "/factory-health" | Skill `factory-health` (read-only; reads `runs/`, open PRs, unshipped register) |
 
 ---
 
@@ -123,7 +147,9 @@ For low-friction capture, drop rough notes into any file in `./inspiration-inbox
 ## Don't do
 
 - Don't move or delete anything in `./raw-ideas/`
-- Don't write outside the relevant channel folder when working on a single channel
+- Don't write outside the relevant channel folder when working on a single channel (sole exception: the one heartbeat row in `runs/<channel>.md`)
+- Don't bypass the LinkedIn ship gate to "just get a post out" — publishing the backlog is the faster path to the same goal
+- Don't skip the heartbeat row because a run did nothing. That run is exactly the one worth logging
 - Don't auto-commit or auto-push unless explicitly asked
 - Don't suggest folding multiple channels into one folder — the multi-channel structure is intentional
 - Don't create new top-level folders without being asked

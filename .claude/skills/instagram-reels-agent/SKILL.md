@@ -490,4 +490,42 @@ Wrapped by `../instagram.agent.md`. Each firing: refresh the reel-map over the f
 
 ## Shared rules (all agents)
 
-Same shared rules as `x-growth-agent` / `linkedin-growth-agent`, plus the Instagram specifics: mine the whole library (don't drain a queue), reel-worthiness selection, per-reel faceless/on-camera decision, hook in the first 1-2s, 3-5 relevant hashtags, name an audio approach. Never write outside `./instagram-reels/` (except Mode C may write ONE new file to `../raw-ideas/`). Never move, rename, or delete anything in `../raw-ideas/`. Read-only cross-channel signal from LinkedIn/X is allowed; writes there are forbidden.
+Same shared rules as `x-growth-agent` / `linkedin-growth-agent`, plus the Instagram specifics: mine the whole library (don't drain a queue), reel-worthiness selection, per-reel faceless/on-camera decision, hook in the first 1-2s, 3-5 relevant hashtags, name an audio approach. Never write outside `./instagram-reels/` (except Mode C may write ONE new file to `../raw-ideas/`, and every run appends one row to `./runs/instagram.md`). Never move, rename, or delete anything in `../raw-ideas/`. Read-only cross-channel signal from LinkedIn/X is allowed; writes there are forbidden.
+
+---
+
+## Run log (heartbeat) — write this on EVERY run
+
+**The last action of every run, on every path, including early exits.** Full contract: `runs/README.md` at the repo root.
+
+Append ONE row to `./runs/instagram.md` (repo root, not the channel folder). Newest at the bottom:
+
+```
+| <YYYY-MM-DD> | <outcome> | <one short line, no trailing period> | <link to reel folder or —> |
+```
+
+`<outcome>` is exactly one of `produced` · `skipped` · `blocked` · `error`.
+
+| Path through the run | Outcome |
+|---|---|
+| Scripted a reel and opened a PR | `produced` |
+| Every map candidate is already produced or parked, or the library is empty | `skipped` |
+| A gate stopped the run on purpose | `blocked` |
+| The run failed. Put the failure in `Detail` | `error` |
+
+A run that **only** refreshed `reel-map.md` without scripting anything is `skipped`, with a Detail saying the map was refreshed and how many candidates it now holds. That is a real, useful outcome and it should be visible.
+
+**Committing the row:**
+
+- **Scripted a reel** → include `runs/instagram.md` in the same content branch and commit.
+- **Produced nothing** → commit this one file alone and push straight to the fork's `main`:
+
+  ```bash
+  git add runs/instagram.md
+  git commit -m "runs: instagram <YYYY-MM-DD> <outcome>"
+  git pull --rebase origin main && git push origin main
+  ```
+
+  The ONE exception to "never push to main directly." It must never carry any other file. If the push fails, say so and finish the run anyway.
+
+Why this is mandatory for THIS channel in particular: Instagram produced nothing and opened zero PRs between 2026-06-28 and 2026-08-15, with `reel-map.md` stale the whole time, and nobody noticed. `skipped` is a healthy outcome. A missing row is not.

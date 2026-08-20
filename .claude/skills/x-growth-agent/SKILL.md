@@ -83,7 +83,7 @@ Identical mechanics to LinkedIn, but the channel token is `"x"`.
    queue = (files in ../raw-ideas/) MINUS (Done) MINUS (In Progress) MINUS (Skipped)
    ```
 4. Filter: drop any file whose frontmatter declares `channels: [...]` without `"x"` in the list.
-5. If queue is empty → print `No new X ideas. Skipping.` and exit. **Generate nothing.**
+5. If queue is empty → print `No new X ideas. Skipping.`, write the run-log row with outcome `skipped` (see **Run log** below), and exit. **Generate nothing.**
 6. Otherwise pick the **oldest by filename sort** (lexical — `001-` before `002-`).
 7. Read the chosen file. Its content (minus frontmatter) is the **candidate raw idea**.
 8. Derive `<slug>` from the filename (strip extension AND numeric prefix, kebab-case).
@@ -151,7 +151,7 @@ Implication for X: <one line — e.g. "strong LinkedIn comment-rate → lead wit
 **Acting on the verdict:**
 
 - **`yes` / `borderline`** → this is the run's idea. NOW create the post folder `./x-posts/posts/<slug>-<YYYYMMDD>/`, write `00-x-fit.md` into it, move the idea to **In Progress** in TODO.md, and proceed to the Strategist (which reads `00-x-fit.md`).
-- **`no`** → do NOT generate. Add the idea to the **Skipped (not a fit for X)** section of `./x-posts/TODO.md` with a one-line reason and date. Then return to Step 0 and evaluate the **next** oldest queued idea. Repeat until an idea passes or the queue is exhausted (if exhausted → print `No X-worthy ideas in the queue right now. Skipping.` and exit).
+- **`no`** → do NOT generate. Add the idea to the **Skipped (not a fit for X)** section of `./x-posts/TODO.md` with a one-line reason and date. Then return to Step 0 and evaluate the **next** oldest queued idea. Repeat until an idea passes or the queue is exhausted (if exhausted → print `No X-worthy ideas in the queue right now. Skipping.`, write the run-log row with outcome `skipped`, and exit).
 - **Mode B (direct invocation):** advisory only — print the verdict but always proceed, even on `no` (the user explicitly asked for this topic).
 
 A `no` is not permanent: the user can move an idea out of **Skipped** back to the queue any time, and direct invocation always overrides the gate.
@@ -488,4 +488,42 @@ Each firing: computes X queue (`../raw-ideas/` MINUS TODO.md Done + In Progress)
 
 ## Shared rules (all agents)
 
-Identical to `linkedin-growth-agent`'s shared-rules section — plus the X-specific hard rules: 280-char ceiling per tweet, no hashtags by default, links only in replies, hook in the first ~7 words. Never write outside `./x-posts/` (except Mode B may write ONE new file to `../raw-ideas/`). Never move, rename, or delete anything in `../raw-ideas/`.
+Identical to `linkedin-growth-agent`'s shared-rules section — plus the X-specific hard rules: 280-char ceiling per tweet, no hashtags by default, links only in replies, hook in the first ~7 words. Never write outside `./x-posts/` (except Mode B may write ONE new file to `../raw-ideas/`, and every run appends one row to `./runs/x.md`). Never move, rename, or delete anything in `../raw-ideas/`.
+
+---
+
+## Run log (heartbeat) — write this on EVERY run
+
+**The last action of every run, on every path, including early exits.** Full contract: `runs/README.md` at the repo root.
+
+Append ONE row to `./runs/x.md` (repo root, not the channel folder). Newest at the bottom:
+
+```
+| <YYYY-MM-DD> | <outcome> | <one short line, no trailing period> | <link to post folder or —> |
+```
+
+`<outcome>` is exactly one of `produced` · `skipped` · `blocked` · `error`.
+
+| Path through the run | Outcome |
+|---|---|
+| Generated a post or thread and opened a PR | `produced` |
+| Empty queue, every candidate already in flight, or the X Fit Gate rejected everything left | `skipped` |
+| A gate stopped the run on purpose | `blocked` |
+| The run failed. Put the failure in `Detail` | `error` |
+
+When the Fit Gate sends an idea to **Skipped**, that is still an outcome worth logging: use `skipped` with a Detail like `fit gate rejected 3 ideas, queue exhausted`.
+
+**Committing the row:**
+
+- **Produced a post** → include `runs/x.md` in the same content branch and commit.
+- **Produced nothing** → commit this one file alone and push straight to the fork's `main`:
+
+  ```bash
+  git add runs/x.md
+  git commit -m "runs: x <YYYY-MM-DD> <outcome>"
+  git pull --rebase origin main && git push origin main
+  ```
+
+  The ONE exception to "never push to main directly." It must never carry any other file. If the push fails, say so and finish the run anyway.
+
+Why this is mandatory for THIS channel in particular: X produced nothing and opened zero PRs between 2026-06-30 and 2026-08-15, and nobody noticed, because a quiet exit and a dead routine look identical from outside. `skipped` is a healthy outcome. A missing row is not.

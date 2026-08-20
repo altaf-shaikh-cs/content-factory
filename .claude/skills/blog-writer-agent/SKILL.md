@@ -49,7 +49,7 @@ content-factory/                            ← project root
    queue = (files in ../raw-ideas/) MINUS (Done filenames) MINUS (In Progress filenames)
    ```
 4. Filter: drop any file whose frontmatter declares `channels: [...]` without `"blog"` in the list.
-5. If queue is empty → print one line: `No new blog ideas. Skipping.` and exit. Do not generate anything.
+5. If queue is empty → print one line: `No new blog ideas. Skipping.`, write the run-log row with outcome `skipped` (see **Run log** below), and exit. Do not generate anything.
 6. Otherwise pick the **oldest by filename sort** (lexical — `001-` runs before `002-`).
 7. Read the chosen file. Its full content (minus frontmatter) is the **raw idea**.
 8. Derive `<slug>` from the filename (strip extension AND any numeric prefix, kebab-case it).
@@ -487,3 +487,41 @@ Each daily firing:
 - Respects `channels:` frontmatter — skips ideas that exclude "blog"
 
 To process multiple ideas in one day, invoke the skill manually as many times as needed — each invocation drains one entry from the Blog queue. Other channels (LinkedIn, X) maintain independent queues against the same shared library.
+
+---
+
+## Run log (heartbeat) — write this on EVERY run
+
+**The last action of every run, on every path, including early exits.** Full contract: `runs/README.md` at the repo root.
+
+Append ONE row to `./runs/blog.md` (repo root, not the channel folder). Newest at the bottom:
+
+```
+| <YYYY-MM-DD> | <outcome> | <one short line, no trailing period> | <link to post folder or —> |
+```
+
+`<outcome>` is exactly one of `produced` · `skipped` · `blocked` · `error`.
+
+| Path through the run | Outcome |
+|---|---|
+| Wrote a post and opened a PR | `produced` |
+| Empty queue, or every remaining idea already has an open PR | `skipped` |
+| A gate stopped the run on purpose | `blocked` |
+| The run failed. Put the failure in `Detail` | `error` |
+
+The blog channel has historically written long explanatory notes into `TODO.md` when a run found nothing to do. Keep doing that if it helps, but the run-log row is what `/factory-health` reads, so it is not optional.
+
+**Committing the row:**
+
+- **Wrote a post** → include `runs/blog.md` in the same content branch and commit.
+- **Produced nothing** → commit this one file alone and push straight to the fork's `main`:
+
+  ```bash
+  git add runs/blog.md
+  git commit -m "runs: blog <YYYY-MM-DD> <outcome>"
+  git pull --rebase origin main && git push origin main
+  ```
+
+  The ONE exception to "never push to main directly." It must never carry any other file. If the push fails, say so and finish the run anyway.
+
+This channel writes outside `./blog-post/` for exactly this one file and nothing else.
