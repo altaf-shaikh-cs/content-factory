@@ -1,0 +1,52 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4efe3"/>
+      <stop offset="100%" stop-color="#eee7d8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- top label -->
+  <line x1="90" y1="103" x2="122" y2="103" stroke="#9a9384" stroke-width="3"/>
+  <text x="136" y="110" font-family="'SF Mono', 'IBM Plex Mono', 'Courier New', monospace" font-size="22" letter-spacing="5" fill="#8a8478" font-weight="600">FOUR SKILLS FOR 2026 &#183; ANDREW NG</text>
+
+  <!-- decorative blueprint nodes, top right -->
+  <g stroke="#c9c2b0" stroke-width="1.5" fill="none">
+    <line x1="1260" y1="160" x2="1360" y2="70"/>
+    <line x1="1360" y1="70" x2="1460" y2="130"/>
+    <line x1="1460" y1="130" x2="1545" y2="55"/>
+  </g>
+  <circle cx="1260" cy="160" r="6" fill="#cf5a24"/>
+  <circle cx="1360" cy="70" r="5" fill="#9a9384"/>
+  <circle cx="1460" cy="130" r="6" fill="#2f66c9"/>
+  <circle cx="1545" cy="55" r="4" fill="#9a9384"/>
+
+  <!-- headline -->
+  <text x="88" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="104" font-weight="900" fill="#1c1a17">Coding Was <tspan fill="#cf5a24">Never</tspan></text>
+  <text x="88" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="104" font-weight="900" fill="#1c1a17">The Skill That <tspan fill="#2f66c9">Mattered</tspan></text>
+
+  <!-- subheadline -->
+  <rect x="90" y="468" width="6" height="90" fill="#cf5a24"/>
+  <text x="116" y="502" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="600" fill="#2a2723">Andrew Ng analyzed <tspan fill="#cf5a24">10,000</tspan> job postings.</text>
+  <text x="116" y="544" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="600" fill="#2a2723">Coding wasn&#8217;t one of the <tspan fill="#2f66c9">four skills</tspan> that mattered.</text>
+
+  <line x1="90" y1="605" x2="1510" y2="605" stroke="#d9d2c0" stroke-width="1.5"/>
+
+  <!-- stats -->
+  <text x="90" y="695" font-family="'SF Mono', 'IBM Plex Mono', 'Courier New', monospace" font-size="58" font-weight="700" fill="#cf5a24">10,000</text>
+  <text x="90" y="726" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#8a8478">job postings analyzed</text>
+
+  <line x1="480" y1="650" x2="480" y2="740" stroke="#d9d2c0" stroke-width="1.5"/>
+
+  <text x="530" y="695" font-family="'SF Mono', 'IBM Plex Mono', 'Courier New', monospace" font-size="58" font-weight="700" fill="#2f66c9">4</text>
+  <text x="530" y="726" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#8a8478">skills that replaced &#8220;writes code&#8221;</text>
+
+  <line x1="90" y1="775" x2="1510" y2="775" stroke="#d9d2c0" stroke-width="1.5"/>
+
+  <!-- footer -->
+  <text x="90" y="808" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" fill="#9a9384">Coding Was Never the Skill That Mattered</text>
+  <text x="90" y="847" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="800" fill="#cf5a24">@teachmebro</text>
+  <text x="90" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#2a2723">Altaf Shaikh <tspan fill="#8a8478" font-weight="400">&#183; AI Engineering</tspan></text>
+</svg>
