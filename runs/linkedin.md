@@ -9,3 +9,4 @@ Append-only heartbeat, one row per run of `linkedin-growth-agent`, including run
 | 2026-08-09 | produced | five-rung-ai-automation-ladder, first derived cross-idea post | [posts/five-rung-ai-automation-ladder-20260809](../linkedin-posts/posts/five-rung-ai-automation-ladder-20260809/) |
 | 2026-08-09 | produced | 25-claude-code-tips (PR #33, merged) | [posts/25-claude-code-tips-20260809](../linkedin-posts/posts/25-claude-code-tips-20260809/) |
 | 2026-08-11 | produced | claude-code-auto-mode-classifier (PR #36, still open, folder lands on merge) | — |
+| 2026-08-20 | blocked | Ship gate: 5 finished posts unshipped (U=5 ≥ 3); generation blocked until backlog under 3 | — |
