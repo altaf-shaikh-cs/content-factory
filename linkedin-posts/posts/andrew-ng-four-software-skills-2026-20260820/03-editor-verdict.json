@@ -1,0 +1,17 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "approved",
+  "winner": "B",
+  "why_winner": "B opens with a stance the reader has a stake in arguing with (\"coding is not the skill that protects your job\"), which is the hook property the tracker credits for the account's strongest posts. C reads closer to the neutral listicle open the Performance Context explicitly says to avoid.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 9, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.4 },
+    "B": { "hook_strength": 9, "authenticity": 8, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.0 },
+    "C": { "hook_strength": 6, "authenticity": 8, "readability": 8, "plan_compliance": 9, "cta_clarity": 9, "avg": 8.0 }
+  },
+  "runner_up_notes": {
+    "A": "Personal framing (\"I used to think...\") sells the bricklayer reframe as lived realization rather than borrowed research, worth keeping in mind if this gets revised.",
+    "C": "The four-question audit framing is the most directly saveable/actionable version, good raw material for the diagnostic carousel slide even though it lost as a caption."
+  },
+  "issues": []
+}
