@@ -10,3 +10,4 @@ Append-only heartbeat, one row per run of `linkedin-growth-agent`, including run
 | 2026-08-09 | produced | 25-claude-code-tips (PR #33, merged) | [posts/25-claude-code-tips-20260809](../linkedin-posts/posts/25-claude-code-tips-20260809/) |
 | 2026-08-11 | produced | claude-code-auto-mode-classifier (PR #36, still open, folder lands on merge) | — |
 | 2026-08-20 | blocked | Ship gate: 5 finished posts unshipped (U=5 ≥ 3); generation blocked until backlog under 3 | — |
+| 2026-08-21 | blocked | Ship gate: 5 unshipped posts (U=5 ≥ 3); only queued idea (007-claude-code-auto-mode-classifier) already has open PR #36 | — |
