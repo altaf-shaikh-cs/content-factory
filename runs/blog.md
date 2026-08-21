@@ -10,3 +10,4 @@ Note: the blog channel has no cloud routine in the routine table in `CLAUDE.md`.
 | 2026-08-11 | produced | claude-code-auto-mode-classifier (PR #34, merged) | [posts/claude-code-auto-mode-classifier](../blog-post/posts/claude-code-auto-mode-classifier/) |
 | 2026-08-11 | produced | five-rung-ai-automation-ladder (PR #35, still open) | — |
 | 2026-08-15 | seeded | Log created. Rows before this date are reconstructed from git history and PRs, not written by the agent | — |
+| 2026-08-21 | skipped | Queue empty: 007-five-rung-ai-automation-ladder (PR #35, open) and 008-andrew-ng-four-software-skills-2026 (PR #38, open) already in flight, all other raw ideas already Done | — |
