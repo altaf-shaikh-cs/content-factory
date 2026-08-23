@@ -12,3 +12,4 @@ Append-only heartbeat, one row per run of `linkedin-growth-agent`, including run
 | 2026-08-20 | blocked | Ship gate: 5 finished posts unshipped (U=5 ≥ 3); generation blocked until backlog under 3 | — |
 | 2026-08-21 | blocked | Ship gate: 5 unshipped posts (U=5 ≥ 3); only queued idea (007-claude-code-auto-mode-classifier) already has open PR #36 | — |
 | 2026-08-22 | blocked | Ship gate: 5 unshipped posts (U=5 ≥ 3); queue also empty — no new ideas to generate | — |
+| 2026-08-23 | blocked | Ship gate: 5 unshipped posts (U=5 ≥ 3); queue also empty — no new ideas to generate | — |
