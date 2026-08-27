@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">10 / 12</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">WHAT IT CATCHES</text>
+  <text x="88" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="54" font-weight="900" fill="#1A1A18">The default block list</text>
+  <text x="88" y="324" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="54" font-weight="900" fill="#1A1A18">is stranger than you think.</text>
+  <circle cx="96" cy="393" r="5" fill="#E14B16"/>
+  <text x="122" y="402" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#1A1A18">curl | bash</text>
+  <circle cx="96" cy="447" r="5" fill="#E14B16"/>
+  <text x="122" y="456" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#1A1A18">force push, git reset --hard, git clean -fd</text>
+  <circle cx="96" cy="501" r="5" fill="#E14B16"/>
+  <text x="122" y="510" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#1A1A18">terraform destroy, and plans that destroy</text>
+  <circle cx="96" cy="555" r="5" fill="#E14B16"/>
+  <text x="122" y="564" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#1A1A18">production deploys and migrations</text>
+  <circle cx="96" cy="609" r="5" fill="#E14B16"/>
+  <text x="122" y="618" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#1A1A18">printing a live credential into the transcript</text>
+  <circle cx="96" cy="663" r="5" fill="#E14B16"/>
+  <text x="122" y="672" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#1A1A18">merging a PR no human approved</text>
+  <circle cx="96" cy="717" r="5" fill="#E14B16"/>
+  <text x="122" y="726" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#1A1A18">a tunnel exposing localhost to the internet</text>
+  <rect x="88" y="800" width="904" height="248" fill="#FFFFFF" rx="16" opacity="0.5"/>
+  <rect x="88" y="800" width="6" height="248" fill="#1668D6" rx="3"/>
+  <text x="130" y="862" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="25" font-weight="400" fill="#1A1A18">rm -rf "$VAR"  is blocked when $VAR</text>
+  <text x="130" y="906" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="25" font-weight="400" fill="#1A1A18">was never set in the conversation.</text>
+  <text x="130" y="950" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="25" font-weight="400" fill="#1A1A18">It cannot see command output, so it</text>
+  <text x="130" y="994" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="25" font-weight="400" fill="#1A1A18">cannot verify what it would delete.</text>
+  <text x="88" y="1098" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="25" font-weight="700" fill="#1A1A18">It refuses on the grounds that it cannot judge.</text>
+  <text x="88" y="1136" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="25" font-weight="400" fill="#8A8578">That is not pattern matching.</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">Authorization is not</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">transitive.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

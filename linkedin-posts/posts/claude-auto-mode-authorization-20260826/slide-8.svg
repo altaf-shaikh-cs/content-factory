@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">8 / 12</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">SAFETY BY SUBTRACTION, 1 OF 2</text>
+  <text x="88" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#1A1A18">It judges actions,</text>
+  <text x="88" y="336" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#E14B16">not arguments.</text>
+  <rect x="88" y="424" width="904" height="268" fill="#C3D8EF" rx="18"/>
+  <text x="132" y="494" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="900" fill="#8A8578" letter-spacing="2">WHAT THE REVIEWER NEVER SEES</text>
+  <text x="132" y="560" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="38" font-weight="900" fill="#1A1A18">Claude&#8217;s own reasoning.</text>
+  <text x="132" y="616" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#1A1A18">Stripped out before the action</text>
+  <text x="132" y="656" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#1A1A18">reaches the check.</text>
+  <rect x="88" y="732" width="904" height="220" fill="#FFFFFF" rx="16" opacity="0.5"/>
+  <rect x="88" y="732" width="6" height="220" fill="#E14B16" rx="3"/>
+  <text x="130" y="794" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="400" fill="#1A1A18">So the agent cannot explain</text>
+  <text x="130" y="838" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="400" fill="#1A1A18">why this one is fine. There is no</text>
+  <text x="130" y="882" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="400" fill="#1A1A18">argument to be persuaded by.</text>
+  <line x1="88" y1="1010" x2="992" y2="1010" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1066" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="400" fill="#8A8578">It sees your words. It sees the command.</text>
+  <text x="88" y="1106" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="700" fill="#1A1A18">It judges the gap between them.</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">Authorization is not</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">transitive.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

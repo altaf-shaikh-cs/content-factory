@@ -1,0 +1,28 @@
+{
+  "round": 1,
+  "brief_constraint": "Simplify, do not dump. The previous attempt was rejected as a feature inventory. Coverage is disqualifying here, not rewarded.",
+  "scores": {
+    "A_question_hook": { "hook": 7, "authenticity": 9, "readability": 9, "simplicity": 8, "compliance": 10, "cta": 9, "avg": 8.7 },
+    "B_inversion_hook": { "hook": 10, "authenticity": 9, "readability": 10, "simplicity": 10, "compliance": 10, "cta": 6, "avg": 9.2 },
+    "C_daily_reveal": { "hook": 8, "authenticity": 8, "readability": 9, "simplicity": 8, "compliance": 10, "cta": 5, "avg": 8.0 }
+  },
+  "winner": "B_inversion_hook",
+  "why": "B's first two lines are a complete inversion the reader can disagree with before they have scrolled: built to stop a rogue AI, no, built to stop a helpful one. It states the subject and the surprise at once, which A's hook does not. B is also the shortest draft and the only one where nothing can be removed without losing an argument, which is the actual constraint on this rewrite. C is the closest to the last rejected draft in shape: it opens on the mechanism and reaches the reframe in paragraph four, by which point the reader is being informed rather than turned around.",
+  "grafts_into_winner": [
+    "From A: the closing question tied to the reader's own morning, replacing B's flat thesis restatement. B lost six points on CTA and this is the whole gap.",
+    "From A: the two-month practice attached directly to each half of the rule, so the recommendation and the lived evidence are one sentence instead of a claim followed by a credential."
+  ],
+  "cuts_held_from_all_drafts": [
+    "Every raw percentage. The reason for the miss (approval-shaped evidence, unchecked blast radius) is the actionable part; the number was decoration and decoration is what got the last draft rejected.",
+    "The two-stage classifier design, the tiered allowlist, subagent checkpoints, the 3-and-20 fallback thresholds, the protected-path list, the dropped blanket allow rules. All real, none of it changes the reader's decision.",
+    "Status-bar and settings instructions. This is a post about whether to be afraid, not a configuration guide."
+  ],
+  "compliance_check": {
+    "emojis": "none",
+    "em_dashes": "none",
+    "company_names": "none",
+    "invented_stats": "none, and no stats at all this time by choice",
+    "89_vs_13_6_stat": "excluded, not first-party verifiable"
+  },
+  "approved": true
+}

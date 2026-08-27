@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">2 / 12</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">THIS IS MEASURED, NOT A VIBE</text>
+  <text x="88" y="254" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="50" font-weight="900" fill="#1A1A18">The prompt was not</text>
+  <text x="88" y="310" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="50" font-weight="900" fill="#1A1A18">protecting you.</text>
+  <text x="80" y="528" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="196" font-weight="900" fill="#E14B16">93%</text>
+  <text x="90" y="584" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#1A1A18">of permission prompts get approved anyway.</text>
+  <line x1="88" y1="646" x2="992" y2="646" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="712" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#1A1A18">Approve 93% of anything</text>
+  <text x="88" y="764" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#1A1A18">and you are not deciding.</text>
+  <text x="88" y="816" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#E14B16">You are reacting.</text>
+  <rect x="88" y="876" width="904" height="178" fill="#FFFFFF" rx="16" opacity="0.5"/>
+  <rect x="88" y="876" width="6" height="178" fill="#1668D6" rx="3"/>
+  <text x="130" y="938" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#1A1A18">And it degrades inside a session.</text>
+  <text x="130" y="982" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#1A1A18">The more prompts you clear, the less</text>
+  <text x="130" y="1026" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#1A1A18">each one is actually read.</text>
+  <text x="88" y="1104" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="25" font-weight="400" fill="#8A8578">Leaving two bad options: rubber-stamp it all, or turn it all off.</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">Authorization is not</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">transitive.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

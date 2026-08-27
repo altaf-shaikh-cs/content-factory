@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">11 / 12</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">WHAT IT MISSES</text>
+  <text x="88" y="258" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="900" fill="#1A1A18">On real overeager actions,</text>
+  <text x="88" y="346" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="88" font-weight="900" fill="#E14B16">17% got through.</text>
+  <text x="88" y="400" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="24" font-weight="400" fill="#8A8578">Roughly one in six. Anthropic published this themselves.</text>
+  <rect x="88" y="444" width="904" height="240" fill="#FFFFFF" rx="16" opacity="0.5"/>
+  <rect x="88" y="444" width="6" height="240" fill="#E14B16" rx="3"/>
+  <text x="130" y="506" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="400" fill="#1A1A18">The classifier correctly identifies</text>
+  <text x="130" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="400" fill="#1A1A18">the danger. What it gets wrong is</text>
+  <text x="130" y="594" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="400" fill="#1A1A18">whether your consent covered it.</text>
+  <text x="130" y="658" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="700" fill="#8A8578" letter-spacing="1">ANTHROPIC, ON ITS OWN MISSES</text>
+  <rect x="88" y="704" width="904" height="190" fill="#FFFFFF" rx="16" opacity="0.5"/>
+  <rect x="88" y="704" width="6" height="190" fill="#1668D6" rx="3"/>
+  <text x="130" y="766" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="400" fill="#1A1A18">We&#8217;ve tried prompt-engineering around</text>
+  <text x="130" y="810" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="400" fill="#1A1A18">this and haven&#8217;t found a fix that</text>
+  <text x="130" y="854" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="29" font-weight="400" fill="#1A1A18">doesn&#8217;t cost more than it gains.</text>
+  <text x="88" y="956" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="700" fill="#1A1A18">It finds approval-shaped evidence and stops</text>
+  <text x="88" y="998" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="700" fill="#1A1A18">short of checking the blast radius.</text>
+  <rect x="88" y="1042" width="6" height="100" fill="#E14B16" rx="3"/>
+  <text x="122" y="1084" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="33" font-weight="900" fill="#1A1A18">A precise weakness gives</text>
+  <text x="122" y="1128" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="33" font-weight="900" fill="#E14B16">you a precise rule.</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">Authorization is not</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">transitive.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">6 / 12</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">WHY YOU NEVER FEEL IT RUNNING</text>
+  <text x="88" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#1A1A18">Two passes,</text>
+  <text x="88" y="336" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#E14B16">not one.</text>
+  <text x="88" y="402" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#8A8578">One reviewer would have had to pick thorough or cheap.</text>
+  <rect x="88" y="444" width="904" height="244" fill="#C3D8EF" rx="18"/>
+  <rect x="88" y="444" width="8" height="244" fill="#1668D6" rx="4"/>
+  <text x="128" y="494" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="900" fill="#8A8578" letter-spacing="3">STAGE 1</text>
+  <text x="128" y="548" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="36" font-weight="900" fill="#1A1A18">A fast yes or no.</text>
+  <text x="128" y="596" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#1A1A18">One token. Runs on everything that</text>
+  <text x="128" y="634" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#1A1A18">reaches the check. Cautious on purpose,</text>
+  <text x="128" y="672" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#1A1A18">so it over-blocks.</text>
+  <text x="952" y="562" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="68" font-weight="900" fill="#E14B16" text-anchor="end">8.5%</text>
+  <text x="952" y="598" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="end">false positives</text>
+  <line x1="148" y1="700" x2="148" y2="736" stroke="#8A8578" stroke-width="3" stroke-dasharray="5 6"/>
+  <path d="M 138 730 L 148 744 L 158 730" fill="none" stroke="#8A8578" stroke-width="3"/>
+  <text x="184" y="728" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="400" fill="#8A8578">only what stage 1 flagged</text>
+  <rect x="88" y="756" width="904" height="244" fill="#DDD9CF" rx="18"/>
+  <rect x="88" y="756" width="8" height="244" fill="#E14B16" rx="4"/>
+  <text x="128" y="806" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="900" fill="#8A8578" letter-spacing="3">STAGE 2</text>
+  <text x="128" y="860" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="36" font-weight="900" fill="#1A1A18">Full reasoning.</text>
+  <text x="128" y="908" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#1A1A18">Thinks it through, and is almost</text>
+  <text x="128" y="946" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#1A1A18">entirely a cache hit from stage 1,</text>
+  <text x="128" y="984" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#1A1A18">so the thinking is close to free.</text>
+  <text x="952" y="874" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="68" font-weight="900" fill="#E14B16" text-anchor="end">0.4%</text>
+  <text x="952" y="910" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="end">false positives</text>
+  <text x="88" y="1074" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="28" font-weight="700" fill="#1A1A18">Thorough where it matters. Cheap everywhere else.</text>
+  <text x="88" y="1114" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#8A8578">That is the whole trick.</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">Authorization is not</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">transitive.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

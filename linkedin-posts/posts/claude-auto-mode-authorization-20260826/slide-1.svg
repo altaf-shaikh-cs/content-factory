@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">1 / 12</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">APPROVAL FATIGUE</text>
+  <text x="84" y="318" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="94" font-weight="700" fill="#E14B16">y  y  y  y  y  y  y</text>
+  <text x="88" y="424" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="50" font-weight="900" fill="#1A1A18">Somewhere in that streak</text>
+  <text x="88" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="50" font-weight="900" fill="#1A1A18">you approved something</text>
+  <text x="88" y="536" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="50" font-weight="900" fill="#1A1A18">you would not have.</text>
+  <rect x="88" y="586" width="904" height="352" fill="#1A1F26" rx="18"/>
+  <text x="128" y="644" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#F2EEE7">Allow  Bash(npm test)</text>
+  <text x="948" y="644" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="700" fill="#7BC96F" text-anchor="end">y</text>
+  <text x="128" y="698" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#F2EEE7">Allow  Edit(auth.ts)</text>
+  <text x="948" y="698" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="700" fill="#7BC96F" text-anchor="end">y</text>
+  <text x="128" y="752" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#F2EEE7">Allow  Bash(git add -A)</text>
+  <text x="948" y="752" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="700" fill="#7BC96F" text-anchor="end">y</text>
+  <text x="128" y="806" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#E14B16">Allow  Bash(rm -rf $TMP/*)</text>
+  <text x="948" y="806" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="700" fill="#7BC96F" text-anchor="end">y</text>
+  <text x="128" y="860" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="400" fill="#F2EEE7">Allow  Bash(npm run build)</text>
+  <text x="948" y="860" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="26" font-weight="700" fill="#7BC96F" text-anchor="end">y</text>
+  <line x1="128" y1="882" x2="952" y2="882" stroke="#2E343F" stroke-width="2" stroke-dasharray="6 7"/>
+  <text x="128" y="916" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="400" fill="#9AA3AF">five approvals, four seconds</text>
+  <line x1="88" y1="978" x2="992" y2="978" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1036" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#1A1A18">One of those five was not like the others.</text>
+  <text x="88" y="1080" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="400" fill="#8A8578">You did not catch it, because by then you were not reading.</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">Authorization is not</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">transitive.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDEAE3"/>
+      <stop offset="100%" stop-color="#E4E0D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#ground)"/>
+  <text x="992" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="22" font-weight="400" fill="#8A8578" text-anchor="end">4 / 12</text>
+  <line x1="88" y1="138" x2="134" y2="138" stroke="#8A8578" stroke-width="3"/>
+  <text x="154" y="148" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#8A8578" letter-spacing="6">THE TRADEOFF, MAPPED</text>
+  <text x="88" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#1A1A18">High autonomy at</text>
+  <text x="88" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="58" font-weight="900" fill="#E14B16">low upkeep.</text>
+  <text x="88" y="386" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="400" fill="#8A8578">Every other option bills you in clicks or in config.</text>
+  <rect x="170" y="430" width="822" height="640" fill="#FFFFFF" rx="16" opacity="0.38"/>
+  <line x1="150" y1="1080" x2="150" y2="424" stroke="#1A1A18" stroke-width="3"/>
+  <path d="M 144 436 L 150 420 L 156 436" fill="none" stroke="#1A1A18" stroke-width="3"/>
+  <line x1="150" y1="1080" x2="1002" y2="1080" stroke="#1A1A18" stroke-width="3"/>
+  <path d="M 990 1074 L 1006 1080 L 990 1086" fill="none" stroke="#1A1A18" stroke-width="3"/>
+  <text transform="rotate(-90 116 750)" x="116" y="750" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="700" fill="#8A8578" text-anchor="middle" letter-spacing="4">SECURITY / SAFETY</text>
+  <text x="576" y="1124" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="700" fill="#8A8578" text-anchor="middle" letter-spacing="4">TASK AUTONOMY</text>
+  <rect x="190" y="446" width="292" height="178" fill="#FFFFFF" rx="12" opacity="0.72"/>
+  <text x="214" y="484" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="17" font-weight="900" fill="#8A8578" letter-spacing="2">MAINTENANCE FRICTION</text>
+  <circle cx="228" cy="516" r="10" fill="#C6C1B5"/>
+  <text x="252" y="523" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#1A1A18">None</text>
+  <circle cx="228" cy="546" r="10" fill="#F0BC63"/>
+  <text x="252" y="553" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#1A1A18">Low</text>
+  <circle cx="228" cy="576" r="10" fill="#DE7A4E"/>
+  <text x="252" y="583" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#1A1A18">Medium</text>
+  <circle cx="228" cy="606" r="10" fill="#8E2F1C"/>
+  <text x="252" y="613" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#1A1A18">High</text>
+  <line x1="729" y1="720" x2="729" y2="670" stroke="#8A8578" stroke-width="2.5" stroke-dasharray="7 8"/>
+  <path d="M 719 684 L 729 666 L 739 684" fill="none" stroke="#8A8578" stroke-width="2.5"/>
+  <circle cx="729" cy="644" r="19" fill="none" stroke="#8A8578" stroke-width="2.5" stroke-dasharray="6 6"/>
+  <text x="693" y="636" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="end">and a sandbox on top,</text>
+  <text x="693" y="662" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="end">for defence in depth</text>
+  <circle cx="663" cy="494" r="19" fill="#8E2F1C"/>
+  <text x="663" y="544" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="900" fill="#1A1A18" text-anchor="middle">Sandboxing</text>
+  <text x="663" y="574" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="middle">proxies + allowlists, forever</text>
+  <circle cx="351" cy="750" r="19" fill="#DE7A4E"/>
+  <text x="351" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="900" fill="#1A1A18" text-anchor="middle">Manual prompts</text>
+  <text x="351" y="830" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="middle">static allow/deny lists</text>
+  <circle cx="729" cy="750" r="19" fill="#F0BC63"/>
+  <text x="729" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="900" fill="#1A1A18" text-anchor="middle">Auto mode</text>
+  <text x="729" y="830" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="middle">one classifier prompt to keep current</text>
+  <circle cx="893" cy="980" r="19" fill="#C6C1B5"/>
+  <text x="992" y="1030" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="900" fill="#1A1A18" text-anchor="end">Bypass permissions</text>
+  <text x="992" y="1060" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="19" font-weight="400" fill="#8A8578" text-anchor="end">no upkeep, and no floor</text>
+  <line x1="88" y1="1196" x2="992" y2="1196" stroke="#D2CEC4" stroke-width="2"/>
+  <text x="88" y="1248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#1A1A18">Altaf Shaikh</text>
+  <text x="88" y="1282" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="20" font-weight="400" fill="#8A8578">// AI Engineering</text>
+  <text x="946" y="1244" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="30" font-weight="700" fill="#E14B16" text-anchor="end">@teachmebro</text>
+  <text x="946" y="1278" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">Authorization is not</text>
+  <text x="946" y="1302" font-family="'SF Mono', Menlo, 'DejaVu Sans Mono', monospace" font-size="18" font-weight="400" fill="#8A8578" text-anchor="end">transitive.</text>
+  <circle cx="966" cy="1236" r="11" fill="#E14B16"/>
+  <circle cx="990" cy="1236" r="11" fill="#1668D6"/>
+</svg>
