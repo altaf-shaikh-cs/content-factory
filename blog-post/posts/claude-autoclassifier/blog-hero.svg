@@ -1,0 +1,75 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="dotGlowOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D2571B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D2571B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dotGlowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1D6FE0" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1D6FE0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#F4EFE6"/>
+
+  <!-- Top label -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <line x1="90" y1="86" x2="130" y2="86" stroke="#8a8375" stroke-width="2"/>
+    <text x="146" y="93" font-size="22" font-weight="700" letter-spacing="5" fill="#6b6558">TWO MONTHS WITHOUT MANUAL APPROVAL</text>
+  </g>
+
+  <!-- Headline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="900">
+    <text x="90" y="270" font-size="102" fill="#1c1a17">Oversight Didn&#8217;t</text>
+    <text x="90" y="400" font-size="102">
+      <tspan fill="#D2571B">Disappear.</tspan>
+      <tspan fill="#1c1a17"> It </tspan>
+      <tspan fill="#1D6FE0">Moved.</tspan>
+    </text>
+  </g>
+
+  <!-- Sub-statement -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect x="90" y="470" width="6" height="90" fill="#D2571B"/>
+    <text x="128" y="505" font-size="34" font-weight="600" fill="#1c1a17">Manual approval didn&#8217;t go away. It got replaced by a</text>
+    <text x="128" y="547" font-size="34" font-weight="600" fill="#1c1a17">
+      <tspan fill="#1D6FE0" font-weight="800">classifier</tspan>
+      <tspan> that doesn&#8217;t get tired, and a </tspan>
+      <tspan fill="#D2571B" font-weight="800">guardrail</tspan>
+      <tspan> for what runs unwatched.</tspan>
+    </text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="90" y1="672" x2="1510" y2="672" stroke="#d8d0c0" stroke-width="1.5"/>
+
+  <!-- Stat tiles -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="90" y="762" font-size="64" font-weight="800" fill="#D2571B">90%</text>
+    <text x="90" y="796" font-size="21" font-weight="500" fill="#6b6558">manual approvals already redundant</text>
+
+    <line x1="560" y1="700" x2="560" y2="800" stroke="#d8d0c0" stroke-width="1.5"/>
+
+    <text x="610" y="762" font-size="64" font-weight="800" fill="#1D6FE0">0</text>
+    <text x="610" y="796" font-size="21" font-weight="500" fill="#6b6558">misuse cases in two months of daily use</text>
+  </g>
+
+  <!-- Footer: byline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="90" y="850" font-size="27" font-weight="800" fill="#1c1a17">Altaf Shaikh</text>
+    <text x="90" y="875" font-size="17" font-weight="500" letter-spacing="1" fill="#8a8375">AI Engineering</text>
+  </g>
+
+  <!-- Footer: tagline + handle -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="end">
+    <text x="1510" y="830" font-size="17" font-weight="500" fill="#8a8375">two months running Claude Code on auto mode</text>
+    <text x="1510" y="866" font-size="26" font-weight="800" letter-spacing="0.5" fill="#D2571B">@teachmebro</text>
+  </g>
+
+  <!-- Decorative dots -->
+  <circle cx="1540" cy="120" r="16" fill="url(#dotGlowOrange)"/>
+  <circle cx="1540" cy="120" r="6" fill="#D2571B"/>
+  <circle cx="1566" cy="120" r="16" fill="url(#dotGlowBlue)"/>
+  <circle cx="1566" cy="120" r="6" fill="#1D6FE0"/>
+</svg>

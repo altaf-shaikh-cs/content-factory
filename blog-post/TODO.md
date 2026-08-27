@@ -12,6 +12,7 @@ _(none)_
 
 ## Done
 
+- [x] claude-autoclassifier.md → [posts/claude-autoclassifier/final-post.md](./posts/claude-autoclassifier/final-post.md) — 2026-08-27
 - [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → source material for `006-claude-four-building-blocks-skills-plugins-projects-artifacts.md`, already produced: [posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md](./posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md) — 2026-08-14 (marked, not separately produced)
 - [x] (6) Anatoli Kopadze on X_ _Loops explained_ Claude, GPT, Mira and what actually works_ _ X.pdf → source material for `005-loops-explained-prompt-vs-loop-agent-anatomy.md`, already produced: [posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md) — 2026-08-14 (marked, not separately produced)
 - [x] 007-claude-code-auto-mode-classifier.md → [posts/claude-code-auto-mode-classifier/final-post.md](./posts/claude-code-auto-mode-classifier/final-post.md) — 2026-08-11
