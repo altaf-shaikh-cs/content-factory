@@ -71,6 +71,18 @@ Default N=2. User can override to 3 or 4. When N=3, Strategist picks Angle C ada
 
 ## Image defaults
 
+### Carousels
+
+A carousel is **two deliverables with different jobs**, and mixing them up is the main way one fails:
+
+- **Caption** carries the complete argument in prose. Simple, clear, standalone. Assume most readers never swipe.
+- **Deck** carries the proof and the mechanism. Detail, transcripts, charts, lists.
+- Only the load-bearing numbers and the one core reframe appear in both. Anything *shown* rather than *stated* stays deck-only.
+
+Build slides from a **`deck.py`** in the post folder, never hand-authored SVGs, reusing the palette and helpers of the most recent deck so every carousel on the account reads as one system. Render every slide to PNG and **look at it** before finishing; collisions are invisible in source. Export a multipage PDF as the upload artifact. Full contract: **Carousel track** in `.claude/skills/linkedin-growth-agent/SKILL.md`.
+
+### Single images (text and image posts)
+
 - **Variations:** 2 per post — different dimension AND style, reasoned from post content and winning angle
 - **Formats available:** Portrait 1080×1350 · Square 1080×1080 · Landscape 1200×627 — agent picks based on content
 - **SVGs:** saved in the post folder (`impact-1.svg`, `impact-2.svg`)
