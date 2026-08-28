@@ -18,3 +18,4 @@ Append-only heartbeat, one row per run of `linkedin-growth-agent`, including run
 | 2026-08-26 | blocked | Ship gate: 5 unshipped posts (U=5 ≥ 3); queue also empty — only queued idea already has open PR #36 | — |
 | 2026-08-26 | produced | claude-auto-mode-authorization, manual Mode B run, ship gate overridden by direct request, 12-slide carousel | [posts/claude-auto-mode-authorization-20260826](../linkedin-posts/posts/claude-auto-mode-authorization-20260826/) |
 | 2026-08-27 | blocked | Ship gate: 6 unshipped posts (U=6 ≥ 3); queue empty — no new ideas. Recommended: claude-four-building-blocks-20260719 (text+image, contrarian angle) | — |
+| 2026-08-28 | blocked | Ship gate: 6 unshipped posts (U=6 ≥ 3); queue empty — only unprocessed idea (007-claude-code-auto-mode-classifier) already has open PR #36. Recommended: claude-four-building-blocks-20260719 (text+image, contrarian angle) | — |
