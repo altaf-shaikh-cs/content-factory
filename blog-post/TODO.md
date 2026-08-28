@@ -10,6 +10,8 @@ _(none — every current raw idea is either Done below or already has an open PR
 
 _(none)_
 
+**Note (2026-08-28 run):** checked open PRs on the fork (`altaf-shaikh-cs/content-factory`, state=open). Three open PRs cover blog ideas: #39 (`claude/blog-claude-autoclassifier`, covers `claude-autoclassifier.md`, new since last run), #38 (`claude/blog-andrew-ng-four-software-skills-2026`, covers `008-andrew-ng-four-software-skills-2026.md`), and #35 (`claude/blog-five-rung-ai-automation-ladder`, covers `007-five-rung-ai-automation-ladder.md`). Every raw idea in `../raw-ideas/` is already in Done below or covered by one of these open PRs. Queue is empty. No branch or PR created this run.
+
 ## Done
 
 - [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → source material for `006-claude-four-building-blocks-skills-plugins-projects-artifacts.md`, already produced: [posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md](./posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md) — 2026-08-14 (marked, not separately produced)
