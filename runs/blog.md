@@ -18,3 +18,4 @@ Note: the blog channel has no cloud routine in the routine table in `CLAUDE.md`.
 | 2026-08-26 | skipped | Queue empty: 007-five-rung-ai-automation-ladder (PR #35, open) and 008-andrew-ng-four-software-skills-2026 (PR #38, open) still in flight, no new raw ideas added | — |
 | 2026-08-28 | skipped | Queue empty: all raw ideas in Done or covered by open PRs (#35, #38, #39) | — |
 | 2026-08-29 | skipped | Queue empty: all raw ideas in Done or covered by open PRs (#35, #38, #39), no new raw ideas added | — |
+| 2026-08-30 | skipped | Queue empty: all raw ideas in Done or covered by open PRs (#35, #38, #39), no new raw ideas added | — |
