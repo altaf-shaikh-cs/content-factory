@@ -14,6 +14,8 @@ _(none)_
 
 **Note (2026-09-03 run):** checked open PRs on the fork (`altaf-shaikh-cs/content-factory`, state=open). Same three open PRs as prior runs: #39 (`claude/blog-claude-autoclassifier`, covers `claude-autoclassifier.md`), #38 (`claude/blog-andrew-ng-four-software-skills-2026`, covers `008-andrew-ng-four-software-skills-2026.md`), and #35 (`claude/blog-five-rung-ai-automation-ladder`, covers `007-five-rung-ai-automation-ladder.md`). No new files added to `../raw-ideas/` since the last run. Every raw idea is already in Done below or covered by an open PR. Queue is empty. No branch or PR created this run.
 
+**Note (2026-09-03 run):** manual invocation. Altaf passed the URL https://www.anthropic.com/engineering/multi-agent-research-system directly. Captured it into the shared library as `009-anthropic-multi-agent-research-system.md` (append-only, nothing moved or renamed), then ran the full 5-phase pipeline into `posts/multi-agent-research-system/`. No branch or PR created; local only.
+
 **Note (2026-09-02 run):** checked open PRs on the fork (`altaf-shaikh-cs/content-factory`, state=open). Same three open PRs as prior runs: #39 (`claude/blog-claude-autoclassifier`, covers `claude-autoclassifier.md`), #38 (`claude/blog-andrew-ng-four-software-skills-2026`, covers `008-andrew-ng-four-software-skills-2026.md`), and #35 (`claude/blog-five-rung-ai-automation-ladder`, covers `007-five-rung-ai-automation-ladder.md`). No new files added to `../raw-ideas/` since the last run. Every raw idea is already in Done below or covered by an open PR. Queue is empty. No branch or PR created this run.
 
 **Note (2026-09-01 run):** checked open PRs on the fork (`altaf-shaikh-cs/content-factory`, state=open). Same three open PRs as prior runs: #39 (`claude/blog-claude-autoclassifier`, covers `claude-autoclassifier.md`), #38 (`claude/blog-andrew-ng-four-software-skills-2026`, covers `008-andrew-ng-four-software-skills-2026.md`), and #35 (`claude/blog-five-rung-ai-automation-ladder`, covers `007-five-rung-ai-automation-ladder.md`). No new files added to `../raw-ideas/` since the last run. Every raw idea is already in Done below or covered by an open PR. Queue is empty. No branch or PR created this run.
@@ -28,6 +30,7 @@ _(none)_
 
 ## Done
 
+- [x] 009-anthropic-multi-agent-research-system.md → [posts/multi-agent-research-system/final-post.md](./posts/multi-agent-research-system/final-post.md) — 2026-09-03
 - [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → source material for `006-claude-four-building-blocks-skills-plugins-projects-artifacts.md`, already produced: [posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md](./posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md) — 2026-08-14 (marked, not separately produced)
 - [x] (6) Anatoli Kopadze on X_ _Loops explained_ Claude, GPT, Mira and what actually works_ _ X.pdf → source material for `005-loops-explained-prompt-vs-loop-agent-anatomy.md`, already produced: [posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md) — 2026-08-14 (marked, not separately produced)
 - [x] 007-claude-code-auto-mode-classifier.md → [posts/claude-code-auto-mode-classifier/final-post.md](./posts/claude-code-auto-mode-classifier/final-post.md) — 2026-08-11

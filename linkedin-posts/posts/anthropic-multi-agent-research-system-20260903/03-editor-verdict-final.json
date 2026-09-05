@@ -1,0 +1,19 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "All three round-1 issues are resolved. The hook now carries both numbers inside one comparison in two lines. The seven-week outage is in as first-person proof without stealing the opening. B's duplication image landed and does real work: it is the only line that shows the cost rather than stating it. Length came down from 296 to 258 despite the graft.",
+  "scores": {
+    "C-revised": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.2 }
+  },
+  "runner_up_notes": {},
+  "issues": [
+    {
+      "type": "too_long",
+      "severity": "low",
+      "description": "258 words is still on the long side for this account, and the post now has two candidate closing beats: the worth-it/not-worth-it pair and the three-briefs test. Both earn their place, but a reader on mobile hits the truncation fold before the shared-state point.",
+      "action": "No change required. Accepted deliberately: everything above the fold is the hook plus the two numbers, which is exactly what should be there. Flagged only so a future run does not add to this length."
+    }
+  ]
+}
