@@ -2,7 +2,7 @@
 
 One row per published post. Updated by the LinkedIn Performance Agent after each XLSX import. Strategist reads this before planning every new post.
 
-**Last import:** 2026-08-10 · Sources: `AggregateAnalytics_Altaf Shaikh_2026-07-14_2026-08-10.xlsx` + `SinglePostAnalytics_Altaf Shaikh_7492090128753082368.xlsx`
+**Last import:** 2026-09-06 · Source: `AggregateAnalytics_Altaf Shaikh_2026-08-24_2026-09-06.xlsx` (aggregate only, no single-post export yet for the 9/5 post)
 
 **Two export formats now in use:**
 - **Aggregate** — account totals + per-post impressions/engagements. `Engagements` is a combined total (reactions + comments + reposts + clicks), no breakdown.
@@ -50,6 +50,62 @@ Period 3 produced the account's largest post ever and gained nothing from it. Im
 | Total followers | 1,812 (+14 new) |
 | Avg daily impressions | ~121 (+51% vs period 1) |
 | Period engagement rate | ~4.0% (136 eng / 3,396 imp) |
+
+### Period 4: 2026-08-24 to 2026-09-06
+
+| Metric | Value | vs Period 3 |
+|--------|-------|-------------|
+| Total impressions | 3,733 | −51% |
+| Members reached | 1,620 | −63% |
+| Total engagements | 170 | +95% |
+| New followers | +24 | — |
+| Total followers | 1,837 | — |
+| **Engagement rate** | **4.55%** | +296% (was 1.15%) |
+| **Capture rate** | **1.48%** | best on record |
+
+**Half the reach of Period 3 and the best period the account has had.** Period 3 was the
+parle-g meme: 7,569 impressions, 4,429 reached, 0 followers gained. Period 4 reached a
+third as many people and converted 24 of them. This is the reach-vs-capture thesis
+confirmed a second time, now from the good side.
+
+Capture rate 1.48% is roughly 3x the ">0.5% strong" threshold, and above Period 2's 1.08%.
+
+#### Posts published in the window
+
+| Date | Post | Type | Impressions | Engagements | Eng rate |
+|------|------|------|------------:|------------:|---------:|
+| 9/5 | **unidentified** (`ugcPost`, slug `teachmebro`) | document? | 1,370 | 63 | 4.6% |
+| 8/30 | off-pipeline: "hiring criteria are changing" | text | 1,111 | 39 | 3.5% |
+| 8/27 | claude-auto-mode-authorization-20260826 | 12-slide carousel | 704 | 22 | 3.1% |
+| 9/3 | anthropic-multi-agent-research-system-20260903 | text + image | 259 | 32 | **12.4%** |
+| 8/20 | andrew-ng-four-software-skills-2026-20260820 | 8-slide carousel | 197 | 7 | 3.6% |
+
+**The 9/3 post is the signal.** 12.4% engagement rate, roughly 3x the account average and
+the highest single-post rate on record, on the *lowest* distribution of any recent post.
+People who saw it engaged hard; LinkedIn showed it to almost nobody. That is a
+distribution problem, not a writing problem, and it is the opposite failure from parle-g.
+
+**Carousels now have data, and it is unremarkable.** Two shipped (8/20, 8/27) at 3.1% and
+3.6%, both below the 4.55% period average and far below the 9/3 text-plus-image post.
+Three carousels were built on the thesis that they would outperform. On this sample they
+did not. Do not build a third on that assumption.
+
+#### Demographics: the reach is not escaping the local network
+
+Content demographics (who saw the posts) vs audience demographics (who follows):
+
+| Slice | Content | Audience | Read |
+|---|---:|---:|---|
+| Contentstack | 13% | 9% | over-served to colleagues |
+| Mumbai Metropolitan | 45% | 43% | hyper-local |
+| Entry seniority | 36% | 36% | — |
+| Senior seniority | 29% | 37% | content skews junior vs the follower base |
+| Software Engineer | 22% | 23% | — |
+
+Roughly one in eight content views is a colleague at the same company, and nearly half are
+one metro area. For an account positioned on AI Engineering, distribution is still mostly
+the existing local and internal network rather than the wider builder audience. San
+Francisco Bay Area is 1% of the audience and does not appear in content demographics at all.
 
 ### Period 3: 2026-07-14 to 2026-08-10
 

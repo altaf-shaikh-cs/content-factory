@@ -12,16 +12,44 @@ _Empty. The two remaining PDFs in `../raw-ideas/` are reference captures of idea
 
 ## Ready to ship (generated, never published)
 
-Confirmed against the 2026-08-10 analytics export: these have a finished `final-post.md` and **zero LinkedIn impressions**. The export lists posts down to a single impression, so absence means unpublished, not underperforming. **Shipping these outranks generating anything new.**
+Re-verified 2026-09-06 against `AggregateAnalytics_Altaf Shaikh_2026-08-24_2026-09-06.xlsx`.
+These have a finished `final-post.md` and **zero LinkedIn impressions**. The export lists posts
+down to a single impression, so absence means unpublished, not underperforming.
+**Shipping these outranks generating anything new.**
 
-- [ ] [five-rung-ai-automation-ladder-20260809](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 8-slide document carousel + caption. Would be the account's first carousel. Note before posting: move the diagnostic (slide 7) to slide 2.
+- [ ] [five-rung-ai-automation-ladder-20260809](./posts/five-rung-ai-automation-ladder-20260809/final-post.md) — 8-slide document carousel + caption. Note before posting: move the diagnostic (slide 7) to slide 2. (Stale note removed: this is no longer "the account's first carousel", two have since shipped.)
 - [ ] [claude-code-25-tips-20260719](./posts/claude-code-25-tips-20260719/final-post.md)
-- [ ] [claude-four-building-blocks-20260719](./posts/claude-four-building-blocks-20260719/final-post.md) — contrarian angle. The 8/5 second take on the same source shipped and hit 5.15%, the best rate of the period.
+- [ ] [claude-four-building-blocks-20260719](./posts/claude-four-building-blocks-20260719/final-post.md) — contrarian angle. The 8/5 second take on the same source shipped and hit 5.15%, the best rate of that period.
 - [ ] [loops-explained-prompt-vs-loop-agent-anatomy-20260719](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md)
-- [ ] [claude-auto-mode-authorization-20260826](./posts/claude-auto-mode-authorization-20260826/final-post.md) — **12-slide document carousel** + caption (caption + deck, no single-image alternative). Topic overlaps open PR #36 on the same subject; that one uses the announcement angle, this one the mechanism-and-decision angle. Read both before shipping either.
-- [ ] [andrew-ng-four-software-skills-2026-20260820](./posts/andrew-ng-four-software-skills-2026-20260820/final-post.md) — 8-slide document carousel + caption. Second carousel produced, none shipped yet. With the 2026-08-26 deck (12 slides) that is three carousels built and zero shipped; this account still has zero real carousel data.
-- [ ] [token-usage-spike-20260905](./posts/token-usage-spike-20260905/final-post.md) — text + image, 2 variations. Generated 2026-09-05 with the gate already at 7, Mode B override. Mechanism-explainer rewrite; ship with impact-1 (the context-growth chart), it carries the argument.
-- [ ] [anthropic-multi-agent-research-system-20260903](./posts/anthropic-multi-agent-research-system-20260903/final-post.md) — text + image, 2 variations. Generated 2026-09-03 with the gate already at 6, Mode B override.
+- [ ] [token-usage-spike-20260905](./posts/token-usage-spike-20260905/final-post.md) — text + image, 2 variations. Mechanism-explainer rewrite; ship with impact-1 (the context-growth chart), it carries the argument. **Kept here deliberately:** a post published 9/5 could not be attributed (see below). Wrongly marking this shipped would mean it never gets published, so it stays until confirmed.
+
+**Gate count: 5** (was recorded as 8). The gate still fires at ≥3, but now on real numbers.
+
+### Corrected 2026-09-06 — these were listed as unshipped and had in fact been published
+
+The register was last verified against the 2026-08-10 export and never rechecked, so three
+posts shipped between 8/20 and 9/3 were still being counted against the ship gate. That
+inflated the gate by three and contributed to the 2026-09-05 run being blocked.
+
+| Post | Published | Impressions | Engagements | Eng rate | Identified by |
+|---|---|---:|---:|---:|---|
+| [andrew-ng-four-software-skills-2026-20260820](./posts/andrew-ng-four-software-skills-2026-20260820/final-post.md) | 8/20 | 197 | 7 | 3.6% | slug `the-2026-ai-skill-shift`, date + carousel type |
+| [claude-auto-mode-authorization-20260826](./posts/claude-auto-mode-authorization-20260826/final-post.md) | 8/27 | 704 | 22 | 3.1% | slug `claude-auto-mode-under-the-hood` |
+| [anthropic-multi-agent-research-system-20260903](./posts/anthropic-multi-agent-research-system-20260903/final-post.md) | 9/3 | 259 | 32 | **12.4%** | hashtags `aiengineering-aiagents-llm` match exactly |
+
+The 9/3 post has the highest engagement rate on record for this account and the lowest
+distribution of any recent post. See Period 4 in [`performance/tracker.md`](./performance/tracker.md).
+
+### Unattributed published post — 2026-09-05
+
+The account's biggest post of the period is not traceable to any folder here:
+**1,370 impressions, 63 engagements, 9 followers gained that day**, URL slug `teachmebro`,
+type `ugcPost` (the same type as both shipped carousels, suggesting a document post).
+
+It does not match `token-usage-spike` or `five-rung-ai-automation-ladder`, whose captions
+both open with different hashtags. Most likely off-pipeline, like the 8/30 hiring post and
+the parle-g meme. **Worth identifying:** it converted 9 followers in one day, more than a
+third of the period's total, and nothing in this repo records what it was.
 
 Also never seen in any export across three periods, presume unpublished: `superreps-learnings-20260608`, `build-your-first-agents-team-20260616`, `just-text-20260629`, `just-text-20260714`, `run-your-own-agent-acengy-with-paperclip-20260630`.
 
