@@ -1,0 +1,7 @@
+{
+  "name": "video-gen-renderer",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic explainer-video renderer for the content factory.",
+  "dependencies": { "playwright-core": "^1.63.0" }
+}

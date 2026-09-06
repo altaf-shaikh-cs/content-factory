@@ -93,6 +93,8 @@ This is deliberate and it is not a bug when it fires. The account's own tracker 
 | "process my ideas" (ambiguous)                | Ask which channel, OR run all active channel loops in sequence          |
 | "/loop"                                       | Use the loop prompt file matching the channel (e.g. `linkedin.agent.md`)|
 | "generate image" / "redo the image" / "/image-gen-agent" | Skill `image-gen-agent` (reads `./agents/image-gen/inspiration/`) |
+| "make a video" / "explainer video" / "animate this post" / "/video-gen-agent" | Skill `video-gen-agent` (deterministic; data, numbers, mechanisms) |
+| "illustrated video" / "use Gemini for the video" / "/video-gen-gemini-agent" | Skill `video-gen-gemini-agent` (needs `GEMINI_API_KEY`; tonal, metaphor) |
 | "sync the mirror" / "update personal repo" / "/mirror-personal" | Skill `mirror-personal` (runs `scripts/mirror-personal.sh`) |
 | "is the factory healthy" / "which channels are dark" / "why is X not posting" / "/factory-health" | Skill `factory-health` (read-only; reads `runs/`, open PRs, unshipped register) |
 
@@ -105,9 +107,16 @@ Agents that serve all channels live in `./agents/`. They are not channels — th
 | Agent | Folder | Skill | What it does |
 |-------|--------|-------|--------------|
 | image-gen | `agents/image-gen/` | `.claude/skills/image-gen-agent/SKILL.md` | Generates on-brand SVGs for any channel. Reads inspiration library, picks style, produces SVG. |
+| video-gen | `agents/video-gen/` | `.claude/skills/video-gen-agent/SKILL.md` | Deterministic explainer videos. Animated text and charts rendered through headless Chromium. Text is exact, no model call, free. |
+| video-gen-gemini | `agents/video-gen-gemini/` | `.claude/skills/video-gen-gemini-agent/SKILL.md` | Illustrated explainer videos. Gemini image model draws the scenes; camera move or the deterministic text layer puts them in motion. Needs `GEMINI_API_KEY`. |
 
 **To edit an agent's behavior:** open its folder, read `AGENT.md` — it points to the project-local skill file.
 **To add inspiration styles:** drop a file (SVG/PNG/JPG/PDF/screenshot) into `agents/image-gen/inspiration/<style-slug>/` and add a row to `MANIFEST.md`.
+
+**Two video agents, on purpose.** `video-gen` owns anything where a number or a word has to be
+exactly right; it is free, offline and byte-reproducible. `video-gen-gemini` owns illustration and
+mood. Their default composition is hybrid: Gemini draws the backdrop, `video-gen` animates the exact
+text over it. Never let an image model render a statistic.
 
 ---
 

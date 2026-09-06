@@ -1,0 +1,57 @@
+{
+  "width": 1080, "height": 1350, "fps": 30,
+  "brand": { "domain": "AI ENGINEERING", "handle": "@teachmebro" },
+  "scenes": [
+    { "layout": "title", "dur": 4.6,
+      "eyebrow": "Agent cost",
+      "lines": ["Five messages.", "<span class=\"amber\">427 API calls.</span>", "Twelve hours."],
+      "rule": true,
+      "sub": "One session in my logs last week." },
+
+    { "layout": "stats", "dur": 5.2,
+      "title": "You think in messages.<br>You get billed in <span class=\"amber\">turns</span>.",
+      "cards": [ { "value": 5, "label": "Messages" }, { "value": 427, "label": "API calls" } ],
+      "sub": "Here is why they are not the same." },
+
+    { "layout": "bars", "dur": 5.6,
+      "eyebrow": "The mechanism",
+      "title": "The model has no memory.",
+      "bars": [ {"h":0.18}, {"h":0.46}, {"h":0.82} ],
+      "xlabels": ["CALL 1", "CALL 3"],
+      "punch": "Every call re-sends <em>everything</em> before it." },
+
+    { "layout": "bars", "dur": 7.2,
+      "eyebrow": "One file read",
+      "title": "A 21,000-token file, read at call 200.",
+      "bars": [
+        {"h":0.05}, {"h":0.1375},
+        {"h":0.2375,"slab":0.553}, {"h":0.34,"slab":0.382}, {"h":0.4375,"slab":0.300},
+        {"h":0.53,"slab":0.247}, {"h":0.6125,"slab":0.214}, {"h":0.70,"slab":0.1875},
+        {"h":0.78,"slab":0.168}, {"h":0.8625,"slab":0.152}, {"h":0.9375,"slab":0.140},
+        {"h":1.0,"slab":0.131}
+      ],
+      "xlabels": ["CALL 1", "CALL 947"],
+      "punch": "It rode along for <em>747 more calls</em>.<br>About 16M tokens. For one file read." },
+
+    { "layout": "formula", "dur": 5.8,
+      "title": "Which gives you:",
+      "parts": [
+        {"t":"cost"}, {"t":"=","k":"op"}, {"t":"avg context","k":"hl2"},
+        {"t":"×","k":"op"}, {"t":"calls","k":"hl"}
+      ],
+      "punch": "Both terms grow together.",
+      "sub": "A session twice as long does not cost twice as much. It costs about four times as much." },
+
+    { "layout": "list", "dur": 6.2,
+      "eyebrow": "The fix",
+      "title": "Two changes. Neither is a better prompt.",
+      "items": [
+        { "t": "Drop the 1M default.", "s": "Switch it on per session, when a task genuinely needs it." },
+        { "t": "One session per task.", "s": "Clear in between. Let auto-compact do its job." }
+      ] },
+
+    { "layout": "title", "dur": 4.6, "small": true,
+      "lines": ["Open your longest session", "from this week.", "<span class=\"amber\">Count how many API calls</span>", "<span class=\"amber\">came out of one message.</span>"],
+      "rule": true }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "width": 1080,
+  "height": 1350,
+  "fps": 30,
+  "brand": {
+    "domain": "AI ENGINEERING",
+    "handle": "@teachmebro"
+  },
+  "scenes": [
+    {
+      "layout": "title",
+      "dur": 5.0,
+      "eyebrow": "Multi-agent",
+      "lines": [
+        "Not a speed upgrade.",
+        "A <span class=\"amber\">spending decision</span>."
+      ],
+      "rule": true,
+      "sub": "Anthropic's numbers on their own research system."
+    },
+    {
+      "layout": "stats",
+      "dur": 5.5,
+      "title": "Multi-agent beat a single agent.<br>It also burned the budget.",
+      "cards": [
+        {
+          "value": 90.2,
+          "decimals": 1,
+          "suffix": "%",
+          "label": "Better"
+        },
+        {
+          "value": 15,
+          "label": "The tokens",
+          "suffix": "×"
+        }
+      ],
+      "sub": "That money does not buy parallelism."
+    },
+    {
+      "layout": "title",
+      "dur": 4.5,
+      "small": true,
+      "lines": [
+        "It buys <span class=\"cyan\">one context window</span>",
+        "per agent, instead of one",
+        "shared by everything."
+      ],
+      "sub": "You are buying room to think. Speed is a side effect."
+    },
+    {
+      "layout": "bars",
+      "dur": 6.0,
+      "eyebrow": "The failure mode",
+      "title": "Five agents. One vague brief.",
+      "bars": [
+        {
+          "h": 0.78
+        },
+        {
+          "h": 0.78
+        },
+        {
+          "h": 0.78
+        },
+        {
+          "h": 0.78
+        },
+        {
+          "h": 0.78
+        }
+      ],
+      "xlabels": [
+        "AGENT 1",
+        "AGENT 5"
+      ],
+      "punch": "The same work five times.<br>You paid <em>15x for duplication</em>."
+    },
+    {
+      "layout": "title",
+      "dur": 5.5,
+      "small": true,
+      "eyebrow": "And nothing crashes",
+      "lines": [
+        "Two agents in my pipeline died.",
+        "<span class=\"amber\">I did not notice for seven weeks.</span>"
+      ],
+      "sub": "An agent with nothing to do and a dead agent both produce nothing."
+    },
+    {
+      "layout": "list",
+      "dur": 6.5,
+      "eyebrow": "The five-minute test",
+      "title": "Write each agent's brief first.",
+      "items": [
+        {
+          "t": "Its objective."
+        },
+        {
+          "t": "The format it must return."
+        },
+        {
+          "t": "The one thing it must not touch."
+        }
+      ]
+    },
+    {
+      "layout": "title",
+      "dur": 5.0,
+      "small": true,
+      "lines": [
+        "If you cannot write them",
+        "without overlap, the work",
+        "is <span class=\"amber\">not independent</span>."
+      ],
+      "rule": true,
+      "sub": "More agents will not fix it. Give one agent a bigger budget instead."
+    }
+  ]
+}

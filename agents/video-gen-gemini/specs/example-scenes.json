@@ -1,0 +1,18 @@
+{
+  "model": "gemini-3-pro-image-preview",
+  "mode": "art",
+  "aspect": "4:5",
+  "width": 1080, "height": 1350, "fps": 30, "xfade": 0.7,
+  "style": "agents/image-gen/inspiration/warm-illustrated/software-factory-claude.jpeg",
+  "styleNote": "Match the visual style of the reference image exactly: warm cream background, soft pastel shapes, simple friendly line-drawn figures, generous negative space, one muted accent colour. Editorial illustration, not a photograph, not 3D.",
+  "scenes": [
+    { "id": "01-hook", "dur": 5,
+      "prompt": "A person sending a single short message into a small glowing box, while behind the box an enormous unseen machine of gears and conveyor belts churns away. The disproportion between the small input and the vast hidden machinery is the point." },
+    { "id": "02-mechanism", "dur": 5,
+      "prompt": "The same machine shown in cutaway: each pass along the conveyor picks up every parcel from the previous pass and carries them all again. Parcels accumulate visibly along the belt." },
+    { "id": "03-cost", "dur": 5,
+      "prompt": "One heavy parcel, distinctly larger and a different colour from the rest, riding the conveyor belt over and over in a loop, while a meter beside the belt climbs." },
+    { "id": "04-fix", "dur": 5,
+      "prompt": "A calm person reaching out and cleanly resetting the conveyor belt to empty, the accumulated parcels lifted away. Relief and order after the clutter." }
+  ]
+}
