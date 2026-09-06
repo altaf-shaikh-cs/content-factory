@@ -11,8 +11,6 @@ Turns a finished post into a short explainer video. Animated text and charts on 
 **Renderer:** `./agents/video-gen/renderer/`
 **Reference spec:** `./agents/video-gen/specs/example-token-usage-spike.json`
 
-Sibling agent: `/video-gen-gemini-agent` produces illustrated video instead. This agent owns anything where the numbers and words must be exactly right.
-
 ---
 
 ## Interface contract
@@ -126,9 +124,9 @@ Carries: <the stats and lines that appear on screen>
 
 ## Edge cases
 
-- **Post has no numbers.** `bars`, `stats` and `formula` all fall flat. Either use
-  `title` and `list` only, or hand the post to `/video-gen-gemini-agent`, which is
-  built for tonal content. Say which you chose and why.
+- **Post has no numbers.** `bars`, `stats` and `formula` all fall flat. Build it from
+  `title` and `list` only, leaning on typography and pacing, and consider a `bg`
+  backdrop image per scene to carry the mood the data would have carried.
 - **Post is very long.** Do not try to cover it. Pick the spine and cut to it. A video
   that lands one idea beats one that summarises nine.
 - **Requested length would need more than 8 scenes.** Push back in the surface block

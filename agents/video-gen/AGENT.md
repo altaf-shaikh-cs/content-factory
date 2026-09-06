@@ -2,8 +2,6 @@
 
 Project-side home for the **deterministic** explainer-video agent. Produces silent, text-exact motion-graphics videos for any channel.
 
-There is a second, different video agent: [`../video-gen-gemini/`](../video-gen-gemini/AGENT.md). Read [Which agent do I want?](#which-agent-do-i-want) before picking.
-
 ---
 
 ## Global skill
@@ -126,15 +124,27 @@ seconds on the global timeline; `t0` is when the scene starts.
 
 ---
 
-## Which agent do I want?
+## Backdrops
 
-| | `video-gen` (this one) | [`video-gen-gemini`](../video-gen-gemini/AGENT.md) |
-|---|---|---|
-| Output | motion graphics, animated text and charts | illustrated stills, animated by camera move |
-| Text fidelity | exact, it is real DOM text | model-rendered, must be proofread |
-| Determinism | byte-identical re-renders | different every run |
-| Needs network / key | no | yes, `GEMINI_API_KEY` |
-| Cost | free | per image |
-| Best for | data, mechanisms, numbers, formulas | tonal, editorial, metaphor, story |
+Any scene can sit on a still image, and the stage can carry one behind everything:
 
-Data-dense post: use this agent. Tonal or narrative post: try the Gemini one.
+```jsonc
+{ "backdrop": "file:///abs/path/bg.jpg",      // behind every scene
+  "scenes": [ { "bg": "file:///abs/path/01.jpg", ... } ] }
+```
+
+A legibility scrim is drawn automatically over a scene's `bg`, and the image drifts slowly
+across the scene so a still does not feel frozen. Use absolute `file://` paths. This is how
+dropped-in artwork, screen recordings exported as frames, or any inspiration imagery
+composites behind exact animated text.
+
+A generative video model was evaluated for this role and dropped: it cannot reliably spell
+a statistic, and every number in these videos is load-bearing. Artwork goes behind the text,
+never instead of it.
+
+## Themes
+
+`"theme": "light"` on the spec swaps the whole palette to a cream editorial look
+(`#f7f3ec` ground, deep orange accent, teal secondary). Omit it for the default dark.
+Both are defined as CSS variables at the top of `scene.html`; adding a third theme is a
+matter of one more `#stage[data-theme="..."]` block, not touching any layout.

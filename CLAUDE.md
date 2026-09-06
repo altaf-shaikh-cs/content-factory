@@ -94,7 +94,6 @@ This is deliberate and it is not a bug when it fires. The account's own tracker 
 | "/loop"                                       | Use the loop prompt file matching the channel (e.g. `linkedin.agent.md`)|
 | "generate image" / "redo the image" / "/image-gen-agent" | Skill `image-gen-agent` (reads `./agents/image-gen/inspiration/`) |
 | "make a video" / "explainer video" / "animate this post" / "/video-gen-agent" | Skill `video-gen-agent` (deterministic; data, numbers, mechanisms) |
-| "illustrated video" / "use Gemini for the video" / "/video-gen-gemini-agent" | Skill `video-gen-gemini-agent` (needs `GEMINI_API_KEY`; tonal, metaphor) |
 | "sync the mirror" / "update personal repo" / "/mirror-personal" | Skill `mirror-personal` (runs `scripts/mirror-personal.sh`) |
 | "is the factory healthy" / "which channels are dark" / "why is X not posting" / "/factory-health" | Skill `factory-health` (read-only; reads `runs/`, open PRs, unshipped register) |
 
@@ -108,15 +107,16 @@ Agents that serve all channels live in `./agents/`. They are not channels — th
 |-------|--------|-------|--------------|
 | image-gen | `agents/image-gen/` | `.claude/skills/image-gen-agent/SKILL.md` | Generates on-brand SVGs for any channel. Reads inspiration library, picks style, produces SVG. |
 | video-gen | `agents/video-gen/` | `.claude/skills/video-gen-agent/SKILL.md` | Deterministic explainer videos. Animated text and charts rendered through headless Chromium. Text is exact, no model call, free. |
-| video-gen-gemini | `agents/video-gen-gemini/` | `.claude/skills/video-gen-gemini-agent/SKILL.md` | Illustrated explainer videos. Gemini image model draws the scenes; camera move or the deterministic text layer puts them in motion. Needs `GEMINI_API_KEY`. |
 
 **To edit an agent's behavior:** open its folder, read `AGENT.md` — it points to the project-local skill file.
 **To add inspiration styles:** drop a file (SVG/PNG/JPG/PDF/screenshot) into `agents/image-gen/inspiration/<style-slug>/` and add a row to `MANIFEST.md`.
 
-**Two video agents, on purpose.** `video-gen` owns anything where a number or a word has to be
-exactly right; it is free, offline and byte-reproducible. `video-gen-gemini` owns illustration and
-mood. Their default composition is hybrid: Gemini draws the backdrop, `video-gen` animates the exact
-text over it. Never let an image model render a statistic.
+**Video is deterministic on purpose.** `video-gen` renders through a headless browser, so the text
+on screen is real text: exact, byte-reproducible, free, and offline. A generative video model was
+evaluated and dropped — it cannot spell a statistic, and an explainer whose payload is text has no
+use for footage that garbles it. Scenes can take a still image as a backdrop (`bg` per scene, or a
+stage-wide `backdrop`) with an automatic legibility scrim, so dropped-in artwork composites behind
+exact animated text. Never let an image model render a statistic.
 
 ---
 
