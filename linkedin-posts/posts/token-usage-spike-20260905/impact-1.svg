@@ -1,0 +1,109 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243b54"/>
+      <stop offset="100%" stop-color="#182a3d"/>
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <ellipse cx="540" cy="320" rx="440" ry="200" fill="url(#heroGlow)"/>
+
+  <rect x="80" y="80" width="920" height="4" rx="2" fill="url(#accent)"/>
+  <text x="80" y="152"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="26" font-weight="700" letter-spacing="8" fill="#22d3ee">AI ENGINEERING</text>
+  <text x="1000" y="152"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="600" text-anchor="end" fill="#475569">213 re-read per 1 produced</text>
+
+  <!-- Headline -->
+  <text x="80" y="272"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="84" font-weight="900" fill="#e2e8f0" letter-spacing="-2">Read once.</text>
+  <text x="80" y="362"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="84" font-weight="900" fill="url(#accent)" letter-spacing="-2">Paid 747 times.</text>
+  <text x="80" y="422"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="300" fill="#94a3b8">Every call re-sends the entire context. Nothing ever leaves.</text>
+
+  <!-- Annotation -->
+  <text x="268" y="534"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22" font-weight="600" fill="#f59e0b">the same 21k file, re-sent 747 more times</text>
+  <rect x="268" y="556" width="722" height="2" fill="#f59e0b" fill-opacity="0.55"/>
+  <rect x="268" y="556" width="2" height="12" fill="#f59e0b" fill-opacity="0.55"/>
+  <rect x="988" y="556" width="2" height="12" fill="#f59e0b" fill-opacity="0.55"/>
+
+  <!-- Bars: context size per API call -->
+  <rect x="120" y="930" width="56" height="70" rx="4" fill="url(#bar)"/>
+  <rect x="194" y="890" width="56" height="110" rx="4" fill="url(#bar)"/>
+
+  <rect x="268" y="850" width="56" height="150" rx="4" fill="url(#bar)"/>
+  <rect x="268" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="342" y="820" width="56" height="180" rx="4" fill="url(#bar)"/>
+  <rect x="342" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="416" y="790" width="56" height="210" rx="4" fill="url(#bar)"/>
+  <rect x="416" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="490" y="762" width="56" height="238" rx="4" fill="url(#bar)"/>
+  <rect x="490" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="564" y="738" width="56" height="262" rx="4" fill="url(#bar)"/>
+  <rect x="564" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="638" y="715" width="56" height="285" rx="4" fill="url(#bar)"/>
+  <rect x="638" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="712" y="695" width="56" height="305" rx="4" fill="url(#bar)"/>
+  <rect x="712" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="786" y="678" width="56" height="322" rx="4" fill="url(#bar)"/>
+  <rect x="786" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="860" y="662" width="56" height="338" rx="4" fill="url(#bar)"/>
+  <rect x="860" y="938" width="56" height="34" fill="#f59e0b"/>
+  <rect x="934" y="648" width="56" height="352" rx="4" fill="url(#bar)"/>
+  <rect x="934" y="938" width="56" height="34" fill="#f59e0b"/>
+
+  <!-- Axis -->
+  <rect x="120" y="1000" width="870" height="2" fill="#ffffff" fill-opacity="0.14"/>
+  <text x="148" y="1034"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="700" letter-spacing="2" text-anchor="middle" fill="#475569">CALL 1</text>
+  <text x="296" y="1034"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="700" letter-spacing="2" text-anchor="middle" fill="#f59e0b">CALL 200</text>
+  <text x="990" y="1034"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="700" letter-spacing="2" text-anchor="end" fill="#475569">CALL 947</text>
+
+  <text x="120" y="1072"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="400" fill="#64748b">Bar height = context re-sent on that call. 5 user messages produced 427 calls in one session.</text>
+
+  <rect x="80" y="1110" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <text x="540" y="1176"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="34" font-weight="700" text-anchor="middle" fill="url(#accent)">cost = average context &#215; number of calls</text>
+  <text x="540" y="1218"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="23" font-weight="300" text-anchor="middle" fill="#94a3b8">Both terms grow together. Twice as long costs about four times as much.</text>
+
+  <rect x="80" y="1256" width="920" height="1" fill="#ffffff" fill-opacity="0.1"/>
+
+  <text x="540" y="1302"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="700" text-anchor="middle" fill="#22d3ee">@teachmebro</text>
+  <text x="540" y="1336"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="19" font-weight="600" text-anchor="middle" fill="#475569">Altaf Shaikh  &#183;  AI Engineering</text>
+</svg>

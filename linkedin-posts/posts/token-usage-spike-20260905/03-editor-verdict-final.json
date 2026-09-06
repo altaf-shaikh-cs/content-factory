@@ -1,0 +1,19 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "All three round-1 issues are closed. The mechanism is now shown rather than asserted, the ratio has a magnitude attached without implying an invoice, and the chart line indicts the reader's own dashboard. The fold still carries the confession, the 213 to 1 ratio, and the wrong-chart admission in the first three lines.",
+  "scores": {
+    "C-revised": { "hook_strength": 9, "authenticity": 10, "readability": 9, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.4 }
+  },
+  "runner_up_notes": {},
+  "issues": [
+    {
+      "type": "too_long",
+      "severity": "low",
+      "description": "286 words against a 280 plan target. Accepted: the two grafted additions are the highest-value content in the post and the trim pass already removed every redundant clause without cutting a fact.",
+      "action": "None. Do not add length in any future edit to this post."
+    }
+  ]
+}
