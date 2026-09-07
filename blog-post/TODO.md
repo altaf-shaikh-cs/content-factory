@@ -10,6 +10,8 @@ _(none — every current raw idea is either Done below or already has an open PR
 
 _(none)_
 
+**Note (2026-09-06 run):** checked open PRs on the fork (`altaf-shaikh-cs/content-factory`, state=open): #39, #38, #36 (linkedin, not ours), #35 — none cover `token-usage-spike.md`, which was added to `../raw-ideas/` since the last run. Picked it as the next item, ran the full 5-phase pipeline into `posts/token-usage-spike/`, and generated `blog-hero.svg` via `/image-gen-agent` (diagram-explainer style; PNG export skipped, `rsvg-convert` unavailable in this environment). Opened `claude/blog-token-usage-spike` for review.
+
 **Note (2026-09-05 run):** checked open PRs on the fork (`altaf-shaikh-cs/content-factory`, state=open). Same three open PRs as prior runs: #39 (`claude/blog-claude-autoclassifier`, covers `claude-autoclassifier.md`), #38 (`claude/blog-andrew-ng-four-software-skills-2026`, covers `008-andrew-ng-four-software-skills-2026.md`), and #35 (`claude/blog-five-rung-ai-automation-ladder`, covers `007-five-rung-ai-automation-ladder.md`). No new files added to `../raw-ideas/` since the last run. Every raw idea is already in Done below or covered by an open PR. Queue is empty. No branch or PR created this run.
 
 **Note (2026-09-03 run):** checked open PRs on the fork (`altaf-shaikh-cs/content-factory`, state=open). Same three open PRs as prior runs: #39 (`claude/blog-claude-autoclassifier`, covers `claude-autoclassifier.md`), #38 (`claude/blog-andrew-ng-four-software-skills-2026`, covers `008-andrew-ng-four-software-skills-2026.md`), and #35 (`claude/blog-five-rung-ai-automation-ladder`, covers `007-five-rung-ai-automation-ladder.md`). No new files added to `../raw-ideas/` since the last run. Every raw idea is already in Done below or covered by an open PR. Queue is empty. No branch or PR created this run.
@@ -30,6 +32,7 @@ _(none)_
 
 ## Done
 
+- [x] token-usage-spike.md → [posts/token-usage-spike/final-post.md](./posts/token-usage-spike/final-post.md) — 2026-09-06
 - [x] 009-anthropic-multi-agent-research-system.md → [posts/multi-agent-research-system/final-post.md](./posts/multi-agent-research-system/final-post.md) — 2026-09-03
 - [x] The Four Claude Features That Turn AI From Toy to Tool.pdf → source material for `006-claude-four-building-blocks-skills-plugins-projects-artifacts.md`, already produced: [posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md](./posts/claude-four-building-blocks-skills-plugins-projects-artifacts/final-post.md) — 2026-08-14 (marked, not separately produced)
 - [x] (6) Anatoli Kopadze on X_ _Loops explained_ Claude, GPT, Mira and what actually works_ _ X.pdf → source material for `005-loops-explained-prompt-vs-loop-agent-anatomy.md`, already produced: [posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md](./posts/loops-explained-prompt-vs-loop-agent-anatomy/final-post.md) — 2026-08-14 (marked, not separately produced)
