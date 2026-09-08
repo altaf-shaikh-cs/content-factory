@@ -27,3 +27,4 @@ Note: the blog channel has no cloud routine in the routine table in `CLAUDE.md`.
 | 2026-09-04 | skipped | Queue empty: all raw ideas in Done or covered by open PRs (#35, #38, #39), no new raw ideas added | — |
 | 2026-09-05 | skipped | Queue empty: all raw ideas in Done or covered by open PRs (#35, #38, #39), no new raw ideas added | — |
 | 2026-09-07 | skipped | Queue empty: all raw ideas in Done or covered by open PRs (#35, #38, #39, #40), no new raw ideas added | — |
+| 2026-09-08 | skipped | Queue empty: all raw ideas in Done or covered by open PRs (#35, #38, #39, #40), no new raw ideas added | — |
