@@ -45,13 +45,17 @@ Assign exactly one status, first match wins:
 | `STARVED` | `last_run` is current AND no `produced` in **14 days** AND recent rows are `skipped` | Alive but out of input. Check the queue and `inspiration-inbox/` |
 | `HEALTHY` | Anything else | |
 
-**Blog exemption:** the blog channel has no cloud routine, so it can never be `DARK`. If blog has no recent rows, report it as `NO ROUTINE` and note that its runs are manual or via `/loop`.
+**There is no blog exemption.** Blog has a cloud routine — `Daily Blog Post Creator`, cron `30 13 * * *` UTC = 7:00 PM IST — so it is subject to `DARK` exactly like every other channel. The exemption that used to sit here assumed blog had no routine, which was never true; it was simply missing from `CLAUDE.md`'s table until 2026-09-08. Never report blog as `NO ROUTINE`.
+
+**Channels that are off on purpose.** X (`trig_01TcT5YBCou7ZVapPN527Lzp`) and Instagram (`trig_01GrhrDA2vPYEyDkvuCUBRvi`) are `enabled:false` by the owner's deliberate decision of 2026-06-29, confirmed 2026-09-07. Their last runs SUCCEEDED. They will keep computing as `DARK` here, and that is expected rather than an incident — report the status, then say **off by decision, not broken**, so the reader does not go debugging a routine that is simply switched off. Do not suggest `setup-channel-routine` for either: it cannot delete a routine and would create a duplicate.
 
 **Warm-up rule (important, and it expires).** A channel whose log contains **zero agent-written rows** has not yet had a chance to write one. Report it as `UNCONFIRMED` rather than `DARK`, and say what its last known activity was from git and the PR list. Otherwise the very first health check flags every channel as dark purely because the heartbeat is younger than the channels are.
 
 `UNCONFIRMED` is not a free pass. Escalate to `DARK` anyway when the independent evidence is already damning: no output of any kind for more than 14 days, or zero PRs ever opened for that channel. That is a conclusion drawn from git and `gh`, not from an empty log, and it holds on its own.
 
-The warm-up rule stops applying to a channel the moment it writes its first real row. Once every channel has one, delete this section.
+**Use `gh pr list --state all`, never `--state open`.** `--state open` cannot see a merged PR, so a channel whose PRs were all merged reads as having opened none. That exact mistake put "zero PRs ever" into `CLAUDE.md` for X and Instagram on 2026-08-15 and pointed three weeks of diagnosis at "the routine was never created" when the routines existed, had worked, and had been switched off. "Never produced" and "produced, then stopped" are different findings and only `--state all` can tell them apart.
+
+The warm-up rule stops applying to a channel the moment it writes its first real row. LinkedIn and blog have both written many; X and Instagram have written none and cannot, because their routines are `enabled:false`. So this section will not expire on its own — **delete it when X and Instagram are re-enabled and each has written one real row**, not before.
 
 A `DARK` channel is the highest-severity finding this check produces. Never soften it, and always print the routines URL next to it.
 
@@ -88,7 +92,7 @@ FACTORY HEALTH — <YYYY-MM-DD>
 
 DARK
   x           last run <date> (<N>d ago) · last produced <date>
-              7 ideas queued, zero PRs ever opened
+              7 ideas queued · off by decision, not broken (enabled:false)
               → https://claude.ai/code/routines
   instagram   last run <date> (<N>d ago) · last produced <date>
               → https://claude.ai/code/routines

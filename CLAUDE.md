@@ -49,15 +49,30 @@ A change is live for the routines once step 2 completes (their next run clones t
 
 **Set up / change a routine:** use the repo-scoped skill `setup-channel-routine` (`.claude/skills/setup-channel-routine/SKILL.md`) — `/setup-channel-routine <linkedin|x|instagram>`. It bakes in the canonical config (environment, fork repo, tools, no MCP connectors, the within-fork-PR prompt) and staggered schedules. Manage/disable routines at https://claude.ai/code/routines.
 
-| Channel | Routine name | Schedule (IST) | Verified producing |
-|---------|--------------|----------------|--------------------|
-| LinkedIn | Daily Linkedin Post Creator | 8:30 PM | Yes, last PR 2026-08-11 |
-| Instagram | Daily Instagram Reel Creator | 9:00 PM | **No. Zero PRs ever. Unverified** |
-| X | Daily X Post Creator | 10:00 AM | **No. Zero PRs ever. Unverified** |
-| _(none)_ | Blog | manual / `/loop` | Yes, last PR 2026-08-11 |
-| _(health)_ | Factory Health | Mon 9:00 AM | Set up 2026-08-15 |
+Verified against `RemoteTrigger {action:"list"}` on 2026-09-07 and `gh pr list --state all` on the fork on 2026-09-08. Cron is **UTC**; the IST column is derived (UTC+5:30).
 
-**Do not trust the first three columns alone.** As of 2026-08-15, the X and Instagram routines have never opened a single PR on the fork, and their last output was 2026-06-28 / 2026-06-30. Either they were never created or they fail before they can push. Verify at https://claude.ai/code/routines before assuming a channel is running. The `runs/` heartbeat and `/factory-health` exist so this column can never again be wrong for seven weeks.
+| Channel | Routine name | Trigger id | Cron (UTC) | Schedule (IST) | Enabled | Last PR on the fork |
+|---------|--------------|------------|------------|----------------|---------|---------------------|
+| Blog | Daily Blog Post Creator | `trig_016TMLatVAcu4MHPSTUaRz8B` | `30 13 * * *` | 7:00 PM | yes | #40 — 2026-09-06 |
+| LinkedIn | Daily Linkedin Post Creator | `trig_01Pk4L95Z2H48aLN9HXwq7Zw` | `30 19 * * *` | 1:00 AM (next day) | yes | #36 — 2026-08-11 |
+| X | Daily X Post Creator | `trig_01TcT5YBCou7ZVapPN527Lzp` | `30 16 * * *` | 10:00 PM | **no — `enabled:false`** | #6 — 2026-06-30 (merged) |
+| Instagram | Daily Instagram Reel Creator | `trig_01GrhrDA2vPYEyDkvuCUBRvi` | `30 15 * * *` | 9:00 PM | **no — `enabled:false`** | #3 — 2026-06-28 (merged) |
+| _(health)_ | Factory Health | — | — | claimed Mon 9:00 AM | **unverified** | n/a — reports only |
+
+**X and Instagram are off by decision, not broken.** Both routines exist, both were last updated within the same six minutes on 2026-06-29, and the last run of each **SUCCEEDED**. They were switched off deliberately; they did not fail. Do not run `setup-channel-routine` to "fix" them — it cannot delete a routine, so it would create a duplicate alongside the existing one. The fix, when you decide to bring them back, is `RemoteTrigger {action:"update"}` with `enabled: true` on the two ids above. **List before you create, always.**
+
+**The Factory Health row is unverified.** No routine by that name appeared in the 2026-09-07 routine list, which did include all four channel routines plus one unrelated personal routine. It may never have been created despite the "Set up 2026-08-15" note this table used to carry. Re-list before relying on a weekly health check firing on its own.
+
+### Two corrections applied here on 2026-09-08
+
+This table was wrong from 2026-08-15 to 2026-09-07 in two ways, and both errors had been copied into `runs/x.md`, `runs/instagram.md`, `runs/blog.md`, `README.md` and `.claude/skills/factory-health/SKILL.md`.
+
+1. **"Zero PRs ever" was false.** X opened #1 `claude/x-superreps-learnings`, #4 `claude/x-claude-new-feature-loop` and #6 `claude/x-ai-drinks-water`; Instagram opened #3 `claude/instagram-hello-world-ai-agents`. All four were opened 2026-06-28..06-30 and **all four were merged**. The original check used `gh pr list --state open`, which cannot see a merged PR. The true statement is **"no PR since 2026-06-30"**. This is not a wording nit: "never created a PR" points at a broken or missing routine, while "worked, then stopped" points at a routine that was turned off — which is what actually happened, and it cost three weeks of looking in the wrong place. **Always check `--state all`.**
+2. **Blog was listed as having no routine.** It has one and it is live: `Daily Blog Post Creator`, cron `30 13 * * *` = 7:00 PM IST, PRs landing at 13:39-13:46 UTC on most days from 2026-07-03 to #40 on 2026-09-06, and a row in `runs/blog.md` nearly every day since 08-21. `/factory-health`'s "Blog exemption" rested on that false premise and has been removed — blog can go `DARK` like any other channel.
+
+The schedules for LinkedIn and X were also wrong (LinkedIn was listed at 8:30 PM IST but fires at 1:00 AM IST; X was listed at 10:00 AM IST but is scheduled for 10:00 PM IST). Both now come from the routine's own cron rather than from memory.
+
+**Still: do not trust this table alone.** It is a cache of a system that lives at https://claude.ai/code/routines and can be changed there without anything here noticing. The `runs/` heartbeat and `/factory-health` exist so a stale row is caught in days, not in seven weeks.
 
 ---
 

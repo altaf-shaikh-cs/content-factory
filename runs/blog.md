@@ -2,7 +2,9 @@
 
 Append-only heartbeat, one row per run of `blog-writer-agent`, including runs that produce nothing. Contract: [`README.md`](./README.md). Newest row at the bottom.
 
-Note: the blog channel has no cloud routine in the routine table in `CLAUDE.md`. Its runs are currently manual or via `/loop` with `blog.agent.md`. Rows will be sparse until that is decided one way or the other.
+**Blog has a cloud routine and it is live.** `Daily Blog Post Creator`, `trig_016TMLatVAcu4MHPSTUaRz8B`, cron `30 13 * * *` UTC = 7:00 PM IST — confirmed against the routine list on 2026-09-07, where its last run had SUCCEEDED that day. It produces PRs at 13:39-13:46 UTC on most days, most recently #40 on 2026-09-06, and writes a row here nearly every day. Manual `/loop` runs with `blog.agent.md` still happen alongside it and are logged the same way.
+
+*Correction, 2026-09-08:* the note that stood here from 2026-08-15 said "the blog channel has no cloud routine" and that rows would be sparse. Both were wrong — the routine simply was never added to `CLAUDE.md`'s table. `/factory-health`'s "Blog exemption" rested on the same false premise and has been removed: blog can go `DARK` like any other channel.
 
 | Date (UTC) | Outcome | Detail | Output |
 |---|---|---|---|
