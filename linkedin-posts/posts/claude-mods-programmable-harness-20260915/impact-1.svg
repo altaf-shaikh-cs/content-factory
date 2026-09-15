@@ -1,0 +1,95 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M 54 0 L 0 0 0 54" fill="none" stroke="#d8d2c6" stroke-width="1" stroke-opacity="0.55"/>
+    </pattern>
+    <linearGradient id="termbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1c20"/>
+      <stop offset="100%" stop-color="#141417"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="#f1ede5"/>
+  <rect width="1080" height="1350" fill="url(#grid)"/>
+
+  <!-- Eyebrow -->
+  <path d="M 80 112 l 0 22 M 69 123 l 22 0 M 72.5 115.5 l 15 15 M 87.5 115.5 l -15 15"
+        stroke="#e0531f" stroke-width="3.4" stroke-linecap="round"/>
+  <text x="112" y="132" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="25" font-weight="700" letter-spacing="6" fill="#e0531f">CLAUDE CODE &#183; MODS</text>
+
+  <!-- Headline -->
+  <text x="80" y="290" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="116" font-weight="900" fill="#16150f" letter-spacing="-3">Tetris is not</text>
+  <text x="80" y="404" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="116" font-weight="900" fill="#16150f" letter-spacing="-3">the story.</text>
+
+  <!-- Mono subline -->
+  <text x="80" y="474" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="31" font-weight="400" fill="#5d5b52">That it shipped on day one is.</text>
+
+  <!-- Terminal window -->
+  <rect x="80" y="536" width="920" height="352" rx="26" fill="url(#termbg)"/>
+  <circle cx="128" cy="580" r="9" fill="#ff5f56"/>
+  <circle cx="158" cy="580" r="9" fill="#ffbd2e"/>
+  <circle cx="188" cy="580" r="9" fill="#27c93f"/>
+  <rect x="80" y="612" width="920" height="1" fill="#ffffff" fill-opacity="0.09"/>
+
+  <text x="124" y="704" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="46" font-weight="700" fill="#6b6a63">&gt;</text>
+  <text x="168" y="704" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="46" font-weight="700" fill="#e0531f">/arcade</text>
+
+  <text x="124" y="774" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="27" font-weight="400" fill="#b9b6ad">tetris &#183; paused &#183; score 48 &#183; best 74</text>
+  <text x="124" y="822" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="27" font-weight="400" fill="#6f6d66">claude is done &#183; crunched for 27s</text>
+
+  <!-- Chip row -->
+  <rect x="80" y="926" width="215" height="72" rx="16" fill="none" stroke="#d3ccbe" stroke-width="2"/>
+  <text x="187.5" y="971" font-family="'SF Mono','Menlo','Consolas',monospace" font-size="26"
+        font-weight="700" text-anchor="middle" fill="#e0531f">pet.ts</text>
+  <rect x="315" y="926" width="215" height="72" rx="16" fill="none" stroke="#d3ccbe" stroke-width="2"/>
+  <text x="422.5" y="971" font-family="'SF Mono','Menlo','Consolas',monospace" font-size="26"
+        font-weight="700" text-anchor="middle" fill="#e0531f">auto.ts</text>
+  <rect x="550" y="926" width="215" height="72" rx="16" fill="none" stroke="#d3ccbe" stroke-width="2"/>
+  <text x="657.5" y="971" font-family="'SF Mono','Menlo','Consolas',monospace" font-size="26"
+        font-weight="700" text-anchor="middle" fill="#e0531f">best.ts</text>
+  <rect x="785" y="926" width="215" height="72" rx="16" fill="none" stroke="#d3ccbe" stroke-width="2"/>
+  <text x="892.5" y="971" font-family="'SF Mono','Menlo','Consolas',monospace" font-size="26"
+        font-weight="700" text-anchor="middle" fill="#1668d4">8 games</text>
+
+  <!-- Stats row -->
+  <text x="80" y="1108" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="56" font-weight="700" fill="#e0531f">508K</text>
+  <text x="80" y="1148" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="22" font-weight="400" fill="#6b6a63">views on the launch</text>
+
+  <rect x="392" y="1064" width="1" height="92" fill="#cfc8ba"/>
+
+  <text x="440" y="1108" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="56" font-weight="700" fill="#e0531f">23 days</text>
+  <text x="440" y="1148" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="22" font-weight="400" fill="#6b6a63">since he last opened it</text>
+
+  <rect x="772" y="1064" width="1" height="92" fill="#cfc8ba"/>
+
+  <text x="816" y="1108" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="56" font-weight="700" fill="#1668d4">0</text>
+  <text x="816" y="1148" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="22" font-weight="400" fill="#6b6a63">tokens to play</text>
+
+  <!-- Footer -->
+  <rect x="80" y="1212" width="920" height="1" fill="#cfc8ba"/>
+  <text x="80" y="1268" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="700" fill="#16150f">Altaf Shaikh</text>
+  <text x="80" y="1304" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="23" font-weight="400" fill="#6b6a63">// AI Engineering</text>
+
+  <text x="1000" y="1266" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="34" font-weight="700" text-anchor="end" fill="#e0531f">@teachmebro</text>
+  <text x="1000" y="1304" font-family="'SF Mono','Menlo','Consolas',monospace"
+        font-size="22" font-weight="400" text-anchor="end" fill="#6b6a63">the harness is the product</text>
+  <circle cx="957" cy="1330" r="9" fill="#e0531f"/>
+  <circle cx="984" cy="1330" r="9" fill="#1668d4"/>
+</svg>

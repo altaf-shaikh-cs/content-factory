@@ -1,0 +1,29 @@
+{
+  "round": 2,
+  "variants_reviewed": ["C-revised"],
+  "status": "approved",
+  "winner": "C",
+  "why_winner": "All three round-1 issues are resolved without losing the split-screen open. The thesis is now stated in nine words at the structural centre, the significance claim is earned by an admission instead of asserted, and the densest line is split so the skimmer gets a clean break exactly where they were dropping out.",
+  "scores": {
+    "C-revised": { "hook_strength": 9, "authenticity": 10, "readability": 10, "plan_compliance": 10, "cta_clarity": 9, "avg": 9.6 }
+  },
+  "runner_up_notes": {},
+  "issues": [
+    {
+      "type": "too_long",
+      "severity": "low",
+      "description": "290 words, at the upper end of what this account's converting posts have run. Every line is now load bearing, so cutting further would cost the zero-token proof or the first-person anchor, which are the two things a reader could not get from the screenshot itself.",
+      "action": "Accept. Do not cut. Noted as a known trade, not an unresolved defect."
+    }
+  ],
+  "fact_check": [
+    "508,000 views: from the capture (508K). Confirmed.",
+    "23 days: verbatim from the quoted post. Confirmed.",
+    "Eight games: snake, tetris, 2048, mines, flappy, invaders, pong, typing. Confirmed against the source listing.",
+    "Pet XP and mood mechanics: verbatim from pet.ts description in the capture. Confirmed.",
+    "Picker behaviour: verbatim from auto.ts description in the capture. Confirmed.",
+    "Zero tokens: from the verified repo description, the plugin answers every click and command itself. Confirmed.",
+    "The Codex quote is one exact sentence; the reason he prefers it is paraphrased rather than spliced, so no quotation implies contiguity it does not have.",
+    "No invented statistics. No company or internal tool names. The pipeline reference is described generically. No emojis. No em dashes."
+  ]
+}

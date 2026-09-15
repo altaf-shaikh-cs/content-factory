@@ -1,0 +1,36 @@
+{
+  "round": 1,
+  "variants_reviewed": ["A", "B", "C"],
+  "status": "needs_revision",
+  "winner": "C",
+  "why_winner": "C is the only draft whose first line already contains the tension the whole post is about, with no setup spent earning it, which is the shape the tracker credits for this account's strongest recent post. It is also the only draft that carries both the zero-token proof and the first-person anchor, where A has the anchor without the sharp open and B has the sharp open without the anchor.",
+  "scores": {
+    "A": { "hook_strength": 7, "authenticity": 10, "readability": 9, "plan_compliance": 9, "cta_clarity": 8, "avg": 8.6 },
+    "B": { "hook_strength": 9, "authenticity": 7, "readability": 9, "plan_compliance": 9, "cta_clarity": 8, "avg": 8.4 },
+    "C": { "hook_strength": 9, "authenticity": 9, "readability": 9, "plan_compliance": 10, "cta_clarity": 8, "avg": 9.0 }
+  },
+  "runner_up_notes": {
+    "B": "The line 'The model is the commodity now. The harness is the product' is the thesis of the whole post stated in nine words, and C argues its way to the same place without ever saying it. Graft it in. B's closing reframe, 'most teams are still deciding which model to use, the sharper question is how much of the product needs one at all', also sets up the CTA better than C's current benchmark line.",
+    "A": "A's 'I almost scrolled past both. A toy and a churn complaint.' earns credibility by admitting the insight was not obvious. C asserts significance the reader has not agreed to yet. Worth one line."
+  },
+  "issues": [
+    {
+      "type": "buries_insight",
+      "severity": "medium",
+      "description": "C never states the thesis outright. It shows the split screen, shows the proof, then jumps to the audit line, leaving the reader to name the pattern themselves. On a feed that is a coin flip.",
+      "action": "Insert B's 'The model is the commodity now. The harness is the product.' as a standalone line immediately after 'Model quality decided neither one.'"
+    },
+    {
+      "type": "weak_hook",
+      "severity": "low",
+      "description": "'That is the whole story' asserts importance four lines in, before the reader has been given a reason to grant it. It reads as the writer telling the reader what to think.",
+      "action": "Replace with A's admission that both posts looked skippable at first. Earn the claim instead of asserting it."
+    },
+    {
+      "type": "too_long",
+      "severity": "low",
+      "description": "The builder sentence stacks three clauses (eight games, the pet, the picker) into one breath and is the densest line in the post, sitting exactly where a skimmer decides to stop.",
+      "action": "Split into two lines. Keep the pet and the picker as concrete detail, they are the most specific thing in the post."
+    }
+  ]
+}

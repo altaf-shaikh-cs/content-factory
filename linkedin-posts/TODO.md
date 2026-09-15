@@ -6,6 +6,8 @@ This is the LinkedIn channel's consumption ledger. Raw ideas live in `../raw-ide
 
 _Empty. The two remaining PDFs in `../raw-ideas/` are reference captures of ideas already processed via their synthesized `.md` files (see Done), so they are not queue items._
 
+_`010-claude-mods-programmable-harness.md` was registered by this run (Mode B) and consumed by it in the same pass, so it is already in Done. It remains in the shared library for X, blog and Instagram to consume independently._
+
 **Note on a drained queue:** when every source idea is consumed, the next move is a DERIVED idea, a pattern that runs across several ideas but is not written in any single one. Read the whole library at once, find the recurring structure, and register it as a new `raw-ideas/<NNN>-*.md` so other channels can consume it too. `007-five-rung-ai-automation-ladder.md` is the first of these.
 
 ## In Progress
@@ -23,7 +25,9 @@ down to a single impression, so absence means unpublished, not underperforming.
 - [ ] [loops-explained-prompt-vs-loop-agent-anatomy-20260719](./posts/loops-explained-prompt-vs-loop-agent-anatomy-20260719/final-post.md)
 - [ ] [token-usage-spike-20260905](./posts/token-usage-spike-20260905/final-post.md) — text + image, 2 variations. Mechanism-explainer rewrite; ship with impact-1 (the context-growth chart), it carries the argument. **Kept here deliberately:** a post published 9/5 could not be attributed (see below). Wrongly marking this shipped would mean it never gets published, so it stays until confirmed.
 
-**Gate count: 5** (was recorded as 8). The gate still fires at ≥3, but now on real numbers.
+- [ ] [claude-mods-programmable-harness-20260915](./posts/claude-mods-programmable-harness-20260915/final-post.md) — text + image, 2 variations. Ship with impact-1 (the terminal card), it carries the proof. Generated 2026-09-15 under a Mode B override, so it ADDS to the backlog rather than reducing it.
+
+**Gate count: 6** (was 5). The gate still fires at ≥3, but now on real numbers.
 
 ### Corrected 2026-09-06 — these were listed as unshipped and had in fact been published
 
@@ -54,6 +58,7 @@ third of the period's total, and nothing in this repo records what it was.
 Also never seen in any export across three periods, presume unpublished: `superreps-learnings-20260608`, `build-your-first-agents-team-20260616`, `just-text-20260629`, `just-text-20260714`, `run-your-own-agent-acengy-with-paperclip-20260630`.
 
 ## Done
+- [x] 010-claude-mods-programmable-harness.md → [posts/claude-mods-programmable-harness-20260915/final-post.md](./posts/claude-mods-programmable-harness-20260915/final-post.md) — 2026-09-15 (Mode B: Altaf passed an X trending screenshot and URL directly, so the ship gate was overridden by the documented Mode B rule, not agent judgment, at U=5. Comparison/split-screen won a 3-angle run at 9.0; B's nine-word thesis and A's "almost scrolled past" admission were grafted in on revision, final 9.6. The source is two opposed X posts in one screenshot, and the post's argument is that they are the same observation.)
 - [x] token-usage-spike.md → [posts/token-usage-spike-20260905/final-post.md](./posts/token-usage-spike-20260905/final-post.md) — 2026-09-05 (Mode B: Altaf passed the idea file path directly and asked for the post, so the ship gate was overridden by the documented Mode B rule, not agent judgment. Vulnerability/confession-first won a 3-angle run at 9.2; the 747-re-reads illustration and A's list-rate cost anchor were grafted in on revision. **Rewritten the same day by request**: refocused from the confession onto the turn mechanism itself, with the 21k-file-at-call-200 example as the spine. impact-1 rebuilt as a context-growth chart. Pipeline version preserved in final-post.md.)
 - [x] 009-anthropic-multi-agent-research-system.md → [posts/anthropic-multi-agent-research-system-20260903/final-post.md](./posts/anthropic-multi-agent-research-system-20260903/final-post.md) — 2026-09-03 (Mode B: Altaf passed the source URL directly the same session the blog post was written, so the ship gate was overridden by the documented Mode B rule, not by agent judgment. Data/number-first won on a 3-angle run; the seven-week outage was grafted in from the story-first draft as first-person proof.)
 - [x] claude-autoclassifier.md → [posts/claude-auto-mode-authorization-20260826/final-post.md](./posts/claude-auto-mode-authorization-20260826/final-post.md) — 2026-08-26 (requested directly with the idea file, so Mode B; ship gate acknowledged and overridden by that direct request, see note below. Built from the Anthropic engineering write-up rather than the announcement coverage. A first draft this same day was rejected as a feature dump and discarded; the rebuild carries one idea, authorization is not transitive.)
